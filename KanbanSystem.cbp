@@ -34,9 +34,11 @@
 		</Compiler>
 		<Unit filename="Coluna.h" />
 		<Unit filename="Email.h" />
-		<Unit filename="main.cpp" />
+		<Unit filename="Teste.h" />
 		<Unit filename="Coluna.cpp" />
 		<Unit filename="Email.cpp" />
+		<Unit filename="Teste.cpp" />
+		<Unit filename="main.cpp" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

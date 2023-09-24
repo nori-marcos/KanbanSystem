@@ -1,12 +1,17 @@
 #include <istream>
 #include <iostream>
 #include "Email.h"
+#include "Teste.h"
 
 using namespace std;
 
 int main() {
     bool emailInvalido = true;
     string emailString;
+
+    Teste teste;
+
+    cout << teste.SOLICITADO << endl;
 
     while (emailInvalido) {
         cout << "Email: " << emailString << endl;
