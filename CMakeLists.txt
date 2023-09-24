@@ -11,5 +11,6 @@ add_executable(KanbanSystem
         Email.cpp
         Email.h
         main.cpp
-        Teste.h
-        Teste.cpp)
+        Codigo.h
+        Codigo.cpp
+)
