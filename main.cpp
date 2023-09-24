@@ -1,3 +1,4 @@
+#include <istream>
 #include <iostream>
 #include "Email.h"
 
