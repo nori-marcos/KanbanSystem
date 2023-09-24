@@ -1,13 +1,13 @@
 #ifndef EMAIL_H
 #define EMAIL_H
+
 #include <stdexcept>
 #include <string>
 
 using namespace std;
 
-class Email
-{
-    public:
+class Email {
+public:
     Email(const string &email);
 
     Email() = default;

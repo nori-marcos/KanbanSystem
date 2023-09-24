@@ -34,8 +34,10 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/Coluna.h" />
 		<Unit filename="include/Email.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/Coluna.cpp" />
 		<Unit filename="src/Email.cpp" />
 		<Extensions />
 	</Project>

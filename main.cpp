@@ -3,8 +3,7 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
     bool emailInvalido = true;
     string emailString;
 
