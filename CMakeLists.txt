@@ -13,4 +13,5 @@ add_executable(KanbanSystem
         main.cpp
         Codigo.h
         Codigo.cpp
+        Senha.cpp
 )
