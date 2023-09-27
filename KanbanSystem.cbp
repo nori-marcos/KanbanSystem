@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="../KanbanSystem" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -22,6 +23,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="../KanbanSystem" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -32,13 +34,15 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="Coluna.h" />
-		<Unit filename="Email.h" />
+		<Unit filename="Codigo.cpp" />
 		<Unit filename="Codigo.h" />
 		<Unit filename="Coluna.cpp" />
+		<Unit filename="Coluna.h" />
 		<Unit filename="Email.cpp" />
+		<Unit filename="Email.h" />
+		<Unit filename="Senha.h" />
+		<Unit filename="Senha.cpp"/>
 		<Unit filename="main.cpp" />
-		<Unit filename="Codigo.cpp" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

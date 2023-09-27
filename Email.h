@@ -7,19 +7,6 @@
 using namespace std;
 
 class Email {
-public:
-    Email(const string &email);
-
-    Email() = default;
-
-    string getEmail() const {
-        return email;
-    }
-
-    void setEmail(const string &newEmail) {
-        validarEmail(newEmail);
-        this->email = newEmail;
-    }
 
 private:
     string email;
@@ -33,6 +20,21 @@ private:
     static void validarCaracter(const char &caracter);
 
     static void validarPontosSeguidos(const char &caracter1, const char &caracter2);
+
+public:
+
+    Email(const string &email);
+
+    Email() = default;
+
+    string getEmail() const {
+        return email;
+    }
+
+    void setEmail(const string &newEmail) {
+        validarEmail(newEmail);
+        this->email = newEmail;
+    }
 };
 
 #endif // EMAIL_H

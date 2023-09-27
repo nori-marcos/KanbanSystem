@@ -1,5 +1,4 @@
 #include "Email.h"
-#include <exception>
 
 Email::Email(const string &email) {
     validarEmail(email);
