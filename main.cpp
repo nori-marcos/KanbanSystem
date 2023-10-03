@@ -3,6 +3,7 @@
 #include "Email.h"
 #include "Codigo.h"
 #include "Senha.h"
+#include "Texto.h"
 
 using namespace std;
 
@@ -10,9 +11,11 @@ int main() {
     bool emailInvalido = true;
     bool codigoInvalido = true;
     bool senhaInvalida = true;
+    bool textoInvalido = true;
     string emailString;
     string codigoString;
     string senhaString;
+    string textoString;
 
 
     while (emailInvalido) {
@@ -61,6 +64,20 @@ int main() {
     }
     cout << "Senha cadastrada com sucesso!" << endl;
     cout << "-----------------------------" << endl;
+
+    while (textoInvalido) {
+        cout << "Texto: " << textoString << endl;
+        cin >> textoString;
+
+        try {
+            Texto texto = Texto(textoString);
+            cout << texto.getTexto() << endl;
+            textoInvalido = false;
+        } catch (invalid_argument &e) {
+            cout << e.what() << endl;
+            textoString = "";
+        }
+    }
 
     return 0;
 }

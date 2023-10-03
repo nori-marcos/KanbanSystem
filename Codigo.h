@@ -7,7 +7,13 @@
 using namespace std;
 
 class Codigo {
+private:
+    string codigo;
+
+    static void validar(string &codigo);
+
 public:
+
     Codigo(string codigo);
 
     void setCodigo(string codigo) {
@@ -18,11 +24,6 @@ public:
     string getCodigo() const {
         return codigo;
     };
-
-private:
-    string codigo;
-
-    static void validar(string &codigo);
 };
 
 #endif //KANBANSYSTEM_CODIGO_H

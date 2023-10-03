@@ -32,7 +32,7 @@ void Senha::validarSenha(const string &senha) {
         } else if (isdigit(caracter)) {
             temDigito = true;
         } else {
-            for (char pontosValido : pontosValidos) {
+            for (char pontosValido: pontosValidos) {
                 if (pontosValido == caracter) {
                     temPontuacao = true;
                 }
@@ -47,7 +47,8 @@ void Senha::validarSenha(const string &senha) {
     }
 
     if (!temMaiuscula || !temMinuscula || !temDigito || !temPontuacao) {
-        throw invalid_argument("Verifique se a senha contém pelo menos uma letra maiúscula, uma letra minúscula, um dígito e um caracter de pontuação");
+        throw invalid_argument(
+                "Verifique se a senha contém pelo menos uma letra maiúscula, uma letra minúscula, um dígito e um caracter de pontuação");
     }
 }
 

@@ -7,7 +7,6 @@
 using namespace std;
 
 class Email {
-
 private:
     string email;
 

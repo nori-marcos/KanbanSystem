@@ -14,8 +14,8 @@ void Email::validarEmail(const std::string &email) {
     for (size_t i = 0; i < tamanhoEmail; i++) {
         validarCaracter(email[i]);
 
-        if (i > 0) {
-            validarPontosSeguidos(email[i - 1], email[i]);
+        if (i < tamanhoEmail - 1) {
+            validarPontosSeguidos(email[i], email[i + 1]);
         }
 
         if (!nomeCompletado) {
