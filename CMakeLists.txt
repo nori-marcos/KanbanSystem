@@ -16,4 +16,7 @@ add_executable(KanbanSystem
         Senha.cpp
         Texto.h
         Texto.cpp
+        Limite.h
+        Limite.cpp
+        Limite.cpp
 )

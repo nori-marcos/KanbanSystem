@@ -44,6 +44,8 @@
 		<Unit filename="Senha.h" />
 		<Unit filename="Texto.cpp" />
 		<Unit filename="Texto.h" />
+		<Unit filename="Limite.cpp" />
+		<Unit filename="Limite.h" />
 		<Unit filename="main.cpp" />
 		<Extensions />
 	</Project>
