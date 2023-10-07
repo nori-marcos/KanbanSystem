@@ -1,4 +1,4 @@
-#include "Texto.h"
+#include "include/dominios/Texto.h"
 
 Texto::Texto(const string &texto) {
     validarTexto(texto);

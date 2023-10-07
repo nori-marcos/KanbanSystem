@@ -13,7 +13,10 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
-					<Add directory="../KanbanSystem" />
+					<Add directory="/home/marcos/CodeBlocksProjects/KanbanSystem/" />
+					<Add directory="include" />
+					<Add directory="src" />
+					<Add directory="test" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -23,7 +26,10 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
-					<Add directory="../KanbanSystem" />
+					<Add directory="include" />
+					<Add directory="src" />
+					<Add directory="/home/marcos/CodeBlocksProjects/KanbanSystem/" />
+					<Add directory="test" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -33,20 +39,28 @@
 		<Compiler>
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
+			<Add directory="include" />
+			<Add directory="/home/marcos/CodeBlocksProjects/KanbanSystem/" />
+			<Add directory="src" />
+			<Add directory="test" />
 		</Compiler>
-		<Unit filename="Codigo.cpp" />
-		<Unit filename="Codigo.h" />
-		<Unit filename="Coluna.cpp" />
-		<Unit filename="Coluna.h" />
-		<Unit filename="Email.cpp" />
-		<Unit filename="Email.h" />
-		<Unit filename="Limite.cpp" />
-		<Unit filename="Limite.h" />
-		<Unit filename="Senha.cpp" />
-		<Unit filename="Senha.h" />
-		<Unit filename="Texto.cpp" />
-		<Unit filename="Texto.h" />
-		<Unit filename="main.cpp" />
+		<Unit filename="include/dominios/Codigo.h" />
+		<Unit filename="include/dominios/CodigoTeste.h" />
+		<Unit filename="include/dominios/Coluna.h" />
+		<Unit filename="include/dominios/Email.h" />
+		<Unit filename="include/dominios/Limite.h" />
+		<Unit filename="include/dominios/LimiteTeste.h" />
+		<Unit filename="include/dominios/Senha.h" />
+		<Unit filename="include/dominios/Texto.h" />
+		<Unit filename="src/dominios/Codigo.cpp" />
+		<Unit filename="src/dominios/CodigoTeste.cpp" />
+		<Unit filename="src/dominios/Coluna.cpp" />
+		<Unit filename="src/dominios/Email.cpp" />
+		<Unit filename="src/dominios/Limite.cpp" />
+		<Unit filename="src/dominios/LimiteTeste.cpp" />
+		<Unit filename="src/dominios/Senha.cpp" />
+		<Unit filename="src/dominios/Texto.cpp" />
+		<Unit filename="src/main.cpp" />
 		<Extensions>
 			<DoxyBlocks>
 				<comment_style block="0" line="0" />

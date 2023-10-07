@@ -1,6 +1,6 @@
 #include <list>
 #include <string>
-#include "Senha.h"
+#include "include/dominios/Senha.h"
 
 Senha::Senha(const string &senha) {
     validarSenha(senha);

@@ -6,18 +6,21 @@ set(CMAKE_CXX_STANDARD 14)
 include_directories(.)
 
 add_executable(KanbanSystem
-        Coluna.cpp
-        Coluna.h
-        Email.cpp
-        Email.h
-        main.cpp
-        Codigo.h
-        Codigo.cpp
-        Senha.cpp
-        Texto.h
-        Texto.cpp
-        Limite.h
-        Limite.cpp
-        Limite.cpp
-        CodigoTeste.h
+        src/dominios/Coluna.cpp
+        include/dominios/Coluna.h
+        src/dominios/Email.cpp
+        include/dominios/Email.h
+        src/main.cpp
+        include/dominios/Codigo.h
+        src/dominios/Codigo.cpp
+        src/dominios/Senha.cpp
+        include/dominios/Texto.h
+        src/dominios/Texto.cpp
+        include/dominios/Limite.h
+        src/dominios/Limite.cpp
+        src/dominios/Limite.cpp
+        include/dominios/CodigoTeste.h
+        src/dominios/CodigoTeste.cpp
+        include/dominios/LimiteTeste.h
+        src/dominios/LimiteTeste.cpp
 )

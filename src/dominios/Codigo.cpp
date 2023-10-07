@@ -1,4 +1,4 @@
-#include "Codigo.h"
+#include "include/dominios/Codigo.h"
 
 Codigo::Codigo(string codigo) {
     validar(codigo);
