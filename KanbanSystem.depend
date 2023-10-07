@@ -1,10 +1,11 @@
 # depslib dependency file v1.0
-1695772420 source:/home/marcos/CodeBlocksProjects/KanbanSystem/main.cpp
+1696365137 source:/home/marcos/CodeBlocksProjects/KanbanSystem/main.cpp
 	<istream>
 	<iostream>
 	"Email.h"
 	"Codigo.h"
 	"Senha.h"
+	"Texto.h"
 
 1695530399 /home/marcos/CodeBlocksProjects/KanbanSystem/include/Email.h
 	<stdexcept>
@@ -39,7 +40,7 @@
 1695580325 source:/home/marcos/CodeBlocksProjects/KanbanSystem/Codigo.cpp
 	"Codigo.h"
 
-1696354763 /home/marcos/CodeBlocksProjects/KanbanSystem/Codigo.h
+1696553360 /home/marcos/CodeBlocksProjects/KanbanSystem/Codigo.h
 	<string>
 	<stdexcept>
 
@@ -58,4 +59,10 @@
 1696356771 /home/marcos/CodeBlocksProjects/KanbanSystem/Texto.h
 	<stdexcept>
 	<string>
+
+1696547048 source:/home/marcos/CodeBlocksProjects/KanbanSystem/Limite.cpp
+	"Limite.h"
+
+1696547048 /home/marcos/CodeBlocksProjects/KanbanSystem/Limite.h
+	<stdexcept>
 

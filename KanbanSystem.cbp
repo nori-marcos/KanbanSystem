@@ -40,13 +40,24 @@
 		<Unit filename="Coluna.h" />
 		<Unit filename="Email.cpp" />
 		<Unit filename="Email.h" />
-		<Unit filename="Senha.cpp"/>
+		<Unit filename="Limite.cpp" />
+		<Unit filename="Limite.h" />
+		<Unit filename="Senha.cpp" />
 		<Unit filename="Senha.h" />
 		<Unit filename="Texto.cpp" />
 		<Unit filename="Texto.h" />
-		<Unit filename="Limite.cpp" />
-		<Unit filename="Limite.h" />
 		<Unit filename="main.cpp" />
-		<Extensions />
+		<Extensions>
+			<DoxyBlocks>
+				<comment_style block="0" line="0" />
+				<doxyfile_project />
+				<doxyfile_build />
+				<doxyfile_warnings />
+				<doxyfile_output />
+				<doxyfile_dot />
+				<general />
+			</DoxyBlocks>
+			<lib_finder disable_auto="1" />
+		</Extensions>
 	</Project>
 </CodeBlocks_project_file>

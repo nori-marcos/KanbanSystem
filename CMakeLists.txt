@@ -19,4 +19,5 @@ add_executable(KanbanSystem
         Limite.h
         Limite.cpp
         Limite.cpp
+        CodigoTeste.h
 )
