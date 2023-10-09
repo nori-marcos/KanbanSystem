@@ -2,36 +2,34 @@
 #define COLUNA_H
 
 #include <string>
+#include <stdexcept>
 
 using namespace std;
 
 class Coluna {
 public:
 
-	private:
-	
-	// atributo de "status da coluna" deve ser alterado por outras classes.
-	//strings possiveis: "SOLICITADO" "EM_EXECUCAO" e "CONCLUIDO";
-				
-	public:
-			
-		string status;
-		
-		Coluna(const string &status);
-		
-		Coluna() = default;
-		
-		string getColuna() const
-		{
-			return status;
-		}
+private:
 
-    
-		void setStatus(const string &newStatus)
-		{
-			validarStatus(newStatus);
-        	this->status = newStatus;
-    	}
+    string status;
+
+    static void validarStatus(const string &status);
+
+public:
+
+    Coluna(const string &status);
+
+    Coluna() = default;
+
+    string getColuna() const {
+        return status;
+    }
+
+
+    void setStatus(const string &newStatus) {
+        validarStatus(newStatus);
+        this->status = newStatus;
+    }
 
 
 };

@@ -122,10 +122,19 @@
 	<stdexcept>
 	<string>
 
-1696691180 /home/marcos/CodeBlocksProjects/KanbanSystem//include/dominios/CodigoTeste.h
+1696694413 /home/marcos/CodeBlocksProjects/KanbanSystem//include/dominios/CodigoTeste.h
 	"include/dominios/Codigo.h"
 	<stdexcept>
 	<string>
+
+1696694720 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/dominios/CodigoTeste.cpp
+	"include/dominios/CodigoTeste.h"
+
+1696694774 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/dominios/LimiteTeste.cpp
+	"include/dominios/LimiteTeste.h"
+
+1696694774 /home/marcos/CodeBlocksProjects/KanbanSystem//include/dominios/LimiteTeste.h
+	"Limite.h"
 
 1696856944 source:c:\users\user\documents\github\kanbansystem\src\dominios\codigo.cpp
 	"include/dominios/Codigo.h"
