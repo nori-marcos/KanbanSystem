@@ -127,3 +127,29 @@
 	<stdexcept>
 	<string>
 
+1696856944 source:c:\users\user\documents\github\kanbansystem\src\dominios\codigo.cpp
+	"include/dominios/Codigo.h"
+
+1696856944 source:c:\users\user\documents\github\kanbansystem\src\dominios\codigoteste.cpp
+	"include/dominios/CodigoTeste.h"
+
+1696856944 source:c:\users\user\documents\github\kanbansystem\src\dominios\coluna.cpp
+	"include/dominios/Coluna.h"
+
+1696856944 source:c:\users\user\documents\github\kanbansystem\src\dominios\email.cpp
+	"include/dominios/Email.h"
+
+1696856944 source:c:\users\user\documents\github\kanbansystem\src\dominios\limite.cpp
+	"include/dominios/Limite.h"
+
+1696856944 source:c:\users\user\documents\github\kanbansystem\src\dominios\limiteteste.cpp
+	"include/dominios/LimiteTeste.h"
+
+1696856944 source:c:\users\user\documents\github\kanbansystem\src\dominios\senha.cpp
+	<list>
+	<string>
+	"include/dominios/Senha.h"
+
+1696856944 source:c:\users\user\documents\github\kanbansystem\src\dominios\texto.cpp
+	"include/dominios/Texto.h"
+
