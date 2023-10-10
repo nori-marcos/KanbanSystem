@@ -23,4 +23,8 @@ add_executable(KanbanSystem
         src/dominios/CodigoTeste.cpp
         include/dominios/LimiteTeste.h
         src/dominios/LimiteTeste.cpp
+        include/entidades/Cartao.h
+        src/entidades/Cartao.cpp
+        include/entidades/Quadro.h
+        include/entidades/Conta.h
 )
