@@ -33,4 +33,6 @@ add_executable(KanbanSystem
         test/dominios/SenhaTeste.cpp
         test/dominios/ColunaTeste.h
         test/dominios/ColunaTeste.cpp
+        test/dominios/EmailTeste.h
+        test/dominios/EmailTeste.cpp
 )
