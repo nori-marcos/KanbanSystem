@@ -109,15 +109,18 @@
 	<stdexcept>
 	<string>
 
-1696951926 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/main.cpp
+1696972286 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/main.cpp
 	<istream>
 	<iostream>
-	"include/dominios/Email.h"
 	"include/dominios/Codigo.h"
 	"include/dominios/Senha.h"
-	"include/dominios/Texto.h"
 	"test/dominios/CodigoTeste.h"
 	"test/dominios/LimiteTeste.h"
+	"test/dominios/SenhaTeste.h"
+	"test/dominios/ColunaTeste.h"
+	"test/dominios/EmailTeste.h"
+	"test/dominios/TextoTeste.h"
+	"test/entidades/CartaoTeste.h"
 
 1696691180 /home/marcos/CodeBlocksProjects/KanbanSystem//test/CodigoTeste.h
 	"include/dominios/Codigo.h"
@@ -193,7 +196,7 @@
 	<stdexcept>
 	<string>
 
-1696951926 /home/marcos/CodeBlocksProjects/KanbanSystem//test/dominios/LimiteTeste.h
+1696966977 /home/marcos/CodeBlocksProjects/KanbanSystem//test/dominios/LimiteTeste.h
 	"include/dominios/Limite.h"
 
 1696966393 source:/home/marcos/CodeBlocksProjects/KanbanSystem/test/dominios/CodigoTeste.cpp
@@ -241,4 +244,29 @@
 	<stdexcept>
 	<string>
 	"include/dominios/Texto.h"
+
+1696964808 /home/marcos/CodeBlocksProjects/KanbanSystem//test/dominios/SenhaTeste.h
+	<stdexcept>
+	<string>
+	"include/dominios/Senha.h"
+
+1696966977 /home/marcos/CodeBlocksProjects/KanbanSystem//test/dominios/ColunaTeste.h
+	<stdexcept>
+	<string>
+	"include/dominios/Coluna.h"
+
+1696968406 /home/marcos/CodeBlocksProjects/KanbanSystem//test/dominios/EmailTeste.h
+	<stdexcept>
+	<string>
+	"include/dominios/Email.h"
+
+1696968851 /home/marcos/CodeBlocksProjects/KanbanSystem//test/dominios/TextoTeste.h
+	<stdexcept>
+	<string>
+	"include/dominios/Texto.h"
+
+1696970860 /home/marcos/CodeBlocksProjects/KanbanSystem//test/entidades/CartaoTeste.h
+	<stdexcept>
+	<string>
+	"include/entidades/Cartao.h"
 
