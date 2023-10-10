@@ -63,6 +63,8 @@
 		<Unit filename="include/entidades/Conta.h" />
 		<Unit filename="include/entidades/Quadro.h" />
 
+		<Unit filename="test/dominios/CartaoTeste.h" />
+
 		<Unit filename="src/dominios/Codigo.cpp" />
 		<Unit filename="src/dominios/Coluna.cpp" />
 		<Unit filename="src/dominios/Email.cpp" />
@@ -80,6 +82,8 @@
 		<Unit filename="src/entidades/Cartao.cpp" />
 		<Unit filename="src/entidades/Conta.cpp" />
 		<Unit filename="src/entidades/Quadro.cpp" />
+
+		<Unit filename="test/dominios/CartaoTeste.cpp" />
 
 		<Unit filename="src/main.cpp" />
 		<Extensions>

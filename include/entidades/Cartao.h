@@ -22,7 +22,9 @@ private:
 
 public:
     ///Inicializa o objeto com os valores passados por parâmetro
-    Cartao(const Codigo& codigo, const Texto& nome, const Texto& descricao, const Coluna& coluna);
+    Cartao(const Codigo &codigo, const Texto &nome, const Texto &descricao, const Coluna &coluna);
+
+    Cartao() = default;
 
     Codigo getCodigo() const {
         return codigo;
