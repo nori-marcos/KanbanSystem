@@ -35,4 +35,6 @@ add_executable(KanbanSystem
         test/dominios/ColunaTeste.cpp
         test/dominios/EmailTeste.h
         test/dominios/EmailTeste.cpp
+        test/dominios/TextoTeste.h
+        test/dominios/TextoTeste.cpp
 )

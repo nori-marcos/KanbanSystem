@@ -40,7 +40,7 @@ public:
     Texto() = default;
 
     ///Atribui um novo texto ao objeto.
-    void setTexto(string &newTexto) {
+    void setTexto(const string &newTexto) {
         validarTexto(newTexto);
         this->texto = newTexto;
     };

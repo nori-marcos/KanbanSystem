@@ -7,6 +7,7 @@
 #include "test/dominios/SenhaTeste.h"
 #include "test/dominios/ColunaTeste.h"
 #include "test/dominios/EmailTeste.h"
+#include "test/dominios/TextoTeste.h"
 
 using namespace std;
 
@@ -17,6 +18,7 @@ int main() {
     EmailTeste emailTeste{};
     LimiteTeste limiteTeste{};
     SenhaTeste senhaTeste{};
+    TextoTeste textoTeste{};
 
     switch (codigoTeste.run()) {
         case CodigoTeste::SUCESSO:
@@ -60,6 +62,15 @@ int main() {
             break;
         case SenhaTeste::FALHA:
             cout << "FALHA - SENHA" << endl;
+            break;
+    }
+
+    switch (textoTeste.run()) {
+        case TextoTeste::SUCESSO:
+            cout << "SUCESSO - TEXTO" << endl;
+            break;
+        case TextoTeste::FALHA:
+            cout << "FALHA - TEXTO" << endl;
             break;
     }
 
