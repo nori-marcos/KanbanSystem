@@ -4,7 +4,7 @@ const string CodigoTeste::VALOR_VALIDO = "LL45";
 const string CodigoTeste::VALOR_INVALIDO = "ll45";
 
 void CodigoTeste::setUp() {
-    codigo = new Codigo(VALOR_VALIDO);
+    codigo = new Codigo();
     estado = SUCESSO;
 }
 

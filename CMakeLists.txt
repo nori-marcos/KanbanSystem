@@ -29,4 +29,6 @@ add_executable(KanbanSystem
         include/entidades/Conta.h
         src/entidades/Quadro.cpp
         src/entidades/Conta.cpp
+        test/dominios/SenhaTeste.h
+        test/dominios/SenhaTeste.cpp
 )
