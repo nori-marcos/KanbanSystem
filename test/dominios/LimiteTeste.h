@@ -2,7 +2,7 @@
 #define KANBANSYSTEM_LIMITETESTE_H
 
 
-#include "Limite.h"
+#include "include/dominios/Limite.h"
 
 class LimiteTeste {
     const static int VALOR_VALIDO;

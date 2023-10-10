@@ -4,8 +4,8 @@
 #include "include/dominios/Codigo.h"
 #include "include/dominios/Senha.h"
 #include "include/dominios/Texto.h"
-#include "include/dominios/CodigoTeste.h"
-#include "include/dominios/LimiteTeste.h"
+#include "test/dominios/CodigoTeste.h"
+#include "test/dominios/LimiteTeste.h"
 
 using namespace std;
 

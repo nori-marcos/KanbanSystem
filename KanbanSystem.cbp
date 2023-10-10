@@ -45,26 +45,28 @@
 			<Add directory="test" />
 		</Compiler>
 		<Unit filename="include/dominios/Codigo.h" />
-		<Unit filename="include/dominios/CodigoTeste.h" />
 		<Unit filename="include/dominios/Coluna.h" />
 		<Unit filename="include/dominios/Email.h" />
 		<Unit filename="include/dominios/Limite.h" />
-		<Unit filename="include/dominios/LimiteTeste.h" />
 		<Unit filename="include/dominios/Senha.h" />
 		<Unit filename="include/dominios/Texto.h" />
+
+		<Unit filename="test/dominios/CodigoTeste.h" />
+		<Unit filename="test/dominios/LimiteTeste.h" />
 
 		<Unit filename="include/entidades/Cartao.h" />
 		<Unit filename="include/entidades/Conta.h" />
 		<Unit filename="include/entidades/Quadro.h" />
 
 		<Unit filename="src/dominios/Codigo.cpp" />
-		<Unit filename="src/dominios/CodigoTeste.cpp" />
 		<Unit filename="src/dominios/Coluna.cpp" />
 		<Unit filename="src/dominios/Email.cpp" />
 		<Unit filename="src/dominios/Limite.cpp" />
-		<Unit filename="src/dominios/LimiteTeste.cpp" />
 		<Unit filename="src/dominios/Senha.cpp" />
 		<Unit filename="src/dominios/Texto.cpp" />
+
+		<Unit filename="test/dominios/CodigoTeste.cpp" />
+		<Unit filename="test/dominios/LimiteTeste.cpp" />
 
 		<Unit filename="src/entidades/Cartao.cpp" />
 		<Unit filename="src/entidades/Conta.cpp" />

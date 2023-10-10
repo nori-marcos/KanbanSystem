@@ -1,4 +1,4 @@
-#include "include/dominios/LimiteTeste.h"
+#include "LimiteTeste.h"
 
 const int LimiteTeste::VALOR_VALIDO = 5;
 const int LimiteTeste::VALOR_INVALIDO = 0;

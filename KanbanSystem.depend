@@ -66,57 +66,58 @@
 1696547048 /home/marcos/CodeBlocksProjects/KanbanSystem/Limite.h
 	<stdexcept>
 
-1696690493 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/dominios/Codigo.cpp
+1696946041 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/dominios/Codigo.cpp
 	"include/dominios/Codigo.h"
 
-1696949166 /home/marcos/CodeBlocksProjects/KanbanSystem//include/dominios/Codigo.h
+1696951026 /home/marcos/CodeBlocksProjects/KanbanSystem//include/dominios/Codigo.h
 	<string>
 	<stdexcept>
 
-1696690493 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/dominios/Coluna.cpp
+1696948264 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/dominios/Coluna.cpp
 	"include/dominios/Coluna.h"
 
-1695544591 /home/marcos/CodeBlocksProjects/KanbanSystem//include/dominios/Coluna.h
+1696951026 /home/marcos/CodeBlocksProjects/KanbanSystem//include/dominios/Coluna.h
 	<string>
+	<stdexcept>
 
-1696690493 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/dominios/Email.cpp
+1696946888 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/dominios/Email.cpp
 	"include/dominios/Email.h"
 
-1696949166 /home/marcos/CodeBlocksProjects/KanbanSystem//include/dominios/Email.h
+1696951224 /home/marcos/CodeBlocksProjects/KanbanSystem//include/dominios/Email.h
 	<stdexcept>
 	<string>
 
-1696690493 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/dominios/Limite.cpp
+1696947367 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/dominios/Limite.cpp
 	"include/dominios/Limite.h"
 
-1696949166 /home/marcos/CodeBlocksProjects/KanbanSystem//include/dominios/Limite.h
+1696951026 /home/marcos/CodeBlocksProjects/KanbanSystem//include/dominios/Limite.h
 	<stdexcept>
 
-1696690493 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/dominios/Senha.cpp
+1696946955 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/dominios/Senha.cpp
 	<list>
 	<string>
 	"include/dominios/Senha.h"
 
-1696949352 /home/marcos/CodeBlocksProjects/KanbanSystem//include/dominios/Senha.h
+1696951026 /home/marcos/CodeBlocksProjects/KanbanSystem//include/dominios/Senha.h
 	<stdexcept>
 	<string>
 
-1696690493 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/dominios/Texto.cpp
+1696947176 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/dominios/Texto.cpp
 	"include/dominios/Texto.h"
 
-1696949599 /home/marcos/CodeBlocksProjects/KanbanSystem//include/dominios/Texto.h
+1696951026 /home/marcos/CodeBlocksProjects/KanbanSystem//include/dominios/Texto.h
 	<stdexcept>
 	<string>
 
-1696694910 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/main.cpp
+1696951926 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/main.cpp
 	<istream>
 	<iostream>
 	"include/dominios/Email.h"
 	"include/dominios/Codigo.h"
 	"include/dominios/Senha.h"
 	"include/dominios/Texto.h"
-	"include/dominios/CodigoTeste.h"
-	"include/dominios/LimiteTeste.h"
+	"test/dominios/CodigoTeste.h"
+	"test/dominios/LimiteTeste.h"
 
 1696691180 /home/marcos/CodeBlocksProjects/KanbanSystem//test/CodigoTeste.h
 	"include/dominios/Codigo.h"
@@ -162,4 +163,50 @@
 
 1696856944 source:c:\users\user\documents\github\kanbansystem\src\dominios\texto.cpp
 	"include/dominios/Texto.h"
+
+1696947799 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/entidades/Cartao.cpp
+	"include/entidades/Cartao.h"
+
+1696950155 /home/marcos/CodeBlocksProjects/KanbanSystem//include/entidades/Cartao.h
+	"include/dominios/Texto.h"
+	"include/dominios/Coluna.h"
+	"include/dominios/Codigo.h"
+
+1696945754 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/entidades/Conta.cpp
+	"include/entidades/Conta.h"
+
+1696944021 /home/marcos/CodeBlocksProjects/KanbanSystem//include/entidades/Conta.h
+	"include/dominios/Texto.h"
+	"include/dominios/Senha.h"
+	"include/dominios/Email.h"
+
+1696945719 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/entidades/Quadro.cpp
+	"include/entidades/Quadro.h"
+
+1696944021 /home/marcos/CodeBlocksProjects/KanbanSystem//include/entidades/Quadro.h
+	"include/dominios/Texto.h"
+	"include/dominios/Limite.h"
+	"include/dominios/Codigo.h"
+
+1696694413 /home/marcos/CodeBlocksProjects/KanbanSystem//test/dominios/CodigoTeste.h
+	"include/dominios/Codigo.h"
+	<stdexcept>
+	<string>
+
+1696951926 /home/marcos/CodeBlocksProjects/KanbanSystem//test/dominios/LimiteTeste.h
+	"include/dominios/Limite.h"
+
+1696951926 source:/home/marcos/CodeBlocksProjects/KanbanSystem/test/dominios/CodigoTeste.cpp
+	"CodigoTeste.h"
+
+1696694413 /home/marcos/CodeBlocksProjects/KanbanSystem/test/dominios/CodigoTeste.h
+	"include/dominios/Codigo.h"
+	<stdexcept>
+	<string>
+
+1696951926 source:/home/marcos/CodeBlocksProjects/KanbanSystem/test/dominios/LimiteTeste.cpp
+	"LimiteTeste.h"
+
+1696951926 /home/marcos/CodeBlocksProjects/KanbanSystem/test/dominios/LimiteTeste.h
+	"include/dominios/Limite.h"
 

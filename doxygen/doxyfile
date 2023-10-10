@@ -95,7 +95,8 @@ WARN_LOGFILE            = "/home/marcos/CodeBlocksProjects/KanbanSystem/doxygen/
 #---------------------------------------------------------------------------
 # configuration options related to the input files
 #---------------------------------------------------------------------------
-INPUT                  = "../src" "../include"
+INPUT                  =    "../include"
+
 INPUT_ENCODING         = UTF-8
 FILE_PATTERNS          =
 RECURSIVE              = YES

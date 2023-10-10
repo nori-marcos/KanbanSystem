@@ -2,7 +2,6 @@ var annotated_dup =
 [
     [ "Cartao", "class_cartao.html", "class_cartao" ],
     [ "Codigo", "class_codigo.html", "class_codigo" ],
-    [ "CodigoTeste", "class_codigo_teste.html", "class_codigo_teste" ],
     [ "Coluna", "class_coluna.html", "class_coluna" ],
     [ "Conta", "class_conta.html", null ],
     [ "Email", "class_email.html", "class_email" ],

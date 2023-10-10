@@ -1,4 +1,4 @@
-#include "include/dominios/CodigoTeste.h"
+#include "CodigoTeste.h"
 
 const string CodigoTeste::VALOR_VALIDO = "LL45";
 const string CodigoTeste::VALOR_INVALIDO = "ll45";

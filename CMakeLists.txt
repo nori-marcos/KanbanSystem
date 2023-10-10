@@ -19,10 +19,10 @@ add_executable(KanbanSystem
         include/dominios/Limite.h
         src/dominios/Limite.cpp
         src/dominios/Limite.cpp
-        include/dominios/CodigoTeste.h
-        src/dominios/CodigoTeste.cpp
-        include/dominios/LimiteTeste.h
-        src/dominios/LimiteTeste.cpp
+        test/dominios/CodigoTeste.h
+        test/dominios/CodigoTeste.cpp
+        test/dominios/LimiteTeste.h
+        test/dominios/LimiteTeste.cpp
         include/entidades/Cartao.h
         src/entidades/Cartao.cpp
         include/entidades/Quadro.h
