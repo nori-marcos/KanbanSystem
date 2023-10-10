@@ -12,6 +12,43 @@ private:
     Texto nome;
     Texto descricao;
     Coluna coluna;
+
+public:
+    Cartao();
+
+    Cartao(Codigo codigo, Texto nome, Texto descricao, Coluna coluna);
+
+    Codigo getCodigo() const {
+        return codigo;
+    };
+
+    void setCodigo(Codigo &newCodigo) {
+        this->codigo = newCodigo;
+    };
+
+    Texto getNome() const {
+        return nome;
+    };
+
+    void setNome(Texto &newNome) {
+        this->nome = newNome;
+    };
+
+    Texto getDescricao() const {
+        return descricao;
+    };
+
+    void setDescricao(Texto &newDescricao) {
+        this->descricao = newDescricao;
+    };
+
+    Coluna getColuna() const {
+        return coluna;
+    };
+
+    void setColuna(Coluna &newColuna) {
+        this->coluna = newColuna;
+    };
 };
 
 #endif //KANBANSYSTEM_CARTAO_H
