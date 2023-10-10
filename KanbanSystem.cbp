@@ -44,6 +44,7 @@
 			<Add directory="src" />
 			<Add directory="test" />
 		</Compiler>
+
 		<Unit filename="include/dominios/Codigo.h" />
 		<Unit filename="include/dominios/Coluna.h" />
 		<Unit filename="include/dominios/Email.h" />
@@ -55,7 +56,6 @@
 		<Unit filename="test/dominios/ColunaTeste.h" />
 		<Unit filename="test/dominios/LimiteTeste.h" />
 		<Unit filename="test/dominios/SenhaTeste.h" />
-
 
 		<Unit filename="include/entidades/Cartao.h" />
 		<Unit filename="include/entidades/Conta.h" />
