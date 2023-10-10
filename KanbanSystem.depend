@@ -167,7 +167,7 @@
 1696964473 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/entidades/Cartao.cpp
 	"include/entidades/Cartao.h"
 
-1696964473 /home/marcos/CodeBlocksProjects/KanbanSystem//include/entidades/Cartao.h
+1696972242 /home/marcos/CodeBlocksProjects/KanbanSystem//include/entidades/Cartao.h
 	"include/dominios/Texto.h"
 	"include/dominios/Coluna.h"
 	"include/dominios/Codigo.h"
@@ -233,4 +233,12 @@
 	<stdexcept>
 	<string>
 	"include/dominios/Email.h"
+
+1696969149 source:/home/marcos/CodeBlocksProjects/KanbanSystem/test/dominios/TextoTeste.cpp
+	"TextoTeste.h"
+
+1696968851 /home/marcos/CodeBlocksProjects/KanbanSystem/test/dominios/TextoTeste.h
+	<stdexcept>
+	<string>
+	"include/dominios/Texto.h"
 
