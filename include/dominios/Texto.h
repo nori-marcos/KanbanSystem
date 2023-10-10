@@ -34,7 +34,7 @@ public:
     /// - Não deve haver pontuações seguidas.
     /// - Não deve haver acentuação.
     /// - Primeira letra do texto deve ser maiúscula.
-    /// -Primeiro caracter após pontuação deve ser maiúsculo.
+    /// - Primeiro caracter após pontuação deve ser maiúsculo.
     Texto(const string &texto);
 
     Texto() = default;
