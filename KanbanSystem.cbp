@@ -54,6 +54,7 @@
 
 		<Unit filename="test/dominios/CodigoTeste.h" />
 		<Unit filename="test/dominios/ColunaTeste.h" />
+		<Unit filename="test/dominios/EmailTeste.h" />
 		<Unit filename="test/dominios/LimiteTeste.h" />
 		<Unit filename="test/dominios/SenhaTeste.h" />
 
@@ -70,6 +71,7 @@
 
 		<Unit filename="test/dominios/CodigoTeste.cpp" />
 		<Unit filename="test/dominios/ColunaTeste.cpp" />
+		<Unit filename="test/dominios/EmailTeste.cpp" />
 		<Unit filename="test/dominios/LimiteTeste.cpp" />
 		<Unit filename="test/dominios/SenhaTeste.cpp" />
 
