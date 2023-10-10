@@ -12,13 +12,13 @@ private:
 
     ///Valida o valor passado por parâmetro, que deve ser um inteiro válido: 5, 10, 15 ou 20.
     /// @param valor valor a ser validado.
-    static void validarValor(const int& newValor);
+    static void validarValor(const int &newValor);
 
 public:
     ///Inicializa o objeto com o valor passado por parâmetro.
     ///Regras de formato:
     /// - Deve ser um inteiro válido: 5, 10, 15 ou 20.
-    Limite(const int& valor);
+    Limite(const int &valor);
 
     Limite() = default;
 
@@ -28,7 +28,7 @@ public:
     }
 
     ///Atribui um novo valor ao objeto.
-    void setValor(const int& newValor) {
+    void setValor(const int &newValor) {
         validarValor(newValor);
         this->valor = newValor;
     }

@@ -7,4 +7,3 @@ Cartao::Cartao(const Codigo& codigo, const Texto& nome, const Texto& descricao, 
     this->coluna = coluna;
 }
 
-
