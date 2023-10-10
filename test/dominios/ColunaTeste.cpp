@@ -1,6 +1,6 @@
 #include "ColunaTeste.h"
 
-const string ColunaTeste::VALOR_VALIDO = "EM EXECUCAO";
+const string ColunaTeste::VALOR_VALIDO = "EM EXECUÇÃO";
 const string ColunaTeste::VALOR_INVALIDO = "inválido";
 
 void ColunaTeste::setUp() {

@@ -76,7 +76,7 @@
 1696948264 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/dominios/Coluna.cpp
 	"include/dominios/Coluna.h"
 
-1696951026 /home/marcos/CodeBlocksProjects/KanbanSystem//include/dominios/Coluna.h
+1696967088 /home/marcos/CodeBlocksProjects/KanbanSystem//include/dominios/Coluna.h
 	<string>
 	<stdexcept>
 
@@ -90,7 +90,7 @@
 1696947367 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/dominios/Limite.cpp
 	"include/dominios/Limite.h"
 
-1696951026 /home/marcos/CodeBlocksProjects/KanbanSystem//include/dominios/Limite.h
+1696964473 /home/marcos/CodeBlocksProjects/KanbanSystem//include/dominios/Limite.h
 	<stdexcept>
 
 1696946955 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/dominios/Senha.cpp

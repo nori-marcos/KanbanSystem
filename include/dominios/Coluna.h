@@ -13,14 +13,14 @@ private:
     /// Atributo que armazena o status da coluna.
     string status;
 
-    /// Valida o status passado por parâmetro, que deve ser "SOLICITADO", "EM EXECUCAO" ou "CONCLUIDO".
+    /// Valida o status passado por parâmetro, que deve ser "SOLICITADO", "EM EXECUÇÃO" ou "CONCLUÍDO".
     /// @param status status a ser validado.
     static void validarStatus(const string &status);
 
 public:
     /// Inicializa o objeto com o status passado por parâmetro.
     /// Regras de formato:
-    /// - Deve ser "SOLICITADO", "EM EXECUCAO" ou "CONCLUIDO".
+    /// - Deve ser "SOLICITADO", "EM EXECUÇÃO" ou "CONCLUÍDO".
     Coluna(const string &status);
 
     Coluna() = default;
