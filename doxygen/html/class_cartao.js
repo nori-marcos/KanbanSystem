@@ -1,6 +1,7 @@
 var class_cartao =
 [
     [ "Cartao", "class_cartao.html#a835ee09bb49469ee9b51f1648e4d00bf", null ],
+    [ "Cartao", "class_cartao.html#a3ceadec7ff88b1c925ccf4deb316795b", null ],
     [ "getCodigo", "class_cartao.html#a6df306eb6b04bc3e10f638da193b08a0", null ],
     [ "getColuna", "class_cartao.html#a27770a00e550ee4df36bc19f4c324fa1", null ],
     [ "getDescricao", "class_cartao.html#af414ab91d70756e911079ad2ecb96199", null ],
