@@ -2,12 +2,12 @@
 #include <string>
 #include "include/dominios/Senha.h"
 
-Senha::Senha(const string &senha) {
+Senha::Senha(const string& senha) {
     validarSenha(senha);
     this->senha = senha;
 }
 
-void Senha::validarSenha(const string &senha) {
+void Senha::validarSenha(const string& senha) {
     size_t tamanhoSenha = senha.length();
     list<char> caracteresValidados;
     bool temMaiuscula = false;
@@ -52,7 +52,7 @@ void Senha::validarSenha(const string &senha) {
     }
 }
 
-void Senha::validarCaracter(const char &caracter) {
+void Senha::validarCaracter(const char& caracter) {
     string caracteresValidos = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.,;?!";
 
     bool caracterValidoEncontrado = false;

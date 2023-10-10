@@ -14,9 +14,9 @@ private:
     Coluna coluna;
 
 public:
-    Cartao();
+    Cartao(const Codigo& codigo, const Texto& nome, const Texto& descricao, const Coluna& coluna);
 
-    Cartao(Codigo codigo, Texto nome, Texto descricao, Coluna coluna);
+    Cartao() = default;
 
     Codigo getCodigo() const {
         return codigo;

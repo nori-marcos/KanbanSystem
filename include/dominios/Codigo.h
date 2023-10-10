@@ -13,16 +13,18 @@ private:
     */
     string codigo;
 
-    static void validar(string &codigo);
+    static void validar(string codigo);
 
 public:
 ///Inicializa o objeto com o código passado por parâmetro
-    Codigo(string codigo);
+    Codigo(const string &codigo);
+
+    Codigo() = default;
 
 ///Atribui um novo código ao objeto
-    void setCodigo(string codigo) {
-        validar(codigo);
-        this->codigo = codigo;
+    void setCodigo(const string &newCodigo) {
+        validar(newCodigo);
+        this->codigo = newCodigo;
     };
 
 ///Retorna o código do objeto

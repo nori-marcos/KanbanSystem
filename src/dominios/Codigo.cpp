@@ -1,11 +1,11 @@
 #include "include/dominios/Codigo.h"
 
-Codigo::Codigo(string codigo) {
+Codigo::Codigo(const string& codigo) {
     validar(codigo);
     this->codigo = codigo;
 }
 
-void Codigo::validar(string &codigo) {
+void Codigo::validar(string codigo) {
     size_t tamanho = codigo.length();
 
     for (int i = 0; i < tamanho; i++) {

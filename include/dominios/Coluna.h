@@ -13,11 +13,11 @@ private:
 
     string status;
 
-    static void validarStatus(const string &status);
+    static void validarStatus(const string& status);
 
 public:
 
-    Coluna(const string &status);
+    Coluna(const string& status);
 
     Coluna() = default;
 
@@ -26,7 +26,7 @@ public:
     }
 
 
-    void setStatus(const string &newStatus) {
+    void setStatus(const string& newStatus) {
         validarStatus(newStatus);
         this->status = newStatus;
     }

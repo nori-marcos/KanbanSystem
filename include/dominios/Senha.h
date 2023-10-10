@@ -10,12 +10,12 @@ class Senha {
 private:
     string senha;
 
-    static void validarSenha(const string &newSenha);
+    static void validarSenha(const string& newSenha);
 
-    static void validarCaracter(const char &caracter);
+    static void validarCaracter(const char& caracter);
 
 public:
-    Senha(const string &senha);
+    Senha(const string& senha);
 
     Senha() = default;
 
@@ -23,7 +23,7 @@ public:
         return senha;
     }
 
-    void setSenha(const string &newSenha) {
+    void setSenha(const string& newSenha) {
         validarSenha(newSenha);
         this->senha = newSenha;
     };

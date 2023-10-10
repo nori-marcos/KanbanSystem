@@ -27,4 +27,6 @@ add_executable(KanbanSystem
         src/entidades/Cartao.cpp
         include/entidades/Quadro.h
         include/entidades/Conta.h
+        src/entidades/Quadro.cpp
+        src/entidades/Conta.cpp
 )

@@ -9,10 +9,10 @@ class Limite {
 private:
     int valor;
 
-    static void validarValor(const int &newValor);
+    static void validarValor(const int& newValor);
 
 public:
-    Limite(const int &valor);
+    Limite(const int& valor);
 
     Limite() = default;
 
@@ -20,7 +20,7 @@ public:
         return valor;
     }
 
-    void setValor(const int &newValor) {
+    void setValor(const int& newValor) {
         validarValor(newValor);
         this->valor = newValor;
     }

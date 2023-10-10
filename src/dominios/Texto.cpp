@@ -1,11 +1,11 @@
 #include "include/dominios/Texto.h"
 
-Texto::Texto(const string &texto) {
+Texto::Texto(const string& texto) {
     validarTexto(texto);
     this->texto = texto;
 }
 
-void Texto::validarTexto(const string &texto) {
+void Texto::validarTexto(const string& texto) {
 
     size_t tamanho = texto.size();
     string caracteresMaisculas = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -38,7 +38,7 @@ void Texto::validarTexto(const string &texto) {
     }
 }
 
-void Texto::validarCaracterEAcentuacao(const char &caracter) {
+void Texto::validarCaracterEAcentuacao(const char& caracter) {
     string caracteresValidos = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.,;?! ";
     bool caracterValidoEncontrado = false;
 
@@ -53,13 +53,13 @@ void Texto::validarCaracterEAcentuacao(const char &caracter) {
     }
 }
 
-void Texto::validarEspacoEmBrancoSeguidos(const char &caracter1, const char &caracter2) {
+void Texto::validarEspacoEmBrancoSeguidos(const char& caracter1, const char& caracter2) {
     if (caracter1 == ' ' && caracter2 == ' ') {
         throw invalid_argument("Espaços em branco não podem ser seguidos");
     }
 }
 
-void Texto::validarPontuacoesSeguidas(const char &caracter1, const char &caracter2) {
+void Texto::validarPontuacoesSeguidas(const char& caracter1, const char& caracter2) {
     string pontuacoesValidas = ".,;?!";
     bool caracter1EhPontuacao = false;
     bool caracter2EhPontuacao = false;

@@ -10,19 +10,19 @@ class Email {
 private:
     string email;
 
-    static void validarEmail(const string &email);
+    static void validarEmail(const string& email);
 
-    static void validarNome(const string &nome);
+    static void validarNome(const string& nome);
 
-    static void validarDominio(const string &dominio);
+    static void validarDominio(const string& dominio);
 
-    static void validarCaracter(const char &caracter);
+    static void validarCaracter(const char& caracter);
 
-    static void validarPontosSeguidos(const char &caracter1, const char &caracter2);
+    static void validarPontosSeguidos(const char& caracter1, const char& caracter2);
 
 public:
 
-    Email(const string &email);
+    Email(const string& email);
 
     Email() = default;
 
@@ -30,7 +30,7 @@ public:
         return email;
     }
 
-    void setEmail(const string &newEmail) {
+    void setEmail(const string& newEmail) {
         validarEmail(newEmail);
         this->email = newEmail;
     }

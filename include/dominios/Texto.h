@@ -20,16 +20,18 @@ private:
 
 public:
 
-        Texto(const string& texto);
+    Texto(const string &texto);
 
-        void setTexto(string texto) {
-            validarTexto(texto);
-            this->texto = texto;
-        };
+    Texto() = default;
 
-        string getTexto() const {
-            return texto;
-        };
+    void setTexto(string &newTexto) {
+        validarTexto(newTexto);
+        this->texto = newTexto;
+    };
+
+    string getTexto() const {
+        return texto;
+    };
 };
 
 
