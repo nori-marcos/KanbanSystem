@@ -73,7 +73,7 @@
 	<string>
 	<stdexcept>
 
-1696948264 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/dominios/Coluna.cpp
+1696968044 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/dominios/Coluna.cpp
 	"include/dominios/Coluna.h"
 
 1696967465 /home/marcos/CodeBlocksProjects/KanbanSystem//include/dominios/Coluna.h
@@ -105,7 +105,7 @@
 1696947176 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/dominios/Texto.cpp
 	"include/dominios/Texto.h"
 
-1696951026 /home/marcos/CodeBlocksProjects/KanbanSystem//include/dominios/Texto.h
+1696968851 /home/marcos/CodeBlocksProjects/KanbanSystem//include/dominios/Texto.h
 	<stdexcept>
 	<string>
 
@@ -217,4 +217,20 @@
 	<stdexcept>
 	<string>
 	"include/dominios/Senha.h"
+
+1696967730 source:/home/marcos/CodeBlocksProjects/KanbanSystem/test/dominios/ColunaTeste.cpp
+	"ColunaTeste.h"
+
+1696966977 /home/marcos/CodeBlocksProjects/KanbanSystem/test/dominios/ColunaTeste.h
+	<stdexcept>
+	<string>
+	"include/dominios/Coluna.h"
+
+1696968375 source:/home/marcos/CodeBlocksProjects/KanbanSystem/test/dominios/EmailTeste.cpp
+	"EmailTeste.h"
+
+1696968406 /home/marcos/CodeBlocksProjects/KanbanSystem/test/dominios/EmailTeste.h
+	<stdexcept>
+	<string>
+	"include/dominios/Email.h"
 
