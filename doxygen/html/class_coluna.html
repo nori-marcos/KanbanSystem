@@ -82,27 +82,51 @@ $(document).ready(function(){initNavTree('class_coluna.html',''); initResizable(
 
 <div class="header">
   <div class="summary">
-<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_coluna-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Coluna Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a7d1329c0aafc8a5302b70483c53e7679"><td class="memItemLeft" align="right" valign="top"><a id="a7d1329c0aafc8a5302b70483c53e7679"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>SOLICITADO</b> = &quot;SOLICITADO&quot;</td></tr>
-<tr class="separator:a7d1329c0aafc8a5302b70483c53e7679"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a5211d9282cd0656f9746a856efed65"><td class="memItemLeft" align="right" valign="top"><a id="a5a5211d9282cd0656f9746a856efed65"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>EM_EXECUCAO</b> = &quot;EM_EXECUCAO&quot;</td></tr>
-<tr class="separator:a5a5211d9282cd0656f9746a856efed65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a654632a11b2e8ccde3e3246462eb67e1"><td class="memItemLeft" align="right" valign="top"><a id="a654632a11b2e8ccde3e3246462eb67e1"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>CONCLUIDO</b> = &quot;CONCLUIDO&quot;</td></tr>
-<tr class="separator:a654632a11b2e8ccde3e3246462eb67e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a27cdb0cfb253b5f56d8742fe53ec0133"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_coluna.html#a27cdb0cfb253b5f56d8742fe53ec0133">Coluna</a> (const string &amp;status)</td></tr>
+<tr class="separator:a27cdb0cfb253b5f56d8742fe53ec0133"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe2a006f1c01cd6d88405e1f5c55d562"><td class="memItemLeft" align="right" valign="top"><a id="afe2a006f1c01cd6d88405e1f5c55d562"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_coluna.html#afe2a006f1c01cd6d88405e1f5c55d562">setStatus</a> (const string &amp;newStatus)</td></tr>
+<tr class="memdesc:afe2a006f1c01cd6d88405e1f5c55d562"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atribui um novo status ao objeto. <br /></td></tr>
+<tr class="separator:afe2a006f1c01cd6d88405e1f5c55d562"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a637ea01cbc4fe21536589c7cf39f3b8a"><td class="memItemLeft" align="right" valign="top"><a id="a637ea01cbc4fe21536589c7cf39f3b8a"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_coluna.html#a637ea01cbc4fe21536589c7cf39f3b8a">getColuna</a> () const</td></tr>
+<tr class="memdesc:a637ea01cbc4fe21536589c7cf39f3b8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna o status do objeto. <br /></td></tr>
+<tr class="separator:a637ea01cbc4fe21536589c7cf39f3b8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a27cdb0cfb253b5f56d8742fe53ec0133"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27cdb0cfb253b5f56d8742fe53ec0133">&#9670;&nbsp;</a></span>Coluna()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Coluna::Coluna </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>status</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Inicializa o objeto com o status passado por parâmetro. Regras de formato:</p><ul>
+<li>Deve ser "SOLICITADO", "EM EXECUCAO" ou "CONCLUIDO". </li>
+</ul>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_coluna_8h_source.html">Coluna.h</a></li>
+<li>Coluna.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -110,7 +134,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>CONCLUIDO</b> = &qu
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_coluna.html">Coluna</a></li>
-    <li class="footer">Generated on Sat Oct 7 2023 11:12:16 for KanbanSystem by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Oct 10 2023 12:17:08 for KanbanSystem by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

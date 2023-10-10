@@ -69,7 +69,7 @@
 1696690493 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/dominios/Codigo.cpp
 	"include/dominios/Codigo.h"
 
-1696687975 /home/marcos/CodeBlocksProjects/KanbanSystem//include/dominios/Codigo.h
+1696949166 /home/marcos/CodeBlocksProjects/KanbanSystem//include/dominios/Codigo.h
 	<string>
 	<stdexcept>
 
@@ -82,14 +82,14 @@
 1696690493 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/dominios/Email.cpp
 	"include/dominios/Email.h"
 
-1696354763 /home/marcos/CodeBlocksProjects/KanbanSystem//include/dominios/Email.h
+1696949166 /home/marcos/CodeBlocksProjects/KanbanSystem//include/dominios/Email.h
 	<stdexcept>
 	<string>
 
 1696690493 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/dominios/Limite.cpp
 	"include/dominios/Limite.h"
 
-1696547048 /home/marcos/CodeBlocksProjects/KanbanSystem//include/dominios/Limite.h
+1696949166 /home/marcos/CodeBlocksProjects/KanbanSystem//include/dominios/Limite.h
 	<stdexcept>
 
 1696690493 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/dominios/Senha.cpp
@@ -97,18 +97,18 @@
 	<string>
 	"include/dominios/Senha.h"
 
-1695777230 /home/marcos/CodeBlocksProjects/KanbanSystem//include/dominios/Senha.h
+1696949352 /home/marcos/CodeBlocksProjects/KanbanSystem//include/dominios/Senha.h
 	<stdexcept>
 	<string>
 
 1696690493 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/dominios/Texto.cpp
 	"include/dominios/Texto.h"
 
-1696356771 /home/marcos/CodeBlocksProjects/KanbanSystem//include/dominios/Texto.h
+1696949599 /home/marcos/CodeBlocksProjects/KanbanSystem//include/dominios/Texto.h
 	<stdexcept>
 	<string>
 
-1696692868 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/main.cpp
+1696694910 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/main.cpp
 	<istream>
 	<iostream>
 	"include/dominios/Email.h"
@@ -116,6 +116,7 @@
 	"include/dominios/Senha.h"
 	"include/dominios/Texto.h"
 	"include/dominios/CodigoTeste.h"
+	"include/dominios/LimiteTeste.h"
 
 1696691180 /home/marcos/CodeBlocksProjects/KanbanSystem//test/CodigoTeste.h
 	"include/dominios/Codigo.h"

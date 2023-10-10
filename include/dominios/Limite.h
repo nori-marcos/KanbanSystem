@@ -8,8 +8,6 @@ using namespace std;
 class Limite {
 private:
     ///Atributo que armazena o valor do limite
-    ///Regras de formato:
-    /// - Deve ser um inteiro válido: 5, 10, 15 ou 20.
     int valor;
 
     ///Valida o valor passado por parâmetro, que deve ser um inteiro válido: 5, 10, 15 ou 20.
@@ -17,7 +15,9 @@ private:
     static void validarValor(const int& newValor);
 
 public:
-    ///Inicializa o objeto com o valor passado por parâmetro
+    ///Inicializa o objeto com o valor passado por parâmetro.
+    ///Regras de formato:
+    /// - Deve ser um inteiro válido: 5, 10, 15 ou 20.
     Limite(const int& valor);
 
     Limite() = default;

@@ -9,9 +9,6 @@ using namespace std;
 class Codigo {
 private:
     ///Atributo que armazena o código
-    ///Regras de formato:
-    ///Exemplo: "AB12"
-    /// - Deve ser composto por 2 letras maiúsculas e 2 dígitos.
     string codigo;
 
     ///Valida o código passado por parâmetro, que de ser composto por 2 letras maiúsculas e 2 dígitos.
@@ -19,7 +16,10 @@ private:
     static void validar(string codigo);
 
 public:
-    ///Inicializa o objeto com o código passado por parâmetro
+    ///Inicializa o objeto com o código passado por parâmetro.
+    ///Regras de formato:
+    /// - Exemplo: "AB12".
+    /// - Deve ser composto por 2 letras maiúsculas e 2 dígitos.
     Codigo(const string &codigo);
 
     Codigo() = default;

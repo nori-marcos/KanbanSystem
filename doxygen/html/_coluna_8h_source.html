@@ -89,25 +89,44 @@ $(document).ready(function(){initNavTree('_coluna_8h_source.html',''); initResiz
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define COLUNA_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">using namespace </span>std;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_coluna.html">    8</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_coluna.html">Coluna</a> {</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordtype">string</span> SOLICITADO = <span class="stringliteral">&quot;SOLICITADO&quot;</span>;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordtype">string</span> EM_EXECUCAO = <span class="stringliteral">&quot;EM_EXECUCAO&quot;</span>;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordtype">string</span> CONCLUIDO = <span class="stringliteral">&quot;CONCLUIDO&quot;</span>;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;};</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// COLUNA_H</span></div>
-<div class="ttc" id="aclass_coluna_html"><div class="ttname"><a href="class_coluna.html">Coluna</a></div><div class="ttdef"><b>Definition:</b> Coluna.h:8</div></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;stdexcept&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_coluna.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_coluna.html">Coluna</a> {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">string</span> status;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> validarStatus(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;status);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="class_coluna.html">Coluna</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;status);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="class_coluna.html">Coluna</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_coluna.html#afe2a006f1c01cd6d88405e1f5c55d562">   29</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_coluna.html#afe2a006f1c01cd6d88405e1f5c55d562">setStatus</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;newStatus) {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        validarStatus(newStatus);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        this-&gt;status = newStatus;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_coluna.html#a637ea01cbc4fe21536589c7cf39f3b8a">   35</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_coluna.html#a637ea01cbc4fe21536589c7cf39f3b8a">getColuna</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordflow">return</span> status;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// COLUNA_H</span></div>
+<div class="ttc" id="aclass_coluna_html"><div class="ttname"><a href="class_coluna.html">Coluna</a></div><div class="ttdef"><b>Definition:</b> Coluna.h:9</div></div>
+<div class="ttc" id="aclass_coluna_html_a637ea01cbc4fe21536589c7cf39f3b8a"><div class="ttname"><a href="class_coluna.html#a637ea01cbc4fe21536589c7cf39f3b8a">Coluna::getColuna</a></div><div class="ttdeci">string getColuna() const</div><div class="ttdoc">Retorna o status do objeto.</div><div class="ttdef"><b>Definition:</b> Coluna.h:35</div></div>
+<div class="ttc" id="aclass_coluna_html_afe2a006f1c01cd6d88405e1f5c55d562"><div class="ttname"><a href="class_coluna.html#afe2a006f1c01cd6d88405e1f5c55d562">Coluna::setStatus</a></div><div class="ttdeci">void setStatus(const string &amp;newStatus)</div><div class="ttdoc">Atribui um novo status ao objeto.</div><div class="ttdef"><b>Definition:</b> Coluna.h:29</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>Coluna.h</b></li>
-    <li class="footer">Generated on Sat Oct 7 2023 11:12:16 for KanbanSystem by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c0d10a41af149a1d0f636d2d65cacec0.html">dominios</a></li><li class="navelem"><b>Coluna.h</b></li>
+    <li class="footer">Generated on Tue Oct 10 2023 12:17:08 for KanbanSystem by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

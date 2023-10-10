@@ -95,23 +95,10 @@ WARN_LOGFILE            = "/home/marcos/CodeBlocksProjects/KanbanSystem/doxygen/
 #---------------------------------------------------------------------------
 # configuration options related to the input files
 #---------------------------------------------------------------------------
-INPUT                  = \
-	"../Coluna.h" \
-	"../Limite.cpp" \
-	"../Email.cpp" \
-	"../main.cpp" \
-	"../Senha.cpp" \
-	"../Codigo.cpp" \
-	"../Limite.h" \
-	"../Email.h" \
-	"../Texto.cpp" \
-	"../Texto.h" \
-	"../Senha.h" \
-	"../Codigo.h" \
-	"../Coluna.cpp" 
+INPUT                  = "../src" "../include"
 INPUT_ENCODING         = UTF-8
 FILE_PATTERNS          =
-RECURSIVE              = NO
+RECURSIVE              = YES
 EXCLUDE                =
 EXCLUDE_SYMLINKS       = NO
 EXCLUDE_PATTERNS       =

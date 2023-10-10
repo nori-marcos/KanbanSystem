@@ -11,8 +11,6 @@ public:
 
 private:
     /// Atributo que armazena o status da coluna.
-    /// Regras de formato:
-    /// - Deve ser "SOLICITADO", "EM EXECUCAO" ou "CONCLUIDO".
     string status;
 
     /// Valida o status passado por parâmetro, que deve ser "SOLICITADO", "EM EXECUCAO" ou "CONCLUIDO".
@@ -21,6 +19,8 @@ private:
 
 public:
     /// Inicializa o objeto com o status passado por parâmetro.
+    /// Regras de formato:
+    /// - Deve ser "SOLICITADO", "EM EXECUCAO" ou "CONCLUIDO".
     Coluna(const string &status);
 
     Coluna() = default;

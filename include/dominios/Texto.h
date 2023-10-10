@@ -9,14 +9,6 @@ using namespace std;
 class Texto {
 private:
     ///Atributo que armazena o texto
-    ///Regras de formato:
-    /// - Deve ser composto por 5 a 30 caracteres.
-    /// - Deve ser composto por letras maiúsculas, letras minúsculas, dígitos, sinais de pontuação ou espaço em branco.
-    /// - Não deve haver espaços em branco seguidos.
-    /// - Não deve haver pontuações seguidas.
-    /// - Não deve haver acentuação.
-    /// - Primeira letra do texto deve ser maiúscula.
-    /// -Primeiro caracter após pontuação deve ser maiúsculo.
     string texto;
 
     ///Valida o texto passado por parâmetro
@@ -35,6 +27,14 @@ private:
 public:
 
     ///Inicializa o objeto com o texto passado por parâmetro.
+    ///Regras de formato:
+    /// - Deve ser composto por 5 a 30 caracteres.
+    /// - Deve ser composto por letras maiúsculas, letras minúsculas, dígitos, sinais de pontuação ou espaço em branco.
+    /// - Não deve haver espaços em branco seguidos.
+    /// - Não deve haver pontuações seguidas.
+    /// - Não deve haver acentuação.
+    /// - Primeira letra do texto deve ser maiúscula.
+    /// -Primeiro caracter após pontuação deve ser maiúsculo.
     Texto(const string &texto);
 
     Texto() = default;

@@ -91,16 +91,45 @@ $(document).ready(function(){initNavTree('class_email.html',''); initResizable()
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4a199734e29834046e8d9fa5d04dfd0d"><td class="memItemLeft" align="right" valign="top"><a id="a4a199734e29834046e8d9fa5d04dfd0d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Email</b> (const string &amp;email)</td></tr>
+<tr class="memitem:a4a199734e29834046e8d9fa5d04dfd0d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_email.html#a4a199734e29834046e8d9fa5d04dfd0d">Email</a> (const string &amp;email)</td></tr>
 <tr class="separator:a4a199734e29834046e8d9fa5d04dfd0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c314589c2042bf2234a9b5781d50def"><td class="memItemLeft" align="right" valign="top"><a id="a6c314589c2042bf2234a9b5781d50def"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>getEmail</b> () const</td></tr>
+string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_email.html#a6c314589c2042bf2234a9b5781d50def">getEmail</a> () const</td></tr>
+<tr class="memdesc:a6c314589c2042bf2234a9b5781d50def"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna o email do objeto. <br /></td></tr>
 <tr class="separator:a6c314589c2042bf2234a9b5781d50def"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6452429ac79e467d3f1e13ae87ae553c"><td class="memItemLeft" align="right" valign="top"><a id="a6452429ac79e467d3f1e13ae87ae553c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setEmail</b> (const string &amp;newEmail)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_email.html#a6452429ac79e467d3f1e13ae87ae553c">setEmail</a> (const string &amp;newEmail)</td></tr>
+<tr class="memdesc:a6452429ac79e467d3f1e13ae87ae553c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atribui um novo email ao objeto. <br /></td></tr>
 <tr class="separator:a6452429ac79e467d3f1e13ae87ae553c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a4a199734e29834046e8d9fa5d04dfd0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a199734e29834046e8d9fa5d04dfd0d">&#9670;&nbsp;</a></span>Email()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Email::Email </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>email</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Inicializa o objeto com o email passado por parâmetro. Regra de formato:</p><ul>
+<li>Exemplo: nome@dominio</li>
+<li>O email deve ser composto por 2 partes: nome e domínio.</li>
+<li>O nome deve ter no mínimo 2 caracteres e no máximo 10 caracteres.</li>
+<li>O domínio deve ter no mínimo 2 caracteres e no máximo 20 caracteres.</li>
+<li>O nome e o domínio devem ser separados por um .</li>
+<li>O nome e o domínio não podem começar ou terminar com ponto.</li>
+<li>O nome e o domínio não podem conter espaços. </li>
+</ul>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_email_8h_source.html">Email.h</a></li>
 <li>Email.cpp</li>
@@ -111,7 +140,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setEmail</b> (const s
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_email.html">Email</a></li>
-    <li class="footer">Generated on Sat Oct 7 2023 11:12:16 for KanbanSystem by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Oct 10 2023 12:17:08 for KanbanSystem by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

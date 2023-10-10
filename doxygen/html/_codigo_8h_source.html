@@ -95,34 +95,36 @@ $(document).ready(function(){initNavTree('_codigo_8h_source.html',''); initResiz
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
 <div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_codigo.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_codigo.html">Codigo</a> {</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordtype">string</span> codigo;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> validar(<span class="keywordtype">string</span> &amp;codigo);</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_codigo.html">Codigo</a>(<span class="keywordtype">string</span> codigo);</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_codigo.html#ae1ba68c6d8c6ecb9b4615107e11409d6">   20</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_codigo.html#ae1ba68c6d8c6ecb9b4615107e11409d6">setCodigo</a>(<span class="keywordtype">string</span> codigo) {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        validar(codigo);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        this-&gt;codigo = codigo;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    };</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordtype">string</span> codigo;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> validar(<span class="keywordtype">string</span> codigo);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="class_codigo.html">Codigo</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;codigo);</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_codigo.html#ac263b3f7ff4f995fa72ad9101f1a8533">   26</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_codigo.html#ac263b3f7ff4f995fa72ad9101f1a8533">getCodigo</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordflow">return</span> codigo;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    };</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;};</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#endif </span><span class="comment">//KANBANSYSTEM_CODIGO_H</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="class_codigo.html">Codigo</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_codigo.html#a029d6438c358af53dce0f3066569f337">   28</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_codigo.html#a029d6438c358af53dce0f3066569f337">setCodigo</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;newCodigo) {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        validar(newCodigo);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        this-&gt;codigo = newCodigo;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    };</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_codigo.html#ac263b3f7ff4f995fa72ad9101f1a8533">   34</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_codigo.html#ac263b3f7ff4f995fa72ad9101f1a8533">getCodigo</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordflow">return</span> codigo;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    };</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif </span><span class="comment">//KANBANSYSTEM_CODIGO_H</span></div>
 <div class="ttc" id="aclass_codigo_html"><div class="ttname"><a href="class_codigo.html">Codigo</a></div><div class="ttdef"><b>Definition:</b> Codigo.h:9</div></div>
-<div class="ttc" id="aclass_codigo_html_ac263b3f7ff4f995fa72ad9101f1a8533"><div class="ttname"><a href="class_codigo.html#ac263b3f7ff4f995fa72ad9101f1a8533">Codigo::getCodigo</a></div><div class="ttdeci">string getCodigo() const</div><div class="ttdoc">Retorna o código do objeto.</div><div class="ttdef"><b>Definition:</b> Codigo.h:26</div></div>
-<div class="ttc" id="aclass_codigo_html_ae1ba68c6d8c6ecb9b4615107e11409d6"><div class="ttname"><a href="class_codigo.html#ae1ba68c6d8c6ecb9b4615107e11409d6">Codigo::setCodigo</a></div><div class="ttdeci">void setCodigo(string codigo)</div><div class="ttdoc">Atribui um novo código ao objeto.</div><div class="ttdef"><b>Definition:</b> Codigo.h:20</div></div>
+<div class="ttc" id="aclass_codigo_html_a029d6438c358af53dce0f3066569f337"><div class="ttname"><a href="class_codigo.html#a029d6438c358af53dce0f3066569f337">Codigo::setCodigo</a></div><div class="ttdeci">void setCodigo(const string &amp;newCodigo)</div><div class="ttdoc">Atribui um novo código ao objeto.</div><div class="ttdef"><b>Definition:</b> Codigo.h:28</div></div>
+<div class="ttc" id="aclass_codigo_html_ac263b3f7ff4f995fa72ad9101f1a8533"><div class="ttname"><a href="class_codigo.html#ac263b3f7ff4f995fa72ad9101f1a8533">Codigo::getCodigo</a></div><div class="ttdeci">string getCodigo() const</div><div class="ttdoc">Retorna o código do objeto.</div><div class="ttdef"><b>Definition:</b> Codigo.h:34</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>Codigo.h</b></li>
-    <li class="footer">Generated on Sat Oct 7 2023 11:12:16 for KanbanSystem by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c0d10a41af149a1d0f636d2d65cacec0.html">dominios</a></li><li class="navelem"><b>Codigo.h</b></li>
+    <li class="footer">Generated on Tue Oct 10 2023 12:17:08 for KanbanSystem by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

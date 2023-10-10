@@ -9,14 +9,7 @@ using namespace std;
 class Email {
 private:
     /// Atributo que armazena o email.
-    /// Regra de formato:
-    /// - Exemplo: nome@dominio
-    /// - O email deve ser composto por 2 partes: nome e domínio.
-    /// - O nome deve ter no mínimo 2 caracteres e no máximo 10 caracteres.
-    /// - O domínio deve ter no mínimo 2 caracteres e no máximo 20 caracteres.
-    /// - O nome e o domínio devem ser separados por um @.
-    /// - O nome e o domínio não podem começar ou terminar com ponto.
-    /// - O nome e o domínio não podem conter espaços.
+
     string email;
 
     /// Valida o email passado por parâmetro, que deve ser composto por 2 partes: nome e domínio.
@@ -42,6 +35,14 @@ private:
 public:
 
     /// Inicializa o objeto com o email passado por parâmetro.
+    /// Regra de formato:
+    /// - Exemplo: nome@dominio
+    /// - O email deve ser composto por 2 partes: nome e domínio.
+    /// - O nome deve ter no mínimo 2 caracteres e no máximo 10 caracteres.
+    /// - O domínio deve ter no mínimo 2 caracteres e no máximo 20 caracteres.
+    /// - O nome e o domínio devem ser separados por um arroba.
+    /// - O nome e o domínio não podem começar ou terminar com ponto.
+    /// - O nome e o domínio não podem conter espaços.
     Email(const string& email);
 
     Email() = default;
