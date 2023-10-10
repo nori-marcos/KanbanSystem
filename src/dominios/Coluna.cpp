@@ -7,7 +7,7 @@ Coluna::Coluna(const string& status) {
 
 void Coluna::validarStatus(const string& newStatus) {
     if ((newStatus != "SOLICITADO") || (newStatus != "EM EXECUÇÃO") || (newStatus != "CONCLUIDO")) {
-        throw invalid_argument("Digite o status (SOLICITADO, EM EXECUÇÃO, CONCLUIDO) do cartão com capslock ativo.");
+        throw invalid_argument("Digite um dos status válidos: 'SOLICITADO', 'EM EXECUÇÃO' e 'CONCLUIDO'.");
     }
 }
 

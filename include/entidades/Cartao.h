@@ -8,12 +8,20 @@
 
 class Cartao {
 private:
+    ///Atributo que armazena o código do cartão
     Codigo codigo;
+
+    ///Atributo que armazena o nome do cartão
     Texto nome;
+
+    ///Atributo que armazena a descrição do cartão
     Texto descricao;
+
+    ///Atributo que armazena a coluna do cartão
     Coluna coluna;
 
 public:
+    ///Inicializa o objeto com os valores passados por parâmetro
     Cartao(const Codigo& codigo, const Texto& nome, const Texto& descricao, const Coluna& coluna);
 
     Cartao() = default;
