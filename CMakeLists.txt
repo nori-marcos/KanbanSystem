@@ -31,4 +31,6 @@ add_executable(KanbanSystem
         src/entidades/Conta.cpp
         test/dominios/SenhaTeste.h
         test/dominios/SenhaTeste.cpp
+        test/dominios/ColunaTeste.h
+        test/dominios/ColunaTeste.cpp
 )

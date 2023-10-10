@@ -5,6 +5,8 @@
 #include "include/dominios/Limite.h"
 
 class LimiteTeste {
+
+private:
     const static int VALOR_VALIDO;
 
     const static int VALOR_INVALIDO;

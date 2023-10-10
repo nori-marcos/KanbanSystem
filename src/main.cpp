@@ -1,12 +1,11 @@
 #include <istream>
 #include <iostream>
-#include "include/dominios/Email.h"
 #include "include/dominios/Codigo.h"
 #include "include/dominios/Senha.h"
-#include "include/dominios/Texto.h"
 #include "test/dominios/CodigoTeste.h"
 #include "test/dominios/LimiteTeste.h"
 #include "test/dominios/SenhaTeste.h"
+#include "test/dominios/ColunaTeste.h"
 
 using namespace std;
 
@@ -15,6 +14,7 @@ int main() {
     CodigoTeste codigoTeste{};
     LimiteTeste limiteTeste{};
     SenhaTeste senhaTeste{};
+    ColunaTeste colunaTeste{};
 
     switch (codigoTeste.run()) {
         case CodigoTeste::SUCESSO:
@@ -42,5 +42,15 @@ int main() {
             cout << "FALHA - SENHA" << endl;
             break;
     }
+
+    switch (colunaTeste.run()) {
+        case ColunaTeste::SUCESSO:
+            cout << "SUCESSO - COLUNA" << endl;
+            break;
+        case ColunaTeste::FALHA:
+            cout << "FALHA - COLUNA" << endl;
+            break;
+    }
+
     return 0;
 }

@@ -32,7 +32,7 @@ public:
     }
 
     ///Retorna o status do objeto.
-    string getColuna() const {
+    string getStatus() const {
         return status;
     }
 };
