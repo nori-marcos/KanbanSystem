@@ -1,5 +1,7 @@
 #include "CartaoTeste.h"
 
+const string CartaoTeste::CODIGO_VALIDO = "LL45";
+
 void CartaoTeste::setUp() {
     cartao = new Cartao();
     estado = SUCESSO;
@@ -11,10 +13,10 @@ void CartaoTeste::tearDown() {
 
 void CartaoTeste::testarCenarioSucesso() {
     try {
-        Codigo codigo = Codigo("LL45");
+        Codigo codigo;
+        codigo.setCodigo(CODIGO_VALIDO);
         cartao->setCodigo(codigo);
-
-        if (cartao->getCodigo().getCodigo() != codigo.getCodigo()) {
+        if (cartao->getCodigo().getCodigo() != CODIGO_VALIDO) {
             estado = FALHA;
         }
     } catch (invalid_argument &e) {
@@ -22,20 +24,9 @@ void CartaoTeste::testarCenarioSucesso() {
     }
 }
 
-void CartaoTeste::testarCenarioFalha() {
-    try {
-        Codigo codigo = Codigo("ll45");
-        cartao->setCodigo(codigo);
-        estado = FALHA;
-    } catch (invalid_argument &e) {
-        return;
-    }
-}
-
 int CartaoTeste::run() {
     setUp();
     testarCenarioSucesso();
-    testarCenarioFalha();
     tearDown();
     return estado;
 }

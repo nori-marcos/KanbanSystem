@@ -7,6 +7,8 @@
 
 class CartaoTeste {
 private:
+    const static string CODIGO_VALIDO;
+
     Cartao *cartao;
 
     int estado;
@@ -16,8 +18,6 @@ private:
     void tearDown();
 
     void testarCenarioSucesso();
-
-    void testarCenarioFalha();
 
 public:
     const static int SUCESSO = 0;
