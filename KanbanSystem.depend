@@ -178,7 +178,7 @@
 1696964473 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/entidades/Conta.cpp
 	"include/entidades/Conta.h"
 
-1696964473 /home/marcos/CodeBlocksProjects/KanbanSystem//include/entidades/Conta.h
+1696991787 /home/marcos/CodeBlocksProjects/KanbanSystem//include/entidades/Conta.h
 	"include/dominios/Texto.h"
 	"include/dominios/Senha.h"
 	"include/dominios/Email.h"
@@ -186,7 +186,7 @@
 1696964473 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/entidades/Quadro.cpp
 	"include/entidades/Quadro.h"
 
-1696964473 /home/marcos/CodeBlocksProjects/KanbanSystem//include/entidades/Quadro.h
+1696992031 /home/marcos/CodeBlocksProjects/KanbanSystem//include/entidades/Quadro.h
 	"include/dominios/Texto.h"
 	"include/dominios/Limite.h"
 	"include/dominios/Codigo.h"

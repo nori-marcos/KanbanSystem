@@ -1,6 +1,7 @@
 var class_quadro =
 [
     [ "Quadro", "class_quadro.html#a0f5066578f3b103bd7e232095e450e04", null ],
+    [ "Quadro", "class_quadro.html#a90abd135de10b8d1564184f996977a1b", null ],
     [ "getCodigo", "class_quadro.html#aee145532e82b92b9d80a6d586408b6ad", null ],
     [ "getDescricao", "class_quadro.html#a8643a5c8ae75dd0fd9c3c62f6ffda12d", null ],
     [ "getLimite", "class_quadro.html#a7799b0eea6c85113d94d4f231108c354", null ],
