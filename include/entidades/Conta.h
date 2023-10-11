@@ -19,9 +19,6 @@ private:
 
 public:
     ///Inicializa o objeto com os valores passados por parâmetro.
-    ///@param email email a ser atribuído à conta que precisa ser válido.
-    ///@param nome nome a ser atribuído à conta que precisa ser válido.
-    ///@param senha senha a ser atribuída à conta que precisa ser válida.
     Conta(const Email &email, const Texto &nome, const Senha &senha);
 
     ///Inicializa o objeto com os valores vazios.

@@ -17,7 +17,6 @@ private:
     string status;
 
     /// Valida o status passado por parâmetro, que deve ser "SOLICITADO", "EM EXECUÇÃO" ou "CONCLUÍDO".
-    /// @param status status a ser validado.
     static void validarStatus(const string &status);
 
 public:

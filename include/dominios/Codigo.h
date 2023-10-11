@@ -24,7 +24,6 @@ public:
     Codigo() = default;
 
     ///Atribui um novo código ao objeto
-    ///@param newCodigo código a ser atribuído ao objeto que precisa ser válido
     void setCodigo(const string &newCodigo) {
         validar(newCodigo);
         this->codigo = newCodigo;

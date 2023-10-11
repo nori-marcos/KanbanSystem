@@ -24,9 +24,6 @@ private:
 
 public:
     ///Inicializa o objeto com os valores passados por parâmetro
-    ///@param codigo código a ser atribuído ao cartão que precisa ser válido
-    ///@param nome nome a ser atribuído ao cartão que precisa ser válido
-    ///@param descricao descrição a ser atribuída ao cartão que precisa ser válida
     Cartao(const Codigo &codigo, const Texto &nome, const Texto &descricao, const Coluna &coluna);
 
     ///Inicializa o objeto com os valores vazios
@@ -39,7 +36,6 @@ public:
     };
 
     ///Atribui um novo código ao cartão
-    ///@param newCodigo código a ser atribuído ao cartão que precisa ser válido
     void setCodigo(Codigo &newCodigo) {
         this->codigo = newCodigo;
     };
@@ -51,7 +47,6 @@ public:
     };
 
     ///Atribui um novo nome ao cartão
-    ///@param newNome nome a ser atribuído ao cartão que precisa ser válido
     void setNome(Texto &newNome) {
         this->nome = newNome;
     };
@@ -63,7 +58,6 @@ public:
     };
 
     ///Atribui uma nova descrição ao cartão
-    ///@param newDescricao descrição a ser atribuída ao cartão que precisa ser válida
     void setDescricao(Texto &newDescricao) {
         this->descricao = newDescricao;
     };
@@ -75,7 +69,6 @@ public:
     };
 
     ///Atribui uma nova coluna ao cartão
-    ///@param newColuna coluna a ser atribuída ao cartão que precisa ser válida
     void setColuna(Coluna &newColuna) {
         this->coluna = newColuna;
     };

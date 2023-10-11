@@ -21,10 +21,6 @@ private:
 
 public:
     ///Inicializa o objeto com os valores passados por parâmetro.
-    ///@param codigo código a ser atribuído ao quadro que precisa ser válido.
-    ///@param nome nome a ser atribuído ao quadro que precisa ser válido.
-    ///@param descricao descrição a ser atribuída ao quadro que precisa ser válida.
-    ///@param limite limite a ser atribuído ao quadro que precisa ser válido.
     Quadro(const Codigo &codigo, const Texto &nome, const Texto &descricao, const Limite &limite);
 
     ///Inicializa o objeto com os valores vazios.
