@@ -1,1 +1,3 @@
-/home/marcos/CodeBlocksProjects/KanbanSystem/include/dominios/Email.h:39: warning: Found unknown command '@dominio'
+/home/marcos/CodeBlocksProjects/KanbanSystem/include/entidades/Cartao.h:30: warning: The following parameter of Cartao::Cartao(const Codigo &codigo, const Texto &nome, const Texto &descricao, const Coluna &coluna) is not documented:
+  parameter 'coluna'
+/home/marcos/CodeBlocksProjects/KanbanSystem/include/dominios/Email.h:11: warning: Found unknown command '@dominio'
