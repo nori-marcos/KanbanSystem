@@ -30,7 +30,6 @@ public:
     Cartao() = default;
 
     ///Retorna o código do cartão
-    ///@return código do cartão
     Codigo getCodigo() const {
         return codigo;
     };
@@ -41,7 +40,6 @@ public:
     };
 
     ///Retorna o nome do cartão
-    ///@return nome do cartão
     Texto getNome() const {
         return nome;
     };
@@ -52,7 +50,6 @@ public:
     };
 
     ///Retorna a descrição do cartão
-    ///@return descrição do cartão
     Texto getDescricao() const {
         return descricao;
     };
@@ -63,7 +60,6 @@ public:
     };
 
     ///Retorna a coluna do cartão
-    ///@return coluna do cartão
     Coluna getColuna() const {
         return coluna;
     };
