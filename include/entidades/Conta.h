@@ -6,6 +6,11 @@
 #include "include/dominios/Senha.h"
 #include "include/dominios/Email.h"
 
+///Classe que representa a conta de um usuário. A conta é usada para autenticação no sistema.
+///Regras de formato:
+/// - Email: "usuario@dominio".
+/// - Nome: "Nome".
+/// - Senha: "Ab12!".
 class Conta {
 private:
     Email email;
@@ -13,30 +18,41 @@ private:
     Senha senha;
 
 public:
+    ///Inicializa o objeto com os valores passados por parâmetro.
+    ///@param email email a ser atribuído à conta que precisa ser válido.
+    ///@param nome nome a ser atribuído à conta que precisa ser válido.
+    ///@param senha senha a ser atribuída à conta que precisa ser válida.
     Conta(const Email &email, const Texto &nome, const Senha &senha);
 
+    ///Inicializa o objeto com os valores vazios.
     Conta() = default;
 
+    ///Atribui um novo email ao objeto.
     void setEmail(const Email &newEmail) {
         this->email = newEmail;
     };
 
+    ///Atribui um novo nome ao objeto.
     void setNome(const Texto &newNome) {
         this->nome = newNome;
     };
 
+    ///Atribui uma nova senha ao objeto.
     void setSenha(const Senha &newSenha) {
         this->senha = newSenha;
     };
 
+    ///Retorna o email do objeto.
     Email getEmail() const {
         return email;
     };
 
+    ///Retorna o nome do objeto.
     Texto getNome() const {
         return nome;
     };
 
+    ///Retorna a senha do objeto.
     Senha getSenha() const {
         return senha;
     };

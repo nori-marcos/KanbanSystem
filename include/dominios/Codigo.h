@@ -6,7 +6,7 @@
 
 using namespace std;
 
-///Classe que representa o código de um cartão.
+///Classe que representa o código de um cartão e de um quadro.
 ///Regras de formato:
 /// - Exemplo: "AB12".
 /// - Deve ser composto por 2 letras maiúsculas e 2 dígitos.

@@ -6,6 +6,9 @@
 
 using namespace std;
 
+/// Classe que representa uma coluna do quadro, que representa o status de um cartão.
+/// Regras de formato:
+/// - Deve ser "SOLICITADO", "EM EXECUÇÃO" ou "CONCLUÍDO".
 class Coluna {
 public:
 
@@ -19,10 +22,9 @@ private:
 
 public:
     /// Inicializa o objeto com o status passado por parâmetro.
-    /// Regras de formato:
-    /// - Deve ser "SOLICITADO", "EM EXECUÇÃO" ou "CONCLUÍDO".
     Coluna(const string &status);
 
+    /// Inicializa o objeto com o status vazio.
     Coluna() = default;
 
     ///Atribui um novo status ao objeto.

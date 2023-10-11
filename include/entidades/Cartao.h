@@ -6,24 +6,30 @@
 #include "include/dominios/Coluna.h"
 #include "include/dominios/Codigo.h"
 
+///Classe que representa o cartão de um quadro. O cartão representa a tarefa criada e a ser executada pelo usuário.
+///Regras de formato:
+/// - Código: "AB12".
+/// - Nome: "Nome da tarefa".
+/// - Descrição: "Descrição da tarefa".
+/// - Coluna: "SOLICITADO", "EM EXECUÇÃO" ou "CONCLUÍDO".
 class Cartao {
 private:
-    ///Atributo que armazena o código do cartão
     Codigo codigo;
 
-    ///Atributo que armazena o nome do cartão
     Texto nome;
 
-    ///Atributo que armazena a descrição do cartão
     Texto descricao;
 
-    ///Atributo que armazena a coluna do cartão
     Coluna coluna;
 
 public:
     ///Inicializa o objeto com os valores passados por parâmetro
+    ///@param codigo código a ser atribuído ao cartão que precisa ser válido
+    ///@param nome nome a ser atribuído ao cartão que precisa ser válido
+    ///@param descricao descrição a ser atribuída ao cartão que precisa ser válida
     Cartao(const Codigo &codigo, const Texto &nome, const Texto &descricao, const Coluna &coluna);
 
+    ///Inicializa o objeto com os valores vazios
     Cartao() = default;
 
     ///Retorna o código do cartão
