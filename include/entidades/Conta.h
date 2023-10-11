@@ -15,6 +15,8 @@ private:
 public:
     Conta(const Email &email, const Texto &nome, const Senha &senha);
 
+    Conta() = default;
+
     void setEmail(const Email &newEmail) {
         this->email = newEmail;
     };

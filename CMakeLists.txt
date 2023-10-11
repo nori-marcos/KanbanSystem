@@ -39,4 +39,8 @@ add_executable(KanbanSystem
         test/dominios/TextoTeste.cpp
         test/entidades/CartaoTeste.h
         test/entidades/CartaoTeste.cpp
+        test/entidades/ContaTeste.h
+        test/entidades/ContaTeste.cpp
+        test/entidades/QuadroTeste.h
+        test/entidades/QuadroTeste.cpp
 )

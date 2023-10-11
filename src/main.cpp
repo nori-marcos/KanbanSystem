@@ -9,6 +9,8 @@
 #include "test/dominios/EmailTeste.h"
 #include "test/dominios/TextoTeste.h"
 #include "test/entidades/CartaoTeste.h"
+#include "test/entidades/ContaTeste.h"
+#include "test/entidades/QuadroTeste.h"
 
 using namespace std;
 
@@ -21,6 +23,8 @@ int main() {
     SenhaTeste senhaTeste{};
     TextoTeste textoTeste{};
     CartaoTeste cartaoTeste{};
+    ContaTeste contaTeste{};
+    QuadroTeste quadroTeste{};
 
     cout << "TESTES DE UNIDADE DOS DOMÍNIOS" << endl;
 
@@ -88,7 +92,23 @@ int main() {
             break;
     }
 
+    switch (contaTeste.run()) {
+        case ContaTeste::SUCESSO:
+            cout << "SUCESSO - CONTA" << endl;
+            break;
+        case ContaTeste::FALHA:
+            cout << "FALHA - CONTA" << endl;
+            break;
+    }
 
+    switch (quadroTeste.run()) {
+        case QuadroTeste::SUCESSO:
+            cout << "SUCESSO - QUADRO" << endl;
+            break;
+        case QuadroTeste::FALHA:
+            cout << "FALHA - QUADRO" << endl;
+            break;
+    }
 
     return 0;
 }

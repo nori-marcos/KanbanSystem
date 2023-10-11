@@ -64,6 +64,8 @@
 		<Unit filename="include/entidades/Quadro.h" />
 
 		<Unit filename="test/entidades/CartaoTeste.h" />
+		<Unit filename="test/entidades/ContaTeste.h" />
+		<Unit filename="test/entidades/QuadroTeste.h" />
 
 		<Unit filename="src/dominios/Codigo.cpp" />
 		<Unit filename="src/dominios/Coluna.cpp" />
@@ -84,6 +86,8 @@
 		<Unit filename="src/entidades/Quadro.cpp" />
 
 		<Unit filename="test/entidades/CartaoTeste.cpp" />
+		<Unit filename="test/entidades/ContaTeste.cpp" />
+		<Unit filename="test/entidades/QuadroTeste.cpp" />
 
 		<Unit filename="src/main.cpp" />
 		<Extensions>

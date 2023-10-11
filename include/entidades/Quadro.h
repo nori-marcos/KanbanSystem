@@ -16,6 +16,8 @@ private:
 public:
     Quadro(const Codigo &codigo, const Texto &nome, const Texto &descricao, const Limite &limite);
 
+    Quadro() = default;
+
     void setCodigo(const Codigo &newCodigo) {
         this->codigo = newCodigo;
     };
