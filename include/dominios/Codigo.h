@@ -1,3 +1,5 @@
+//Marcos Noriyuki Miyata 18/0126890
+
 #ifndef KANBANSYSTEM_CODIGO_H
 #define KANBANSYSTEM_CODIGO_H
 

@@ -1,3 +1,6 @@
+//Marcos Noriyuki Miyata 18/0126890
+//Gustavo Vieira do Nascimento 22/2012872
+
 #ifndef SENHA_H
 #define SENHA_H
 

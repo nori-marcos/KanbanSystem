@@ -1,3 +1,5 @@
+//Marcos Noriyuki Miyata 18/0126890
+
 #ifndef COLUNA_H
 #define COLUNA_H
 
