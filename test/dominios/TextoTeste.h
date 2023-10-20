@@ -1,3 +1,6 @@
+//Marcos Noriyuki Miyata 18/0126890
+//Luis Henrique Wiltgen de Toledo 22/1003968
+
 #ifndef KANBANSYSTEM_TEXTOTESTE_H
 #define KANBANSYSTEM_TEXTOTESTE_H
 

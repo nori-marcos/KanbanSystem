@@ -1,3 +1,6 @@
+//Marcos Noriyuki Miyata 18/0126890
+//Delma Nogueira  de Jesus 22/2035705
+
 #ifndef KANBANSYSTEM_QUADROTESTE_H
 #define KANBANSYSTEM_QUADROTESTE_H
 
