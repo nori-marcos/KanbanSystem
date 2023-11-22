@@ -52,6 +52,8 @@
 		<Unit filename="include/dominios/Senha.h" />
 		<Unit filename="include/dominios/Texto.h" />
 
+		<Unit filename="include/Interfaces.h" />
+
 		<Unit filename="test/dominios/CodigoTeste.h" />
 		<Unit filename="test/dominios/ColunaTeste.h" />
 		<Unit filename="test/dominios/EmailTeste.h" />

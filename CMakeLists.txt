@@ -43,4 +43,7 @@ add_executable(KanbanSystem
         test/entidades/ContaTeste.cpp
         test/entidades/QuadroTeste.h
         test/entidades/QuadroTeste.cpp
+        include/Interfaces.h
+        include/controladoras/CntrIAAutenticacao.h
+        src/controladoras/CntrIAAutenticacao.cpp
 )
