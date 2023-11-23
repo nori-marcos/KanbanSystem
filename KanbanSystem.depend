@@ -80,10 +80,10 @@
 	<string>
 	<stdexcept>
 
-1696946888 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/dominios/Email.cpp
+1700749263 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/dominios/Email.cpp
 	"include/dominios/Email.h"
 
-1697761151 /home/marcos/CodeBlocksProjects/KanbanSystem//include/dominios/Email.h
+1700749263 /home/marcos/CodeBlocksProjects/KanbanSystem//include/dominios/Email.h
 	<stdexcept>
 	<string>
 
@@ -109,20 +109,12 @@
 	<stdexcept>
 	<string>
 
-1696992031 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/main.cpp
+1700751315 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/main.cpp
 	<istream>
 	<iostream>
-	"include/dominios/Codigo.h"
-	"include/dominios/Senha.h"
-	"test/dominios/CodigoTeste.h"
-	"test/dominios/LimiteTeste.h"
-	"test/dominios/SenhaTeste.h"
-	"test/dominios/ColunaTeste.h"
-	"test/dominios/EmailTeste.h"
-	"test/dominios/TextoTeste.h"
-	"test/entidades/CartaoTeste.h"
-	"test/entidades/ContaTeste.h"
-	"test/entidades/QuadroTeste.h"
+	"include/Interfaces.h"
+	"include/controladoras/CntrIAAutenticacao.h"
+	"include/Stubs.h"
 
 1696691180 /home/marcos/CodeBlocksProjects/KanbanSystem//test/CodigoTeste.h
 	"include/dominios/Codigo.h"
@@ -305,4 +297,24 @@
 	<stdexcept>
 	<string>
 	"include/entidades/Quadro.h"
+
+1700747164 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/controladoras/CntrIAAutenticacao.cpp
+	"include/controladoras/CntrIAAutenticacao.h"
+
+1700751677 /home/marcos/CodeBlocksProjects/KanbanSystem//include/controladoras/CntrIAAutenticacao.h
+	"include/Interfaces.h"
+	<stdexcept>
+	<iostream>
+	<cstdlib>
+
+1700691738 /home/marcos/CodeBlocksProjects/KanbanSystem//include/Interfaces.h
+	"include/dominios/Email.h"
+	"include/dominios/Senha.h"
+	"include/entidades/Conta.h"
+
+1700750111 /home/marcos/CodeBlocksProjects/KanbanSystem//include/Stubs.h
+	"Interfaces.h"
+	<stdexcept>
+	<iostream>
+	<string>
 

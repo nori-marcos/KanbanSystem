@@ -56,6 +56,7 @@
 		<Unit filename="include/entidades/Quadro.h" />
 
 		<Unit filename="include/Interfaces.h" />
+		<Unit filename="include/Stubs.h" />
 
 		<Unit filename="include/controladoras/CntrIAAutenticacao.h" />
 
@@ -69,6 +70,7 @@
 		<Unit filename="src/entidades/Conta.cpp" />
 		<Unit filename="src/entidades/Quadro.cpp" />
 
+		<Unit filename="src/Stubs.cpp" />
 		<Unit filename="src/controladoras/CntrIAAutenticacao.cpp" />
 
 		<Unit filename="src/main.cpp" />
