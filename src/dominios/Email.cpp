@@ -1,7 +1,5 @@
 #include "include/dominios/Email.h"
 
-const string Email::EMAIL_INVALIDO = "aluno.com.br";
-
 Email::Email(const string &email) {
     validarEmail(email);
     this->email = email;
