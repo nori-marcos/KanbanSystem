@@ -33,6 +33,7 @@ private:
     static void validarPontosSeguidos(const char &caracter1, const char &caracter2);
 
 public:
+    const static string EMAIL_INVALIDO;
 
     /// Inicializa o objeto com o email passado por parâmetro.
     Email(const string &email);

@@ -46,4 +46,6 @@ add_executable(KanbanSystem
         include/Interfaces.h
         include/controladoras/CntrIAAutenticacao.h
         src/controladoras/CntrIAAutenticacao.cpp
+        src/Stubs.cpp
+        include/Stubs.h
 )

@@ -1,114 +1,44 @@
 #include <istream>
 #include <iostream>
-#include "include/dominios/Codigo.h"
-#include "include/dominios/Senha.h"
-#include "test/dominios/CodigoTeste.h"
-#include "test/dominios/LimiteTeste.h"
-#include "test/dominios/SenhaTeste.h"
-#include "test/dominios/ColunaTeste.h"
-#include "test/dominios/EmailTeste.h"
-#include "test/dominios/TextoTeste.h"
-#include "test/entidades/CartaoTeste.h"
-#include "test/entidades/ContaTeste.h"
-#include "test/entidades/QuadroTeste.h"
+#include "include/Interfaces.h"
+#include "include/controladoras/CntrIAAutenticacao.h"
+#include "include/Stubs.h"
 
 using namespace std;
 
 int main() {
 
-    CodigoTeste codigoTeste{};
-    ColunaTeste colunaTeste{};
-    EmailTeste emailTeste{};
-    LimiteTeste limiteTeste{};
-    SenhaTeste senhaTeste{};
-    TextoTeste textoTeste{};
-    CartaoTeste cartaoTeste{};
-    ContaTeste contaTeste{};
-    QuadroTeste quadroTeste{};
+    IAAutenticacao *cntrIAutenticacao = new CntrIAAutenticacao();
+    StubISAutenticacao *stubISAutenticacao = new StubISAutenticacao();
 
-    cout << "TESTES DE UNIDADE DOS DOMÍNIOS" << endl;
+    cntrIAutenticacao->setCntrIAutenticacao(stubISAutenticacao);
 
-    switch (codigoTeste.run()) {
-        case CodigoTeste::SUCESSO:
-            cout << "SUCESSO - CODIGO" << endl;
+    bool resultado;
+
+    Email email;
+
+    while (true) {
+        cout << endl << "Tela inicial do sistema." << endl;
+
+        try {
+            resultado = cntrIAutenticacao->autenticar(&email);
+        } catch (const runtime_error &exp) {
+            cout << "Erro de sistema." << endl;
             break;
-        case CodigoTeste::FALHA:
-            cout << "FALHA - CODIGO" << endl;
+        }
+
+        if (resultado) {
+            cout << endl << "Sucesso autenticacao." << endl;
+            cout << endl << "Email: " << email.getEmail() << endl;
             break;
+        } else {
+            cout << endl << "Erro autenticacao." << endl;
+            break;
+        }
     }
 
-    switch (colunaTeste.run()) {
-        case ColunaTeste::SUCESSO:
-            cout << "SUCESSO - COLUNA" << endl;
-            break;
-        case ColunaTeste::FALHA:
-            cout << "FALHA - COLUNA" << endl;
-            break;
-    }
-
-    switch (emailTeste.run()) {
-        case EmailTeste::SUCESSO:
-            cout << "SUCESSO - EMAIL" << endl;
-            break;
-        case EmailTeste::FALHA:
-            cout << "FALHA - EMAIL" << endl;
-            break;
-    }
-
-    switch (limiteTeste.run()) {
-        case LimiteTeste::SUCESSO:
-            cout << "SUCESSO - LIMITE" << endl;
-            break;
-        case LimiteTeste::FALHA:
-            cout << "FALHA - LIMITE" << endl;
-            break;
-    }
-
-    switch (senhaTeste.run()) {
-        case SenhaTeste::SUCESSO:
-            cout << "SUCESSO - SENHA" << endl;
-            break;
-        case SenhaTeste::FALHA:
-            cout << "FALHA - SENHA" << endl;
-            break;
-    }
-
-    switch (textoTeste.run()) {
-        case TextoTeste::SUCESSO:
-            cout << "SUCESSO - TEXTO" << endl;
-            break;
-        case TextoTeste::FALHA:
-            cout << "FALHA - TEXTO" << endl;
-            break;
-    }
-
-    cout << "\nTESTES DE UNIDADE DAS ENTIDADES" << endl;
-    switch (cartaoTeste.run()) {
-        case CartaoTeste::SUCESSO:
-            cout << "SUCESSO - CARTAO" << endl;
-            break;
-        case CartaoTeste::FALHA:
-            cout << "FALHA - CARTAO" << endl;
-            break;
-    }
-
-    switch (contaTeste.run()) {
-        case ContaTeste::SUCESSO:
-            cout << "SUCESSO - CONTA" << endl;
-            break;
-        case ContaTeste::FALHA:
-            cout << "FALHA - CONTA" << endl;
-            break;
-    }
-
-    switch (quadroTeste.run()) {
-        case QuadroTeste::SUCESSO:
-            cout << "SUCESSO - QUADRO" << endl;
-            break;
-        case QuadroTeste::FALHA:
-            cout << "FALHA - QUADRO" << endl;
-            break;
-    }
+    delete cntrIAutenticacao;
+    delete stubISAutenticacao;
 
     return 0;
 }

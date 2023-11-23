@@ -3,6 +3,10 @@
 
 #include "include/Interfaces.h"
 
+#include <stdexcept>
+#include <iostream>
+#include <cstdlib>
+
 using namespace std;
 
 class CntrIAAutenticacao : public IAAutenticacao {
@@ -11,9 +15,9 @@ private:
 public:
     bool autenticar(Email *);
 
-    void setCntrIAutenticacao(ISAutenticacao *);
-
+    void setCntrIAutenticacao(ISAutenticacao *cntrIAutenticacao) {
+        this->cntrIAutenticacao = cntrIAutenticacao;
+    };
 };
-
 
 #endif //KANBANSYSTEM_CNTRIAAUTENTICACAO_H
