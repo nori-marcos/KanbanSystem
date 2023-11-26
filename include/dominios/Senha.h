@@ -31,7 +31,7 @@ public:
     Senha() = default;
 
     ///Retorna a senha do objeto.
-    string getSenha() const {
+    string getValor() const {
         return senha;
     }
 

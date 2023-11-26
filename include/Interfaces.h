@@ -5,6 +5,7 @@
 #include "include/dominios/Email.h"
 #include "include/dominios/Senha.h"
 #include "include/entidades/Conta.h"
+#include "include/containers/ContainerConta.h"
 
 class ISAutenticacao;
 
@@ -44,6 +45,8 @@ public:
 class ISAutenticacao {
 public:
     virtual bool autenticar(const Email &, const Senha &) = 0;
+
+    virtual void setContainerConta(ContainerConta *) = 0;
 
     virtual ~ISAutenticacao() {};
 };

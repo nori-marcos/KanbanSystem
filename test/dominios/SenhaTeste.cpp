@@ -15,7 +15,7 @@ void SenhaTeste::tearDown() {
 void SenhaTeste::testarCenarioSucesso() {
     try {
         senha->setSenha(VALOR_VALIDO);
-        if (senha->getSenha() != VALOR_VALIDO) {
+        if (senha->getValor() != VALOR_VALIDO) {
             estado = FALHA;
         }
     } catch (invalid_argument &e) {

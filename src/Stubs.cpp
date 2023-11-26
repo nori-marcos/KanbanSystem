@@ -7,12 +7,12 @@ bool StubISAutenticacao::autenticar(const Email &email, const Senha &senha) {
 
     cout << endl << "StubISAutenticacao::autenticar" << endl;
 
-    cout << "Email: " << email.getEmail() << endl;
-    cout << "Senha: " << senha.getSenha() << endl;
+    cout << "Email: " << email.getValor() << endl;
+    cout << "Senha: " << senha.getValor() << endl;
 
-    if (email.getEmail() == TRIGGER_FALHA) return false;
+    if (email.getValor() == TRIGGER_FALHA) return false;
 
-    if (email.getEmail() == TRIGGER_ERRO_SISTEMA) throw runtime_error("Erro de sistema");
+    if (email.getValor() == TRIGGER_ERRO_SISTEMA) throw runtime_error("Erro de sistema");
 
     return true;
 }

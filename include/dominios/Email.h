@@ -40,7 +40,7 @@ public:
     Email() = default;
 
     /// Retorna o email do objeto.
-    string getEmail() const {
+    string getValor() const {
         return email;
     }
 

@@ -48,4 +48,10 @@ add_executable(KanbanSystem
         src/controladoras/CntrIAAutenticacao.cpp
         src/Stubs.cpp
         include/Stubs.h
+        include/containers/ContainerConta.h
+        src/containers/ContainerConta.cpp
+        include/controladoras/CntrISAutenticacao.h
+        src/controladoras/CntrISAutenticacao.cpp
+        include/controladoras/CntrAInterface.h
+        src/controladoras/CntrAInterface.cpp
 )
