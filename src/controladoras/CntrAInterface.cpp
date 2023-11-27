@@ -55,7 +55,6 @@ int CntrAInterface::executar() {
                     cout << "Erro de sistema." << endl;
                     return 1;
                 }
-
                 if (resultado) {
                     cout << endl << "Sucesso autenticação." << endl;
                     return 0;
