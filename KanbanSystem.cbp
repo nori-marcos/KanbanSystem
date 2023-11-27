@@ -58,7 +58,11 @@
 		<Unit filename="include/Interfaces.h" />
 		<Unit filename="include/Stubs.h" />
 
+		<Unit filename="include/containers/ContainerConta.h" />
+
+		<Unit filename="include/controladoras/CntrAInterface.h" />
 		<Unit filename="include/controladoras/CntrIAAutenticacao.h" />
+		<Unit filename="include/controladoras/CntrISAutenticacao.h" />
 
 		<Unit filename="src/dominios/Codigo.cpp" />
 		<Unit filename="src/dominios/Coluna.cpp" />
@@ -71,7 +75,12 @@
 		<Unit filename="src/entidades/Quadro.cpp" />
 
 		<Unit filename="src/Stubs.cpp" />
+
+    	<Unit filename="src/containers/ContainerConta.cpp" />
+
+		<Unit filename="src/controladoras/CntrAInterface.cpp" />
 		<Unit filename="src/controladoras/CntrIAAutenticacao.cpp" />
+		<Unit filename="src/controladoras/CntrISAutenticacao.cpp" />
 
 		<Unit filename="src/main.cpp" />
 

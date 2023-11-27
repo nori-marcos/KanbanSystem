@@ -6,7 +6,6 @@ int CntrAInterface::executar() {
     IAAutenticacao *cntrIAutenticacao = new CntrIAAutenticacao();
     ISAutenticacao *cntrISAutenticacao = new CntrISAutenticacao();
     ContainerConta *containerConta = new ContainerConta();
-
     CntrAInterface *cntrAInterface = new CntrAInterface();
 
     Conta conta_1;
@@ -31,6 +30,7 @@ int CntrAInterface::executar() {
     cntrAInterface->setCntrIAAutenticacao(cntrIAutenticacao);
 
     bool resultado;
+    bool encerrar = false;
     int escolha;
 
     Email email;
@@ -58,7 +58,6 @@ int CntrAInterface::executar() {
 
                 if (resultado) {
                     cout << endl << "Sucesso autenticação." << endl;
-//                    cout << endl << "Email: " << email.getValor() << endl;
                     return 0;
                 } else {
                     cout << endl << "Erro autenticação." << endl;
@@ -66,12 +65,13 @@ int CntrAInterface::executar() {
                 }
             case 3:
                 cout << "Sistema encerrado" << endl;
+                encerrar = true;
                 break;
             default:
                 cout << "Opção inválida" << endl;
                 break;
         }
-    } while (escolha != 3);
+    } while (!encerrar);
 
     delete cntrIAutenticacao;
     delete cntrISAutenticacao;
