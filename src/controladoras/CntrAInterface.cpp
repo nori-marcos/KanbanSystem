@@ -35,9 +35,9 @@ int CntrAInterface::executar() {
 
     Email email;
 
-    do {
-        cout << endl << "Tela inicial do sistema." << endl;
+    cout << endl << "Tela inicial do sistema." << endl;
 
+    do {
         cout << endl << "Escolha uma das opções:" << endl;
         cout << endl << "1. Cadastrar" << endl;
         cout << endl << "2. Autenticar" << endl;

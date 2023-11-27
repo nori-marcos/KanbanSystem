@@ -80,10 +80,10 @@
 	<string>
 	<stdexcept>
 
-1700749263 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/dominios/Email.cpp
+1700752535 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/dominios/Email.cpp
 	"include/dominios/Email.h"
 
-1700752535 /home/marcos/CodeBlocksProjects/KanbanSystem//include/dominios/Email.h
+1701025884 /home/marcos/CodeBlocksProjects/KanbanSystem//include/dominios/Email.h
 	<stdexcept>
 	<string>
 
@@ -98,7 +98,7 @@
 	<string>
 	"include/dominios/Senha.h"
 
-1697761151 /home/marcos/CodeBlocksProjects/KanbanSystem//include/dominios/Senha.h
+1701028515 /home/marcos/CodeBlocksProjects/KanbanSystem//include/dominios/Senha.h
 	<stdexcept>
 	<string>
 
@@ -307,14 +307,21 @@
 	<iostream>
 	<cstdlib>
 
-1700691738 /home/marcos/CodeBlocksProjects/KanbanSystem//include/Interfaces.h
+1701030877 /home/marcos/CodeBlocksProjects/KanbanSystem//include/Interfaces.h
 	"include/dominios/Email.h"
 	"include/dominios/Senha.h"
 	"include/entidades/Conta.h"
+	"include/containers/ContainerConta.h"
 
 1700750111 /home/marcos/CodeBlocksProjects/KanbanSystem//include/Stubs.h
 	"Interfaces.h"
 	<stdexcept>
 	<iostream>
 	<string>
+
+1701025123 /home/marcos/CodeBlocksProjects/KanbanSystem//include/containers/ContainerConta.h
+	<iostream>
+	<map>
+	<string>
+	"include/entidades/Conta.h"
 
