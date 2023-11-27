@@ -36,7 +36,7 @@ public:
     }
 
     ///Atribui uma nova senha ao objeto.
-    void setSenha(const string &newSenha) {
+    void setValor(const string &newSenha) {
         validarSenha(newSenha);
         this->senha = newSenha;
     };

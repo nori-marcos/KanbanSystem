@@ -14,7 +14,7 @@ void EmailTeste::tearDown() {
 
 void EmailTeste::testarCenarioSucesso() {
     try {
-        email->setEmail(VALOR_VALIDO);
+        email->setValor(VALOR_VALIDO);
         if (email->getValor() != VALOR_VALIDO) {
             estado = FALHA;
         }
@@ -25,7 +25,7 @@ void EmailTeste::testarCenarioSucesso() {
 
 void EmailTeste::testarCenarioFalha() {
     try {
-        email->setEmail(VALOR_INVALIDO);
+        email->setValor(VALOR_INVALIDO);
         estado = FALHA;
     } catch (invalid_argument &e) {
         return;

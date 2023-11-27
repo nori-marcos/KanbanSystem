@@ -111,12 +111,12 @@ $(document).ready(function(){initNavTree('_texto_8h_source.html',''); initResiza
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_texto.html#a4f84c8b6a85219a321b606054cc5fff1">   36</a></span>&#160;    <a class="code" href="class_texto.html#a4f84c8b6a85219a321b606054cc5fff1">Texto</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_texto.html#a41305805b3cfc47dc1303e2de8a32d96">   39</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_texto.html#a41305805b3cfc47dc1303e2de8a32d96">setTexto</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;newTexto) {</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_texto.html#a41305805b3cfc47dc1303e2de8a32d96">   39</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_texto.html#a41305805b3cfc47dc1303e2de8a32d96">setValor</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;newTexto) {</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        validarTexto(newTexto);</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        this-&gt;texto = newTexto;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    };</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_texto.html#a69463b543f36eaf86076ef48c896987f">   45</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_texto.html#a69463b543f36eaf86076ef48c896987f">getTexto</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_texto.html#a69463b543f36eaf86076ef48c896987f">   45</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_texto.html#a69463b543f36eaf86076ef48c896987f">getValor</a>()<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">return</span> texto;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    };</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
@@ -124,9 +124,9 @@ $(document).ready(function(){initNavTree('_texto_8h_source.html',''); initResiza
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif </span><span class="comment">//KANBANSYSTEM_TEXTO_H</span></div>
 <div class="ttc" id="aclass_texto_html"><div class="ttname"><a href="class_texto.html">Texto</a></div><div class="ttdef"><b>Definition:</b> Texto.h:18</div></div>
 <div class="ttc" id="aclass_texto_html_a3fef3e22ffd1ad810c15977e554fed6c"><div class="ttname"><a href="class_texto.html#a3fef3e22ffd1ad810c15977e554fed6c">Texto::Texto</a></div><div class="ttdeci">Texto(const string &amp;texto)</div><div class="ttdoc">Inicializa o objeto com o texto passado por parâmetro.</div></div>
-<div class="ttc" id="aclass_texto_html_a41305805b3cfc47dc1303e2de8a32d96"><div class="ttname"><a href="class_texto.html#a41305805b3cfc47dc1303e2de8a32d96">Texto::setTexto</a></div><div class="ttdeci">void setTexto(const string &amp;newTexto)</div><div class="ttdoc">Atribui um novo texto ao objeto.</div><div class="ttdef"><b>Definition:</b> Texto.h:39</div></div>
+<div class="ttc" id="aclass_texto_html_a41305805b3cfc47dc1303e2de8a32d96"><div class="ttname"><a href="class_texto.html#a41305805b3cfc47dc1303e2de8a32d96">Texto::setValor</a></div><div class="ttdeci">void setValor(const string &amp;newTexto)</div><div class="ttdoc">Atribui um novo texto ao objeto.</div><div class="ttdef"><b>Definition:</b> Texto.h:39</div></div>
 <div class="ttc" id="aclass_texto_html_a4f84c8b6a85219a321b606054cc5fff1"><div class="ttname"><a href="class_texto.html#a4f84c8b6a85219a321b606054cc5fff1">Texto::Texto</a></div><div class="ttdeci">Texto()=default</div><div class="ttdoc">Inicializa o objeto com o texto vazio.</div></div>
-<div class="ttc" id="aclass_texto_html_a69463b543f36eaf86076ef48c896987f"><div class="ttname"><a href="class_texto.html#a69463b543f36eaf86076ef48c896987f">Texto::getTexto</a></div><div class="ttdeci">string getTexto() const</div><div class="ttdoc">Retorna o texto do objeto.</div><div class="ttdef"><b>Definition:</b> Texto.h:45</div></div>
+<div class="ttc" id="aclass_texto_html_a69463b543f36eaf86076ef48c896987f"><div class="ttname"><a href="class_texto.html#a69463b543f36eaf86076ef48c896987f">Texto::getValor</a></div><div class="ttdeci">string getValor() const</div><div class="ttdoc">Retorna o texto do objeto.</div><div class="ttdef"><b>Definition:</b> Texto.h:45</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

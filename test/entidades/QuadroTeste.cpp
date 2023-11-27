@@ -14,9 +14,9 @@ void QuadroTeste::tearDown() {
 void QuadroTeste::testarCenarioSucesso() {
     try {
         Codigo codigo;
-        codigo.setCodigo(CODIGO_VALIDO);
+        codigo.setValor(CODIGO_VALIDO);
         quadro->setCodigo(codigo);
-        if (quadro->getCodigo().getCodigo() != CODIGO_VALIDO) {
+        if (quadro->getCodigo().getValor() != CODIGO_VALIDO) {
             estado = FALHA;
         }
     } catch (invalid_argument &e) {

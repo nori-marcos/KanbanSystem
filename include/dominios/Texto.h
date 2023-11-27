@@ -39,13 +39,13 @@ public:
     Texto() = default;
 
     ///Atribui um novo texto ao objeto.
-    void setTexto(const string &newTexto) {
+    void setValor(const string &newTexto) {
         validarTexto(newTexto);
         this->texto = newTexto;
     };
 
     ///Retorna o texto do objeto.
-    string getTexto() const {
+    string getValor() const {
         return texto;
     };
 };

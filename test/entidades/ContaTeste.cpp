@@ -14,9 +14,9 @@ void ContaTeste::tearDown() {
 void ContaTeste::testarCenarioSucesso() {
     try {
         Texto nome;
-        nome.setTexto(NOME_VALIDO);
+        nome.setValor(NOME_VALIDO);
         conta->setNome(nome);
-        if (conta->getNome().getTexto() != NOME_VALIDO) {
+        if (conta->getNome().getValor() != NOME_VALIDO) {
             estado = FALHA;
         }
     } catch (invalid_argument &e) {

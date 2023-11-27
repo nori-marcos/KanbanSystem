@@ -15,9 +15,9 @@ int CntrAInterface::executar() {
     Email email_1;
     Senha senha_1;
 
-    nome_1.setTexto("Marcos");
-    email_1.setEmail("marcos@gmail.com");
-    senha_1.setSenha("Abc1!");
+    nome_1.setValor("Marcos");
+    email_1.setValor("marcos@gmail.com");
+    senha_1.setValor("Abc1!");
 
     conta_1.setNome(nome_1);
     conta_1.setEmail(email_1);
@@ -56,10 +56,10 @@ int CntrAInterface::executar() {
                     return 1;
                 }
                 if (resultado) {
-                    cout << endl << "Sucesso autenticação." << endl;
+                    cout << endl << "Sucesso de autenticação." << endl;
                     return 0;
                 } else {
-                    cout << endl << "Erro autenticação." << endl;
+                    cout << endl << "Erro de autenticação." << endl;
                     break;
                 }
             case 3:

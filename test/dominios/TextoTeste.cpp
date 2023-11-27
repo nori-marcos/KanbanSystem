@@ -14,8 +14,8 @@ void TextoTeste::tearDown() {
 
 void TextoTeste::testarCenarioSucesso() {
     try {
-        texto->setTexto(VALOR_VALIDO);
-        if (texto->getTexto() != VALOR_VALIDO) {
+        texto->setValor(VALOR_VALIDO);
+        if (texto->getValor() != VALOR_VALIDO) {
             estado = FALHA;
         }
     } catch (invalid_argument &e) {
@@ -25,7 +25,7 @@ void TextoTeste::testarCenarioSucesso() {
 
 void TextoTeste::testarCenarioFalha() {
     try {
-        texto->setTexto(VALOR_INVALIDO);
+        texto->setValor(VALOR_INVALIDO);
         estado = FALHA;
     } catch (invalid_argument &e) {
         return;

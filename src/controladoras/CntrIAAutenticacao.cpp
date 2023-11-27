@@ -9,11 +9,11 @@ bool CntrIAAutenticacao::autenticar(Email *email) {
         try {
             cout << "Digite o email: ";
             cin >> entrada;
-            email->setEmail(entrada);
+            email->setValor(entrada);
 
             cout << "Digite a senha: ";
             cin >> entrada;
-            senha.setSenha(entrada);
+            senha.setValor(entrada);
             break;
         } catch (const invalid_argument &exception) {
             cout << endl << exception.what() << endl;

@@ -45,7 +45,7 @@ public:
     }
 
     /// Atribui um novo email ao objeto.
-    void setEmail(const string &newEmail) {
+    void setValor(const string &newEmail) {
         validarEmail(newEmail);
         this->email = newEmail;
     }

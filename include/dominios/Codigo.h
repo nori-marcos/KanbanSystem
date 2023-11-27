@@ -26,13 +26,13 @@ public:
     Codigo() = default;
 
     ///Atribui um novo código ao objeto
-    void setCodigo(const string &newCodigo) {
+    void setValor(const string &newCodigo) {
         validar(newCodigo);
         this->codigo = newCodigo;
     };
 
     ///Retorna o código do objeto
-    string getCodigo() const {
+    string getValor() const {
         return codigo;
     };
 };
