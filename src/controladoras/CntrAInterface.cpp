@@ -1,81 +1,80 @@
 #include "include/controladoras/CntrAInterface.h"
-#include "include/controladoras/CntrIAAutenticacao.h"
-#include "include/controladoras/CntrISAutenticacao.h"
+#include <string>
 
-int CntrAInterface::executar() {
-    IAAutenticacao *cntrIAutenticacao = new CntrIAAutenticacao();
-    ISAutenticacao *cntrISAutenticacao = new CntrISAutenticacao();
-    ContainerConta *containerConta = new ContainerConta();
-    CntrAInterface *cntrAInterface = new CntrAInterface();
+void CntrAInterface::executar() {
+    string texto1 = "Selecione um dos serviços:";
+    string texto2 = "1 - Acessar sistema";
+    string texto3 = "2 - Criar conta";
+    string texto4 = "3 - Encerrar sistema";
 
-    Conta conta_1;
-    Texto nome_1;
-    Texto email_texto_1;
-    Texto senha_texto_1;
-    Email email_1;
-    Senha senha_1;
+    string texto5 = "Selecione um dos serviços:";
+    string texto6 = "1 - Excluir conta";
+    string texto7 = "2 - Editar conta";
+    string texto8 = "3 - Consultar conta";
+    string texto9 = "4 - Encerrar sessão";
 
-    nome_1.setValor("Marcos");
-    email_1.setValor("marcos@gmail.com");
-    senha_1.setValor("Abc1!");
+    string texto10 = "Falha na autenticação. Digite qualquer tecla para continuar.";
 
-    conta_1.setNome(nome_1);
-    conta_1.setEmail(email_1);
-    conta_1.setSenha(senha_1);
+    bool apresentar = true;
 
-    containerConta->incluir(conta_1);
+    while (apresentar) {
+        int campo;
 
-    cntrISAutenticacao->setContainerConta(containerConta);
-    cntrIAutenticacao->setCntrIAutenticacao(cntrISAutenticacao);
-    cntrAInterface->setCntrIAAutenticacao(cntrIAutenticacao);
+        cout << "----------------------------------------" << endl;
+        cout << "Selecione um dos serviços:" << endl;
+        cout << "1 - Acessar sistema" << endl;
+        cout << "2 - Criar conta" << endl;
+        cout << "3 - Encerrar sistema" << endl;
+        cin >> campo;
 
-    bool resultado;
-    bool encerrar = false;
-    int escolha;
-
-    Email email;
-
-    cout << endl << "Tela inicial do sistema." << endl;
-
-    do {
-        cout << endl << "Escolha uma das opções:" << endl;
-        cout << endl << "1. Cadastrar" << endl;
-        cout << endl << "2. Autenticar" << endl;
-        cout << endl << "3. Sair" << endl;
-        cin >> escolha;
-
-        switch (escolha) {
+        switch (campo) {
             case 1:
-                cout << "Opção indisponível" << endl;
+                if (cntrIAAutenticacao->autenticar(&email)) {
+                    bool apresentar = true;
+                    while (apresentar) {
+                        cout << "----------------------------------------" << endl;
+                        cout << "Selecione um dos serviços:" << endl;
+                        cout << "1 - Excluir conta" << endl;
+                        cout << "2 - Editar conta" << endl;
+                        cout << "3 - Consultar conta" << endl;
+                        cout << "4 - Encerrar sessão" << endl;
+                        cin >> campo;
+
+                        switch (campo) {
+                            case 1:
+                                cout << "Serviço não implementado." << endl;
+                                apresentar = false;
+                                break;
+                            case 2:
+                                cout << "Serviço não implementado." << endl;
+                                apresentar = false;
+                                break;
+                            case 3:
+                                cout << "Serviço não implementado." << endl;
+                                apresentar = false;
+                                break;
+                            case 4:
+                                apresentar = false;
+                                break;
+                            default:
+                                break;
+                        }
+                    }
+
+                } else {
+                    cout << "----------------------------------------" << endl;
+                    cout << "Falha na autenticação. Digite qualquer tecla para continuar." << endl;
+                }
                 break;
             case 2:
-                try {
-                    resultado = cntrIAutenticacao->autenticar(&email);
-                } catch (const runtime_error &exp) {
-                    cout << "Erro de sistema." << endl;
-                    return 1;
-                }
-                if (resultado) {
-                    cout << endl << "Sucesso de autenticação." << endl;
-                    return 0;
-                } else {
-                    cout << endl << "Erro de autenticação." << endl;
-                    break;
-                }
+                cout << "Serviço não implementado." << endl;
+                break;
             case 3:
-                cout << "Sistema encerrado" << endl;
-                encerrar = true;
+                apresentar = false;
                 break;
             default:
-                cout << "Opção inválida" << endl;
                 break;
         }
-    } while (!encerrar);
-
-    delete cntrIAutenticacao;
-    delete cntrISAutenticacao;
-    delete containerConta;
-    delete cntrAInterface;
-
-    return 0;
+    }
 }
+

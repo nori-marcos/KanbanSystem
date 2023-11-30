@@ -1,26 +1,32 @@
 #include "include/controladoras/CntrIAAutenticacao.h"
 
 bool CntrIAAutenticacao::autenticar(Email *email) {
-    bool resultado;
+    string texto1 = "Digite seu email:";
+    string texto2 = "Digite sua senha:";
+    string texto3 = "Dado em formato incorreto. Digite qualquer tecla para continuar.";
+
+    char campo1[80];
+    char campo2[80];
+
     Senha senha;
-    string entrada;
 
     while (true) {
-        try {
-            cout << "Digite o email: ";
-            cin >> entrada;
-            email->setValor(entrada);
+        cout << "----------------------------------------" << endl;
+        cout << "Digite seu email:" << endl;
+        cin >> campo1;
+        cout << "Digite sua senha:" << endl;
+        cin >> campo2;
 
-            cout << "Digite a senha: ";
-            cin >> entrada;
-            senha.setValor(entrada);
+        try {
+            email->setValor(string(campo1));
+            senha.setValor(string(campo2));
             break;
-        } catch (const invalid_argument &exception) {
-            cout << endl << exception.what() << endl;
+        } catch (invalid_argument &exp) {
+            cout << "----------------------------------------" << endl;
+            cout << "Dado em formato incorreto. Digite qualquer tecla para continuar." << endl;
+            cout << exp.what() << endl;
         }
     }
 
-    resultado = cntrIAutenticacao->autenticar(*email, senha);
-
-    return resultado;
+    return cntrIAutenticacao->autenticar(*email, senha);
 }

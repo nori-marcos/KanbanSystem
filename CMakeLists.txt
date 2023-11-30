@@ -5,6 +5,7 @@ set(CMAKE_CXX_STANDARD 14)
 
 include_directories(.)
 
+
 add_executable(KanbanSystem
         src/dominios/Coluna.cpp
         include/dominios/Coluna.h
@@ -54,4 +55,8 @@ add_executable(KanbanSystem
         src/controladoras/CntrISAutenticacao.cpp
         include/controladoras/CntrAInterface.h
         src/controladoras/CntrAInterface.cpp
+        include/Curses.h
 )
+
+target_link_libraries(KanbanSystem PRIVATE ncurses)
+
