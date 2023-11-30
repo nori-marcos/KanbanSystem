@@ -1,10 +1,6 @@
 #include "include/controladoras/CntrIAAutenticacao.h"
 
 bool CntrIAAutenticacao::autenticar(Email *email) {
-    string texto1 = "Digite seu email:";
-    string texto2 = "Digite sua senha:";
-    string texto3 = "Dado em formato incorreto. Digite qualquer tecla para continuar.";
-
     char campo1[80];
     char campo2[80];
 
