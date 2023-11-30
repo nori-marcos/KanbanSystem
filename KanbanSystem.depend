@@ -307,7 +307,7 @@
 	<iostream>
 	<cstdlib>
 
-1701030877 /home/marcos/CodeBlocksProjects/KanbanSystem//include/Interfaces.h
+1701375778 /home/marcos/CodeBlocksProjects/KanbanSystem//include/Interfaces.h
 	"include/dominios/Email.h"
 	"include/dominios/Senha.h"
 	"include/entidades/Conta.h"

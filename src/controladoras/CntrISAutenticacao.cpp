@@ -4,7 +4,7 @@ bool CntrISAutenticacao::autenticar(const Email &email, const Senha &senha) {
     Conta *conta = new Conta();
     bool resposta = true;
 
-    cout << "CntrISAutenticacao::autenticar" << endl;
+    cout << endl << "CntrISAutenticacao::autenticar" << endl;
     cout << "Email: " << email.getValor() << endl;
     cout << "Senha: " << senha.getValor() << endl;
 

@@ -3,7 +3,7 @@
 bool CntrISConta::incluir(const Conta &conta) {
     bool resposta = true;
 
-    cout << "CntrISConta::incluir()" << endl;
+    cout << endl << "CntrISConta::incluir()" << endl;
     cout << "Nome: " << conta.getNome().getValor() << endl;
     cout << "Email: " << conta.getEmail().getValor() << endl;
     cout << "Senha: " << conta.getSenha().getValor() << endl;
@@ -20,7 +20,7 @@ bool CntrISConta::incluir(const Conta &conta) {
 bool CntrISConta::remover(const Email &email) {
     bool resposta = true;
 
-    cout << "CntrISConta::remover()" << endl;
+    cout << endl << "CntrISConta::remover()" << endl;
     cout << "Email: " << email.getValor() << endl;
 
     try {
@@ -35,7 +35,7 @@ bool CntrISConta::remover(const Email &email) {
 bool CntrISConta::pesquisar(Conta *conta) {
     bool resposta = true;
 
-    cout << "CntrISConta::pesquisar()" << endl;
+    cout << endl << "CntrISConta::pesquisar()" << endl;
     cout << "Nome: " << conta->getNome().getValor() << endl;
     cout << "Email: " << conta->getEmail().getValor() << endl;
     cout << "Senha: " << conta->getSenha().getValor() << endl;
@@ -52,7 +52,7 @@ bool CntrISConta::pesquisar(Conta *conta) {
 bool CntrISConta::atualizar(const Conta &conta) {
     bool resposta = true;
 
-    cout << "CntrISConta::atualizar()" << endl;
+    cout << endl << "CntrISConta::atualizar()" << endl;
     cout << "Nome: " << conta.getNome().getValor() << endl;
     cout << "Email: " << conta.getEmail().getValor() << endl;
     cout << "Senha: " << conta.getSenha().getValor() << endl;
