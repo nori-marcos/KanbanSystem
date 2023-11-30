@@ -109,12 +109,14 @@
 	<stdexcept>
 	<string>
 
-1701369355 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/main.cpp
+1701375778 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/main.cpp
 	<istream>
 	"include/Interfaces.h"
 	"include/controladoras/CntrAInterface.h"
 	"include/controladoras/CntrIAAutenticacao.h"
 	"include/controladoras/CntrISAutenticacao.h"
+	"include/controladoras/CntrISConta.h"
+	"include/controladoras/CntrIAConta.h"
 
 1696691180 /home/marcos/CodeBlocksProjects/KanbanSystem//test/CodigoTeste.h
 	"include/dominios/Codigo.h"
@@ -298,7 +300,7 @@
 	<string>
 	"include/entidades/Quadro.h"
 
-1701370119 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/controladoras/CntrIAAutenticacao.cpp
+1701374618 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/controladoras/CntrIAAutenticacao.cpp
 	"include/controladoras/CntrIAAutenticacao.h"
 
 1700751677 /home/marcos/CodeBlocksProjects/KanbanSystem//include/controladoras/CntrIAAutenticacao.h
@@ -328,7 +330,7 @@
 1701046313 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/containers/ContainerConta.cpp
 	"include/containers/ContainerConta.h"
 
-1701369941 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/controladoras/CntrAInterface.cpp
+1701379066 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/controladoras/CntrAInterface.cpp
 	"include/controladoras/CntrAInterface.h"
 
 1701369355 /home/marcos/CodeBlocksProjects/KanbanSystem//include/controladoras/CntrAInterface.h
@@ -341,7 +343,7 @@
 	<wchar.h>
 	<stdbool.h>
 
-1701030416 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/controladoras/CntrISAutenticacao.cpp
+1701376984 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/controladoras/CntrISAutenticacao.cpp
 	"include/controladoras/CntrISAutenticacao.h"
 
 1701030877 /home/marcos/CodeBlocksProjects/KanbanSystem//include/controladoras/CntrISAutenticacao.h
@@ -350,4 +352,16 @@
 
 1701028515 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/Stubs.cpp
 	"include/Stubs.h"
+
+1701379066 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/controladoras/CntrIAConta.cpp
+	"include/controladoras/CntrIAConta.h"
+
+1701379066 /home/marcos/CodeBlocksProjects/KanbanSystem//include/controladoras/CntrIAConta.h
+	"include/Interfaces.h"
+
+1701376984 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/controladoras/CntrISConta.cpp
+	"include/controladoras/CntrISConta.h"
+
+1701375778 /home/marcos/CodeBlocksProjects/KanbanSystem//include/controladoras/CntrISConta.h
+	"include/Interfaces.h"
 

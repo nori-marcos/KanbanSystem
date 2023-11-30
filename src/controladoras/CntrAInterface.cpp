@@ -28,11 +28,9 @@ void CntrAInterface::executar() {
                         switch (campo) {
                             case 1:
                                 cout << "Serviço não implementado." << endl;
-                                apresentar = false;
                                 break;
                             case 2:
                                 cout << "Serviço não implementado." << endl;
-                                apresentar = false;
                                 break;
                             case 3:
                                 apresentar = false;
