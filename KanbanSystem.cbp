@@ -20,7 +20,6 @@
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
-					<Add library="./pdcurses.a" />
 				</Linker>
 			</Target>
 		</Build>
