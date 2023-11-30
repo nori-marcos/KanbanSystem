@@ -50,6 +50,8 @@
 		<Unit filename="include/controladoras/CntrAInterface.h" />
 		<Unit filename="include/controladoras/CntrIAAutenticacao.h" />
 		<Unit filename="include/controladoras/CntrISAutenticacao.h" />
+		<Unit filename="include/controladoras/CntrIAConta.h" />
+		<Unit filename="include/controladoras/CntrISConta.h" />
 
 		<Unit filename="src/dominios/Codigo.cpp" />
 		<Unit filename="src/dominios/Coluna.cpp" />
@@ -68,6 +70,8 @@
 		<Unit filename="src/controladoras/CntrAInterface.cpp" />
 		<Unit filename="src/controladoras/CntrIAAutenticacao.cpp" />
 		<Unit filename="src/controladoras/CntrISAutenticacao.cpp" />
+		<Unit filename="src/controladoras/CntrIAConta.cpp" />
+        <Unit filename="src/controladoras/CntrISConta.cpp" />
 
 		<Unit filename="src/main.cpp" />
 

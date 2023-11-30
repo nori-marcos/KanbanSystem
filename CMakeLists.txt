@@ -55,8 +55,11 @@ add_executable(KanbanSystem
         src/controladoras/CntrISAutenticacao.cpp
         include/controladoras/CntrAInterface.h
         src/controladoras/CntrAInterface.cpp
-        include/Curses.h
+        include/controladoras/CntrIAConta.h
+        include/controladoras/CntrIAConta.h
+        include/controladoras/CntrIAConta.h
+        src/controladoras/CntrIAConta.cpp
+        include/controladoras/CntrISConta.h
+        src/controladoras/CntrISConta.cpp
 )
-
-target_link_libraries(KanbanSystem PRIVATE ncurses)
 

@@ -43,11 +43,15 @@ void CntrAInterface::executar() {
                     }
                 } else {
                     cout << "----------------------------------------" << endl;
-                    cout << "Falha na autenticação. Digite qualquer tecla para continuar." << endl;
+                    cout << "Falha na autenticação." << endl;
                 }
                 break;
             case 2:
-                cout << "Serviço não implementado." << endl;
+                if (cntrIAConta->cadastrar()) {
+                    cout << "Conta criada com sucesso." << endl;
+                } else {
+                    cout << "Falha ao criar conta." << endl;
+                }
                 break;
             case 3:
                 apresentar = false;

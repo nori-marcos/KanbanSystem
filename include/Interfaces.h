@@ -24,9 +24,9 @@ public:
 
 class IAConta {
 public:
-    virtual void cadastrar() = 0;
+    virtual bool cadastrar() = 0;
 
-    virtual void executar() = 0;
+    virtual bool executar() = 0;
 
     virtual void setCntrIAConta(ISConta *) = 0;
 
@@ -53,13 +53,15 @@ public:
 
 class ISConta {
 public:
-    virtual void cadastrar(const Conta &) = 0;
+    virtual bool incluir(const Conta &) = 0;
 
-    virtual void descadastrar(const Email &) = 0;
+    virtual bool remover(const Email &) = 0;
 
-    virtual void editar(const Conta &) = 0;
+    virtual bool atualizar(const Conta &) = 0;
 
-    virtual void consultar(Conta *) = 0;
+    virtual bool pesquisar(Conta *) = 0;
+
+    virtual void setCntrISConta(ContainerConta *) = 0;
 
     virtual ~ISConta() {};
 };
