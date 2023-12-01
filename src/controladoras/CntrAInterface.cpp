@@ -41,22 +41,23 @@ void CntrAInterface::executar() {
 
                                     switch (campo) {
                                         case 1:
-                                            if(cntrIAConta->pesquisar()){
+                                            if (cntrIAConta->pesquisar()) {
                                                 cout << "Conta encontrada." << endl;
                                             } else {
                                                 cout << "Conta não encontrada." << endl;
                                             }
                                             break;
                                         case 2:
-                                            if(cntrIAConta->atualizar()){
+                                            if (cntrIAConta->atualizar()) {
                                                 cout << "Conta atualizada." << endl;
                                             } else {
                                                 cout << "Conta não atualizada." << endl;
                                             }
                                             break;
                                         case 3:
-                                            if(cntrIAConta->remover()){
+                                            if (cntrIAConta->remover()) {
                                                 cout << "Conta removida." << endl;
+                                                apresentarSessao = false;
                                             } else {
                                                 cout << "Conta não removida." << endl;
                                             }

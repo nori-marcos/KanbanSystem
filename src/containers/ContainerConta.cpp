@@ -5,7 +5,7 @@
 bool conectar(sqlite3 **db, const std::string &dbName) {
     int rc = sqlite3_open(dbName.c_str(), db);
     if (rc != SQLITE_OK) {
-        std::cerr << "Erro ao abrir o banco de dados: " << sqlite3_errmsg(*db) << std::endl;
+        cout << "Erro ao abrir o banco de dados: " << sqlite3_errmsg(*db) << endl;
         return false;
     }
     return true;
@@ -17,17 +17,17 @@ void desconectar(sqlite3 *db) {
 
 bool executar(sqlite3 *db, const std::string &sql) {
     sqlite3_stmt *stmt;
-    int rc = sqlite3_prepare_v2(db, sql.c_str(), -1, &stmt, 0);
+    int rc = sqlite3_prepare_v2(db, sql.c_str(), -1, &stmt, nullptr);
 
     if (rc != SQLITE_OK) {
-        std::cerr << "Erro ao preparar a consulta: " << sqlite3_errmsg(db) << std::endl;
+        cout << "Erro ao preparar a consulta: " << sqlite3_errmsg(db) << endl;
         return false;
     }
 
     rc = sqlite3_step(stmt);
 
     if (rc != SQLITE_DONE) {
-        std::cerr << "Erro ao executar a consulta: " << sqlite3_errmsg(db) << std::endl;
+        cout << "Erro ao executar a consulta: " << sqlite3_errmsg(db) << endl;
         sqlite3_finalize(stmt);
         return false;
     }
@@ -42,10 +42,10 @@ bool ContainerConta::incluir(const Conta &conta) {
         return false;
     }
 
-    std::string sql = "INSERT INTO conta (nome, email, senha) VALUES ('" +
-                      conta.getNome().getValor() + "', '" +
-                      conta.getEmail().getValor() + "', '" +
-                      conta.getSenha().getValor() + "')";
+    std::string sql = "INSERT INTO conta (nome, email, senha) VALUES ('"
+                      + conta.getNome().getValor() + "', '"
+                      + conta.getEmail().getValor() + "', '"
+                      + conta.getSenha().getValor() + "')";
 
     bool result = executar(db, sql);
 
@@ -59,7 +59,8 @@ bool ContainerConta::remover(const Email &email) {
         return false;
     }
 
-    std::string sql = "DELETE FROM conta WHERE email = '" + email.getValor() + "'";
+    std::string sql = "DELETE FROM conta WHERE email = '"
+                      + email.getValor() + "'";
 
     bool result = executar(db, sql);
 
@@ -73,20 +74,21 @@ bool ContainerConta::pesquisar(Conta *conta) {
         return false;
     }
 
-    std::string sql = "SELECT nome, email, senha FROM conta WHERE email = '" + conta->getEmail().getValor() + "'";
+    std::string sql = "SELECT nome, email, senha FROM conta WHERE email = '"
+                      + conta->getEmail().getValor() + "'";
 
     sqlite3_stmt *stmt;
-    int rc = sqlite3_prepare_v2(db, sql.c_str(), -1, &stmt, 0);
+    int rc = sqlite3_prepare_v2(db, sql.c_str(), -1, &stmt, nullptr);
 
     if (rc != SQLITE_OK) {
-        std::cerr << "Erro ao preparar a consulta: " << sqlite3_errmsg(db) << std::endl;
+        cout << "Erro ao preparar a consulta: " << sqlite3_errmsg(db) << endl;
         return false;
     }
 
     rc = sqlite3_step(stmt);
 
     if (rc != SQLITE_ROW) {
-        std::cerr << "Erro ao executar a consulta: " << sqlite3_errmsg(db) << std::endl;
+        cout << "Erro ao executar a consulta: " << sqlite3_errmsg(db) << endl;
         sqlite3_finalize(stmt);
         return false;
     }
@@ -101,8 +103,10 @@ bool ContainerConta::atualizar(const Conta &conta) {
         return false;
     }
 
-    std::string sql = "UPDATE conta SET nome = '" + conta.getNome().getValor() + "', senha = '" +
-                      conta.getSenha().getValor() + "' WHERE email = '" + conta.getEmail().getValor() + "'";
+    std::string sql = "UPDATE conta SET nome = '"
+                      + conta.getNome().getValor() + "', senha = '"
+                      + conta.getSenha().getValor() + "' WHERE email = '"
+                      + conta.getEmail().getValor() + "'";
 
     bool result = executar(db, sql);
 

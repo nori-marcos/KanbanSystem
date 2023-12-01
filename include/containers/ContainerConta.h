@@ -11,7 +11,7 @@
 class ContainerConta {
 public:
 
-    bool incluir(const Conta &);
+    static bool incluir(const Conta &);
 
     static bool remover(const Email &);
 

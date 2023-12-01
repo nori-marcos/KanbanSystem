@@ -328,11 +328,10 @@
 	"include/entidades/Conta.h"
 	"include/sqlite3.h"
 
-1701466862 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/containers/ContainerConta.cpp
+1701468252 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/containers/ContainerConta.cpp
 	"include/containers/ContainerConta.h"
 	"include/sqlite3.h"
 	<iostream>
-	<string>
 
 1701452119 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/controladoras/CntrAInterface.cpp
 	"include/controladoras/CntrAInterface.h"
