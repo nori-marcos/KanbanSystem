@@ -104,9 +104,12 @@ bool ContainerConta::atualizar(const Conta &conta) {
     }
 
     std::string sql = "UPDATE conta SET nome = '"
-                      + conta.getNome().getValor() + "', senha = '"
-                      + conta.getSenha().getValor() + "' WHERE email = '"
-                      + conta.getEmail().getValor() + "'";
+                      + conta.getNome().getValor()
+                      + "', senha = '"
+                      + conta.getSenha().getValor()
+                      + "' WHERE email = '"
+                      + conta.getEmail().getValor()
+                      + "'";
 
     bool result = executar(db, sql);
 
