@@ -12,7 +12,7 @@ void Texto::validarTexto(const string& texto) {
     bool comecaComLetraMaiscula = false;
 
     if (tamanho < 5 || tamanho > 30) {
-        throw invalid_argument("Texto deve ter entre 5 e 30 caracteres");
+        throw invalid_argument(texto.c_str() + string(" não possui tamanho válido. Texto deve ter entre 5 e 30 caracteres"));
     }
 
     for (size_t i = 0; i < tamanho; i++) {
@@ -34,7 +34,7 @@ void Texto::validarTexto(const string& texto) {
     }
 
     if (!comecaComLetraMaiscula) {
-        throw invalid_argument("Texto deve começar com letra maiúscula");
+        throw invalid_argument(texto.c_str() + string(" não começa com letra maiúscula"));
     }
 }
 

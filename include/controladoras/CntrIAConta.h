@@ -8,9 +8,13 @@ class CntrIAConta : public IAConta {
 private:
     ISConta *cntrISConta;
 public:
-    bool cadastrar();
+    bool incluir();
 
-    bool executar();
+    bool remover();
+
+    bool atualizar();
+
+    bool pesquisar();
 
     void setCntrIAConta(ISConta *cntrISConta) {
         this->cntrISConta = cntrISConta;

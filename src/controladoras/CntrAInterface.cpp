@@ -16,8 +16,11 @@ void CntrAInterface::executar() {
         switch (campo) {
             case 1:
                 if (cntrIAAutenticacao->autenticar(&email)) {
-                    bool apresentar = true;
-                    while (apresentar) {
+                    cout << "----------------------------------------" << endl;
+                    cout << "Autenticação realizada com sucesso." << endl;
+
+                    bool apresentarSessao = true;
+                    while (apresentarSessao) {
                         cout << "----------------------------------------" << endl;
                         cout << "Selecione um dos serviços:" << endl;
                         cout << "1 - Gerenciar conta" << endl;
@@ -27,13 +30,50 @@ void CntrAInterface::executar() {
 
                         switch (campo) {
                             case 1:
-                                cout << "Serviço não implementado." << endl;
+                                while (apresentarSessao) {
+                                    cout << "----------------------------------------" << endl;
+                                    cout << "Selecione um dos serviços de conta:" << endl;
+                                    cout << "1 - Pesquisar conta" << endl;
+                                    cout << "2 - Atualizar conta" << endl;
+                                    cout << "3 - Remover conta" << endl;
+                                    cout << "4 - Voltar" << endl;
+                                    cin >> campo;
+
+                                    switch (campo) {
+                                        case 1:
+                                            if(cntrIAConta->pesquisar()){
+                                                cout << "Conta encontrada." << endl;
+                                            } else {
+                                                cout << "Conta não encontrada." << endl;
+                                            }
+                                            break;
+                                        case 2:
+                                            if(cntrIAConta->atualizar()){
+                                                cout << "Conta atualizada." << endl;
+                                            } else {
+                                                cout << "Conta não atualizada." << endl;
+                                            }
+                                            break;
+                                        case 3:
+                                            if(cntrIAConta->remover()){
+                                                cout << "Conta removida." << endl;
+                                            } else {
+                                                cout << "Conta não removida." << endl;
+                                            }
+                                            break;
+                                        case 4:
+                                            apresentarSessao = false;
+                                            break;
+                                        default:
+                                            break;
+                                    }
+                                }
                                 break;
                             case 2:
                                 cout << "Serviço não implementado." << endl;
                                 break;
                             case 3:
-                                apresentar = false;
+                                apresentarSessao = false;
                                 break;
                             default:
                                 break;
@@ -45,7 +85,7 @@ void CntrAInterface::executar() {
                 }
                 break;
             case 2:
-                if (cntrIAConta->cadastrar()) {
+                if (cntrIAConta->incluir()) {
                     cout << "Conta criada com sucesso." << endl;
                 } else {
                     cout << "Falha ao criar conta." << endl;
@@ -59,4 +99,3 @@ void CntrAInterface::executar() {
         }
     }
 }
-

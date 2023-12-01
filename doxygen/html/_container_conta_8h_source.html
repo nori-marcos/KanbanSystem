@@ -97,19 +97,17 @@ $(document).ready(function(){initNavTree('_container_conta_8h_source.html',''); 
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;include/entidades/Conta.h&quot;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
 <div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_container_conta.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_container_conta.html">ContainerConta</a> {</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    map&lt;string, Conta&gt; container;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">bool</span> incluir(<a class="code" href="class_conta.html">Conta</a>);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> incluir(<span class="keyword">const</span> <a class="code" href="class_conta.html">Conta</a>&amp;);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> remover(<span class="keyword">const</span> <a class="code" href="class_email.html">Email</a>&amp;);</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">bool</span> remover(<a class="code" href="class_email.html">Email</a>);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> pesquisar(<a class="code" href="class_conta.html">Conta</a> *);</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">bool</span> pesquisar(<a class="code" href="class_conta.html">Conta</a> *);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">bool</span> atualizar(<a class="code" href="class_conta.html">Conta</a>);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;};</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#endif </span><span class="comment">//KANBANSYSTEM_CONTAINERCONTA_H</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> atualizar(<span class="keyword">const</span> <a class="code" href="class_conta.html">Conta</a>&amp;);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;};</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#endif </span><span class="comment">//KANBANSYSTEM_CONTAINERCONTA_H</span></div>
 <div class="ttc" id="aclass_conta_html"><div class="ttname"><a href="class_conta.html">Conta</a></div><div class="ttdef"><b>Definition:</b> Conta.h:17</div></div>
 <div class="ttc" id="aclass_container_conta_html"><div class="ttname"><a href="class_container_conta.html">ContainerConta</a></div><div class="ttdef"><b>Definition:</b> ContainerConta.h:12</div></div>
 <div class="ttc" id="aclass_email_html"><div class="ttname"><a href="class_email.html">Email</a></div><div class="ttdef"><b>Definition:</b> Email.h:20</div></div>
@@ -119,7 +117,7 @@ $(document).ready(function(){initNavTree('_container_conta_8h_source.html',''); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c35e9bb330ad51bde60aaf7a3563beec.html">containers</a></li><li class="navelem"><b>ContainerConta.h</b></li>
-    <li class="footer">Generated on Thu Nov 30 2023 18:15:52 for KanbanSystem by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Dec 1 2023 17:24:15 for KanbanSystem by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

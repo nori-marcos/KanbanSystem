@@ -3,8 +3,10 @@ project(KanbanSystem)
 
 set(CMAKE_CXX_STANDARD 14)
 
-include_directories(.)
+find_package(SQLite3 REQUIRED)
 
+include_directories(.)
+configure_file(${CMAKE_SOURCE_DIR}/kanban.db ${CMAKE_BINARY_DIR}/kanban.db COPYONLY)
 
 add_executable(KanbanSystem
         src/dominios/Coluna.cpp
@@ -61,5 +63,7 @@ add_executable(KanbanSystem
         src/controladoras/CntrIAConta.cpp
         include/controladoras/CntrISConta.h
         src/controladoras/CntrISConta.cpp
+        include/sqlite3.h
 )
 
+target_link_libraries(KanbanSystem sqlite3)

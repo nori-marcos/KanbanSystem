@@ -24,9 +24,13 @@ public:
 
 class IAConta {
 public:
-    virtual bool cadastrar() = 0;
+    virtual bool incluir() = 0;
 
-    virtual bool executar() = 0;
+    virtual bool remover() = 0;
+
+    virtual bool atualizar() = 0;
+
+    virtual bool pesquisar() = 0;
 
     virtual void setCntrIAConta(ISConta *) = 0;
 

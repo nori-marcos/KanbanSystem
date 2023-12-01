@@ -85,71 +85,74 @@ $(document).ready(function(){initNavTree('_conta_8h_source.html',''); initResiza
 <div class="title">Conta.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef KANBANSYSTEM_CONTA_H</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define KANBANSYSTEM_CONTA_H</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//Marcos Noriyuki Miyata 18/0126890</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//Delma Nogueira  de Jesus 22/2035705</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;include/dominios/Texto.h&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;include/dominios/Senha.h&quot;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;include/dominios/Email.h&quot;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_conta.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_conta.html">Conta</a> {</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="class_email.html">Email</a> email;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_texto.html">Texto</a> nome;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="class_senha.html">Senha</a> senha;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_conta.html#ae0582f58604a569340e353c4e29c7b65">   22</a></span>&#160;    <a class="code" href="class_conta.html#ae0582f58604a569340e353c4e29c7b65">Conta</a>(<span class="keyword">const</span> <a class="code" href="class_email.html">Email</a> &amp;email, <span class="keyword">const</span> <a class="code" href="class_texto.html">Texto</a> &amp;nome, <span class="keyword">const</span> <a class="code" href="class_senha.html">Senha</a> &amp;senha);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_conta.html#a2941c3363af5096d1c0b1c08b8c09b64">   25</a></span>&#160;    <a class="code" href="class_conta.html#a2941c3363af5096d1c0b1c08b8c09b64">Conta</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#ifndef KANBANSYSTEM_CONTA_H</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#define KANBANSYSTEM_CONTA_H</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;include/dominios/Texto.h&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;include/dominios/Senha.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;include/dominios/Email.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_conta.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_conta.html">Conta</a> {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="class_email.html">Email</a> email;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="class_texto.html">Texto</a> nome;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="class_senha.html">Senha</a> senha;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_conta.html#ae0582f58604a569340e353c4e29c7b65">   25</a></span>&#160;    <a class="code" href="class_conta.html#ae0582f58604a569340e353c4e29c7b65">Conta</a>(<span class="keyword">const</span> <a class="code" href="class_email.html">Email</a> &amp;email, <span class="keyword">const</span> <a class="code" href="class_texto.html">Texto</a> &amp;nome, <span class="keyword">const</span> <a class="code" href="class_senha.html">Senha</a> &amp;senha);</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_conta.html#a2d23f7d073b17f3b70fdceda27b6ea8a">   28</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_conta.html#a2d23f7d073b17f3b70fdceda27b6ea8a">setValor</a>(<span class="keyword">const</span> <a class="code" href="class_email.html">Email</a> &amp;newEmail) {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        this-&gt;email = newEmail;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    };</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_conta.html#a86f53ad3d4bf9c8aceb129e4c6ac6ae7">   33</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_conta.html#a86f53ad3d4bf9c8aceb129e4c6ac6ae7">setNome</a>(<span class="keyword">const</span> <a class="code" href="class_texto.html">Texto</a> &amp;newNome) {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        this-&gt;nome = newNome;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    };</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_conta.html#ac107edf89b42ad0e179d17b54f2c100e">   38</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_conta.html#ac107edf89b42ad0e179d17b54f2c100e">setValor</a>(<span class="keyword">const</span> <a class="code" href="class_senha.html">Senha</a> &amp;newSenha) {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        this-&gt;senha = newSenha;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    };</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_conta.html#a88123b43dd9ca0763bc0f0d4eb5119db">   43</a></span>&#160;    <a class="code" href="class_email.html">Email</a> <a class="code" href="class_conta.html#a88123b43dd9ca0763bc0f0d4eb5119db">getValor</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">return</span> email;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    };</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_conta.html#a29ad8f3aba97d262de3aa870fb20dfcf">   48</a></span>&#160;    <a class="code" href="class_texto.html">Texto</a> <a class="code" href="class_conta.html#a29ad8f3aba97d262de3aa870fb20dfcf">getNome</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">return</span> nome;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    };</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_conta.html#aa36f37646e006dc200f82bc9f384d79b">   53</a></span>&#160;    <a class="code" href="class_senha.html">Senha</a> <a class="code" href="class_conta.html#aa36f37646e006dc200f82bc9f384d79b">getValor</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">return</span> senha;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    };</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;};</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif </span><span class="comment">//KANBANSYSTEM_CONTA_H</span></div>
-<div class="ttc" id="aclass_conta_html"><div class="ttname"><a href="class_conta.html">Conta</a></div><div class="ttdef"><b>Definition:</b> Conta.h:14</div></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_conta.html#a2941c3363af5096d1c0b1c08b8c09b64">   28</a></span>&#160;    <a class="code" href="class_conta.html#a2941c3363af5096d1c0b1c08b8c09b64">Conta</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_conta.html#a2d23f7d073b17f3b70fdceda27b6ea8a">   31</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_conta.html#a2d23f7d073b17f3b70fdceda27b6ea8a">setEmail</a>(<span class="keyword">const</span> <a class="code" href="class_email.html">Email</a> &amp;newEmail) {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        this-&gt;email = newEmail;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    };</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_conta.html#a86f53ad3d4bf9c8aceb129e4c6ac6ae7">   36</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_conta.html#a86f53ad3d4bf9c8aceb129e4c6ac6ae7">setNome</a>(<span class="keyword">const</span> <a class="code" href="class_texto.html">Texto</a> &amp;newNome) {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        this-&gt;nome = newNome;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    };</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_conta.html#ac107edf89b42ad0e179d17b54f2c100e">   41</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_conta.html#ac107edf89b42ad0e179d17b54f2c100e">setSenha</a>(<span class="keyword">const</span> <a class="code" href="class_senha.html">Senha</a> &amp;newSenha) {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        this-&gt;senha = newSenha;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    };</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_conta.html#a88123b43dd9ca0763bc0f0d4eb5119db">   46</a></span>&#160;    <a class="code" href="class_email.html">Email</a> <a class="code" href="class_conta.html#a88123b43dd9ca0763bc0f0d4eb5119db">getEmail</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordflow">return</span> email;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    };</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_conta.html#a29ad8f3aba97d262de3aa870fb20dfcf">   51</a></span>&#160;    <a class="code" href="class_texto.html">Texto</a> <a class="code" href="class_conta.html#a29ad8f3aba97d262de3aa870fb20dfcf">getNome</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">return</span> nome;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    };</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_conta.html#aa36f37646e006dc200f82bc9f384d79b">   56</a></span>&#160;    <a class="code" href="class_senha.html">Senha</a> <a class="code" href="class_conta.html#aa36f37646e006dc200f82bc9f384d79b">getSenha</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordflow">return</span> senha;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    };</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;};</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif </span><span class="comment">//KANBANSYSTEM_CONTA_H</span></div>
+<div class="ttc" id="aclass_conta_html"><div class="ttname"><a href="class_conta.html">Conta</a></div><div class="ttdef"><b>Definition:</b> Conta.h:17</div></div>
 <div class="ttc" id="aclass_conta_html_a2941c3363af5096d1c0b1c08b8c09b64"><div class="ttname"><a href="class_conta.html#a2941c3363af5096d1c0b1c08b8c09b64">Conta::Conta</a></div><div class="ttdeci">Conta()=default</div><div class="ttdoc">Inicializa o objeto com os valores vazios.</div></div>
-<div class="ttc" id="aclass_conta_html_a29ad8f3aba97d262de3aa870fb20dfcf"><div class="ttname"><a href="class_conta.html#a29ad8f3aba97d262de3aa870fb20dfcf">Conta::getNome</a></div><div class="ttdeci">Texto getNome() const</div><div class="ttdoc">Retorna o nome do objeto.</div><div class="ttdef"><b>Definition:</b> Conta.h:48</div></div>
-<div class="ttc" id="aclass_conta_html_a2d23f7d073b17f3b70fdceda27b6ea8a"><div class="ttname"><a href="class_conta.html#a2d23f7d073b17f3b70fdceda27b6ea8a">Conta::setValor</a></div><div class="ttdeci">void setValor(const Email &amp;newEmail)</div><div class="ttdoc">Atribui um novo email ao objeto.</div><div class="ttdef"><b>Definition:</b> Conta.h:28</div></div>
-<div class="ttc" id="aclass_conta_html_a86f53ad3d4bf9c8aceb129e4c6ac6ae7"><div class="ttname"><a href="class_conta.html#a86f53ad3d4bf9c8aceb129e4c6ac6ae7">Conta::setNome</a></div><div class="ttdeci">void setNome(const Texto &amp;newNome)</div><div class="ttdoc">Atribui um novo nome ao objeto.</div><div class="ttdef"><b>Definition:</b> Conta.h:33</div></div>
-<div class="ttc" id="aclass_conta_html_a88123b43dd9ca0763bc0f0d4eb5119db"><div class="ttname"><a href="class_conta.html#a88123b43dd9ca0763bc0f0d4eb5119db">Conta::getValor</a></div><div class="ttdeci">Email getValor() const</div><div class="ttdoc">Retorna o email do objeto.</div><div class="ttdef"><b>Definition:</b> Conta.h:43</div></div>
-<div class="ttc" id="aclass_conta_html_aa36f37646e006dc200f82bc9f384d79b"><div class="ttname"><a href="class_conta.html#aa36f37646e006dc200f82bc9f384d79b">Conta::getValor</a></div><div class="ttdeci">Senha getValor() const</div><div class="ttdoc">Retorna a senha do objeto.</div><div class="ttdef"><b>Definition:</b> Conta.h:53</div></div>
-<div class="ttc" id="aclass_conta_html_ac107edf89b42ad0e179d17b54f2c100e"><div class="ttname"><a href="class_conta.html#ac107edf89b42ad0e179d17b54f2c100e">Conta::setValor</a></div><div class="ttdeci">void setValor(const Senha &amp;newSenha)</div><div class="ttdoc">Atribui uma nova senha ao objeto.</div><div class="ttdef"><b>Definition:</b> Conta.h:38</div></div>
+<div class="ttc" id="aclass_conta_html_a29ad8f3aba97d262de3aa870fb20dfcf"><div class="ttname"><a href="class_conta.html#a29ad8f3aba97d262de3aa870fb20dfcf">Conta::getNome</a></div><div class="ttdeci">Texto getNome() const</div><div class="ttdoc">Retorna o nome do objeto.</div><div class="ttdef"><b>Definition:</b> Conta.h:51</div></div>
+<div class="ttc" id="aclass_conta_html_a2d23f7d073b17f3b70fdceda27b6ea8a"><div class="ttname"><a href="class_conta.html#a2d23f7d073b17f3b70fdceda27b6ea8a">Conta::setEmail</a></div><div class="ttdeci">void setEmail(const Email &amp;newEmail)</div><div class="ttdoc">Atribui um novo email ao objeto.</div><div class="ttdef"><b>Definition:</b> Conta.h:31</div></div>
+<div class="ttc" id="aclass_conta_html_a86f53ad3d4bf9c8aceb129e4c6ac6ae7"><div class="ttname"><a href="class_conta.html#a86f53ad3d4bf9c8aceb129e4c6ac6ae7">Conta::setNome</a></div><div class="ttdeci">void setNome(const Texto &amp;newNome)</div><div class="ttdoc">Atribui um novo nome ao objeto.</div><div class="ttdef"><b>Definition:</b> Conta.h:36</div></div>
+<div class="ttc" id="aclass_conta_html_a88123b43dd9ca0763bc0f0d4eb5119db"><div class="ttname"><a href="class_conta.html#a88123b43dd9ca0763bc0f0d4eb5119db">Conta::getEmail</a></div><div class="ttdeci">Email getEmail() const</div><div class="ttdoc">Retorna o email do objeto.</div><div class="ttdef"><b>Definition:</b> Conta.h:46</div></div>
+<div class="ttc" id="aclass_conta_html_aa36f37646e006dc200f82bc9f384d79b"><div class="ttname"><a href="class_conta.html#aa36f37646e006dc200f82bc9f384d79b">Conta::getSenha</a></div><div class="ttdeci">Senha getSenha() const</div><div class="ttdoc">Retorna a senha do objeto.</div><div class="ttdef"><b>Definition:</b> Conta.h:56</div></div>
+<div class="ttc" id="aclass_conta_html_ac107edf89b42ad0e179d17b54f2c100e"><div class="ttname"><a href="class_conta.html#ac107edf89b42ad0e179d17b54f2c100e">Conta::setSenha</a></div><div class="ttdeci">void setSenha(const Senha &amp;newSenha)</div><div class="ttdoc">Atribui uma nova senha ao objeto.</div><div class="ttdef"><b>Definition:</b> Conta.h:41</div></div>
 <div class="ttc" id="aclass_conta_html_ae0582f58604a569340e353c4e29c7b65"><div class="ttname"><a href="class_conta.html#ae0582f58604a569340e353c4e29c7b65">Conta::Conta</a></div><div class="ttdeci">Conta(const Email &amp;email, const Texto &amp;nome, const Senha &amp;senha)</div><div class="ttdoc">Inicializa o objeto com os valores passados por parâmetro.</div></div>
-<div class="ttc" id="aclass_email_html"><div class="ttname"><a href="class_email.html">Email</a></div><div class="ttdef"><b>Definition:</b> Email.h:18</div></div>
-<div class="ttc" id="aclass_senha_html"><div class="ttname"><a href="class_senha.html">Senha</a></div><div class="ttdef"><b>Definition:</b> Senha.h:15</div></div>
-<div class="ttc" id="aclass_texto_html"><div class="ttname"><a href="class_texto.html">Texto</a></div><div class="ttdef"><b>Definition:</b> Texto.h:18</div></div>
+<div class="ttc" id="aclass_email_html"><div class="ttname"><a href="class_email.html">Email</a></div><div class="ttdef"><b>Definition:</b> Email.h:20</div></div>
+<div class="ttc" id="aclass_senha_html"><div class="ttname"><a href="class_senha.html">Senha</a></div><div class="ttdef"><b>Definition:</b> Senha.h:18</div></div>
+<div class="ttc" id="aclass_texto_html"><div class="ttname"><a href="class_texto.html">Texto</a></div><div class="ttdef"><b>Definition:</b> Texto.h:21</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_b6fe58feaf6db8197458bb99298aea1c.html">entidades</a></li><li class="navelem"><b>Conta.h</b></li>
-    <li class="footer">Generated on Thu Oct 19 2023 20:50:10 for KanbanSystem by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Dec 1 2023 17:24:15 for KanbanSystem by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

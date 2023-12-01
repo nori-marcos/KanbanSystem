@@ -19,7 +19,7 @@ bool CntrIAAutenticacao::autenticar(Email *email) {
             break;
         } catch (invalid_argument &exp) {
             cout << "----------------------------------------" << endl;
-            cout << "Dado em formato incorreto. Digite qualquer tecla para continuar." << endl;
+            cout << "Dado em formato incorreto." << endl;
             cout << exp.what() << endl;
         }
     }

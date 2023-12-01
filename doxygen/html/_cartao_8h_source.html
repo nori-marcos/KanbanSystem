@@ -85,84 +85,87 @@ $(document).ready(function(){initNavTree('_cartao_8h_source.html',''); initResiz
 <div class="title">Cartao.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef KANBANSYSTEM_CARTAO_H</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define KANBANSYSTEM_CARTAO_H</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//Marcos Noriyuki Miyata 18/0126890</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//Luis Henrique Wiltgen de Toledo 22/1003968</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;include/dominios/Texto.h&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;include/dominios/Coluna.h&quot;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;include/dominios/Codigo.h&quot;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_cartao.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_cartao.html">Cartao</a> {</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_codigo.html">Codigo</a> codigo;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="class_texto.html">Texto</a> nome;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="class_texto.html">Texto</a> descricao;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="class_coluna.html">Coluna</a> coluna;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_cartao.html#a835ee09bb49469ee9b51f1648e4d00bf">   27</a></span>&#160;    <a class="code" href="class_cartao.html#a835ee09bb49469ee9b51f1648e4d00bf">Cartao</a>(<span class="keyword">const</span> <a class="code" href="class_codigo.html">Codigo</a> &amp;codigo, <span class="keyword">const</span> <a class="code" href="class_texto.html">Texto</a> &amp;nome, <span class="keyword">const</span> <a class="code" href="class_texto.html">Texto</a> &amp;descricao, <span class="keyword">const</span> <a class="code" href="class_coluna.html">Coluna</a> &amp;coluna);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_cartao.html#a3ceadec7ff88b1c925ccf4deb316795b">   30</a></span>&#160;    <a class="code" href="class_cartao.html#a3ceadec7ff88b1c925ccf4deb316795b">Cartao</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#ifndef KANBANSYSTEM_CARTAO_H</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#define KANBANSYSTEM_CARTAO_H</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;include/dominios/Texto.h&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;include/dominios/Coluna.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;include/dominios/Codigo.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_cartao.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_cartao.html">Cartao</a> {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="class_codigo.html">Codigo</a> codigo;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="class_texto.html">Texto</a> nome;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="class_texto.html">Texto</a> descricao;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="class_coluna.html">Coluna</a> coluna;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_cartao.html#a835ee09bb49469ee9b51f1648e4d00bf">   30</a></span>&#160;    <a class="code" href="class_cartao.html#a835ee09bb49469ee9b51f1648e4d00bf">Cartao</a>(<span class="keyword">const</span> <a class="code" href="class_codigo.html">Codigo</a> &amp;codigo, <span class="keyword">const</span> <a class="code" href="class_texto.html">Texto</a> &amp;nome, <span class="keyword">const</span> <a class="code" href="class_texto.html">Texto</a> &amp;descricao, <span class="keyword">const</span> <a class="code" href="class_coluna.html">Coluna</a> &amp;coluna);</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_cartao.html#a6df306eb6b04bc3e10f638da193b08a0">   33</a></span>&#160;    <a class="code" href="class_codigo.html">Codigo</a> <a class="code" href="class_cartao.html#a6df306eb6b04bc3e10f638da193b08a0">getValor</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordflow">return</span> codigo;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    };</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_cartao.html#a4263cb9948c3152f9d4f8f733624697e">   38</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_cartao.html#a4263cb9948c3152f9d4f8f733624697e">setValor</a>(<a class="code" href="class_codigo.html">Codigo</a> &amp;newCodigo) {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        this-&gt;codigo = newCodigo;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    };</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_cartao.html#a174544a1f95ad29b973f44d2eba5b98b">   43</a></span>&#160;    <a class="code" href="class_texto.html">Texto</a> <a class="code" href="class_cartao.html#a174544a1f95ad29b973f44d2eba5b98b">getNome</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">return</span> nome;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    };</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_cartao.html#a0e8cb91e4f5e98336ad3fc051d634cf8">   48</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_cartao.html#a0e8cb91e4f5e98336ad3fc051d634cf8">setNome</a>(<a class="code" href="class_texto.html">Texto</a> &amp;newNome) {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        this-&gt;nome = newNome;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    };</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_cartao.html#af414ab91d70756e911079ad2ecb96199">   53</a></span>&#160;    <a class="code" href="class_texto.html">Texto</a> <a class="code" href="class_cartao.html#af414ab91d70756e911079ad2ecb96199">getDescricao</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">return</span> descricao;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    };</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_cartao.html#a3a9ebca830c0e7049d6241dc6cf1b03d">   58</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_cartao.html#a3a9ebca830c0e7049d6241dc6cf1b03d">setDescricao</a>(<a class="code" href="class_texto.html">Texto</a> &amp;newDescricao) {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        this-&gt;descricao = newDescricao;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    };</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="class_cartao.html#a27770a00e550ee4df36bc19f4c324fa1">   63</a></span>&#160;    <a class="code" href="class_coluna.html">Coluna</a> <a class="code" href="class_cartao.html#a27770a00e550ee4df36bc19f4c324fa1">getColuna</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">return</span> coluna;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    };</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="class_cartao.html#a02efe8a7bde83f76ae4cf124f15faa4a">   68</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_cartao.html#a02efe8a7bde83f76ae4cf124f15faa4a">setColuna</a>(<a class="code" href="class_coluna.html">Coluna</a> &amp;newColuna) {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        this-&gt;coluna = newColuna;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    };</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;};</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif </span><span class="comment">//KANBANSYSTEM_CARTAO_H</span></div>
-<div class="ttc" id="aclass_cartao_html"><div class="ttname"><a href="class_cartao.html">Cartao</a></div><div class="ttdef"><b>Definition:</b> Cartao.h:15</div></div>
-<div class="ttc" id="aclass_cartao_html_a02efe8a7bde83f76ae4cf124f15faa4a"><div class="ttname"><a href="class_cartao.html#a02efe8a7bde83f76ae4cf124f15faa4a">Cartao::setColuna</a></div><div class="ttdeci">void setColuna(Coluna &amp;newColuna)</div><div class="ttdoc">Atribui uma nova coluna ao cartão.</div><div class="ttdef"><b>Definition:</b> Cartao.h:68</div></div>
-<div class="ttc" id="aclass_cartao_html_a0e8cb91e4f5e98336ad3fc051d634cf8"><div class="ttname"><a href="class_cartao.html#a0e8cb91e4f5e98336ad3fc051d634cf8">Cartao::setNome</a></div><div class="ttdeci">void setNome(Texto &amp;newNome)</div><div class="ttdoc">Atribui um novo nome ao cartão.</div><div class="ttdef"><b>Definition:</b> Cartao.h:48</div></div>
-<div class="ttc" id="aclass_cartao_html_a174544a1f95ad29b973f44d2eba5b98b"><div class="ttname"><a href="class_cartao.html#a174544a1f95ad29b973f44d2eba5b98b">Cartao::getNome</a></div><div class="ttdeci">Texto getNome() const</div><div class="ttdoc">Retorna o nome do cartão.</div><div class="ttdef"><b>Definition:</b> Cartao.h:43</div></div>
-<div class="ttc" id="aclass_cartao_html_a27770a00e550ee4df36bc19f4c324fa1"><div class="ttname"><a href="class_cartao.html#a27770a00e550ee4df36bc19f4c324fa1">Cartao::getColuna</a></div><div class="ttdeci">Coluna getColuna() const</div><div class="ttdoc">Retorna a coluna do cartão.</div><div class="ttdef"><b>Definition:</b> Cartao.h:63</div></div>
-<div class="ttc" id="aclass_cartao_html_a3a9ebca830c0e7049d6241dc6cf1b03d"><div class="ttname"><a href="class_cartao.html#a3a9ebca830c0e7049d6241dc6cf1b03d">Cartao::setDescricao</a></div><div class="ttdeci">void setDescricao(Texto &amp;newDescricao)</div><div class="ttdoc">Atribui uma nova descrição ao cartão.</div><div class="ttdef"><b>Definition:</b> Cartao.h:58</div></div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_cartao.html#a3ceadec7ff88b1c925ccf4deb316795b">   33</a></span>&#160;    <a class="code" href="class_cartao.html#a3ceadec7ff88b1c925ccf4deb316795b">Cartao</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_cartao.html#a6df306eb6b04bc3e10f638da193b08a0">   36</a></span>&#160;    <a class="code" href="class_codigo.html">Codigo</a> <a class="code" href="class_cartao.html#a6df306eb6b04bc3e10f638da193b08a0">getCodigo</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">return</span> codigo;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    };</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_cartao.html#a4263cb9948c3152f9d4f8f733624697e">   41</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_cartao.html#a4263cb9948c3152f9d4f8f733624697e">setCodigo</a>(<a class="code" href="class_codigo.html">Codigo</a> &amp;newCodigo) {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        this-&gt;codigo = newCodigo;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    };</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_cartao.html#a174544a1f95ad29b973f44d2eba5b98b">   46</a></span>&#160;    <a class="code" href="class_texto.html">Texto</a> <a class="code" href="class_cartao.html#a174544a1f95ad29b973f44d2eba5b98b">getNome</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordflow">return</span> nome;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    };</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_cartao.html#a0e8cb91e4f5e98336ad3fc051d634cf8">   51</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_cartao.html#a0e8cb91e4f5e98336ad3fc051d634cf8">setNome</a>(<a class="code" href="class_texto.html">Texto</a> &amp;newNome) {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        this-&gt;nome = newNome;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    };</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_cartao.html#af414ab91d70756e911079ad2ecb96199">   56</a></span>&#160;    <a class="code" href="class_texto.html">Texto</a> <a class="code" href="class_cartao.html#af414ab91d70756e911079ad2ecb96199">getDescricao</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordflow">return</span> descricao;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    };</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="class_cartao.html#a3a9ebca830c0e7049d6241dc6cf1b03d">   61</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_cartao.html#a3a9ebca830c0e7049d6241dc6cf1b03d">setDescricao</a>(<a class="code" href="class_texto.html">Texto</a> &amp;newDescricao) {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        this-&gt;descricao = newDescricao;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    };</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="class_cartao.html#a27770a00e550ee4df36bc19f4c324fa1">   66</a></span>&#160;    <a class="code" href="class_coluna.html">Coluna</a> <a class="code" href="class_cartao.html#a27770a00e550ee4df36bc19f4c324fa1">getColuna</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">return</span> coluna;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    };</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="class_cartao.html#a02efe8a7bde83f76ae4cf124f15faa4a">   71</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_cartao.html#a02efe8a7bde83f76ae4cf124f15faa4a">setColuna</a>(<a class="code" href="class_coluna.html">Coluna</a> &amp;newColuna) {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        this-&gt;coluna = newColuna;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    };</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;};</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#endif </span><span class="comment">//KANBANSYSTEM_CARTAO_H</span></div>
+<div class="ttc" id="aclass_cartao_html"><div class="ttname"><a href="class_cartao.html">Cartao</a></div><div class="ttdef"><b>Definition:</b> Cartao.h:18</div></div>
+<div class="ttc" id="aclass_cartao_html_a02efe8a7bde83f76ae4cf124f15faa4a"><div class="ttname"><a href="class_cartao.html#a02efe8a7bde83f76ae4cf124f15faa4a">Cartao::setColuna</a></div><div class="ttdeci">void setColuna(Coluna &amp;newColuna)</div><div class="ttdoc">Atribui uma nova coluna ao cartão.</div><div class="ttdef"><b>Definition:</b> Cartao.h:71</div></div>
+<div class="ttc" id="aclass_cartao_html_a0e8cb91e4f5e98336ad3fc051d634cf8"><div class="ttname"><a href="class_cartao.html#a0e8cb91e4f5e98336ad3fc051d634cf8">Cartao::setNome</a></div><div class="ttdeci">void setNome(Texto &amp;newNome)</div><div class="ttdoc">Atribui um novo nome ao cartão.</div><div class="ttdef"><b>Definition:</b> Cartao.h:51</div></div>
+<div class="ttc" id="aclass_cartao_html_a174544a1f95ad29b973f44d2eba5b98b"><div class="ttname"><a href="class_cartao.html#a174544a1f95ad29b973f44d2eba5b98b">Cartao::getNome</a></div><div class="ttdeci">Texto getNome() const</div><div class="ttdoc">Retorna o nome do cartão.</div><div class="ttdef"><b>Definition:</b> Cartao.h:46</div></div>
+<div class="ttc" id="aclass_cartao_html_a27770a00e550ee4df36bc19f4c324fa1"><div class="ttname"><a href="class_cartao.html#a27770a00e550ee4df36bc19f4c324fa1">Cartao::getColuna</a></div><div class="ttdeci">Coluna getColuna() const</div><div class="ttdoc">Retorna a coluna do cartão.</div><div class="ttdef"><b>Definition:</b> Cartao.h:66</div></div>
+<div class="ttc" id="aclass_cartao_html_a3a9ebca830c0e7049d6241dc6cf1b03d"><div class="ttname"><a href="class_cartao.html#a3a9ebca830c0e7049d6241dc6cf1b03d">Cartao::setDescricao</a></div><div class="ttdeci">void setDescricao(Texto &amp;newDescricao)</div><div class="ttdoc">Atribui uma nova descrição ao cartão.</div><div class="ttdef"><b>Definition:</b> Cartao.h:61</div></div>
 <div class="ttc" id="aclass_cartao_html_a3ceadec7ff88b1c925ccf4deb316795b"><div class="ttname"><a href="class_cartao.html#a3ceadec7ff88b1c925ccf4deb316795b">Cartao::Cartao</a></div><div class="ttdeci">Cartao()=default</div><div class="ttdoc">Inicializa o objeto com os valores vazios.</div></div>
-<div class="ttc" id="aclass_cartao_html_a4263cb9948c3152f9d4f8f733624697e"><div class="ttname"><a href="class_cartao.html#a4263cb9948c3152f9d4f8f733624697e">Cartao::setValor</a></div><div class="ttdeci">void setValor(Codigo &amp;newCodigo)</div><div class="ttdoc">Atribui um novo código ao cartão.</div><div class="ttdef"><b>Definition:</b> Cartao.h:38</div></div>
-<div class="ttc" id="aclass_cartao_html_a6df306eb6b04bc3e10f638da193b08a0"><div class="ttname"><a href="class_cartao.html#a6df306eb6b04bc3e10f638da193b08a0">Cartao::getValor</a></div><div class="ttdeci">Codigo getValor() const</div><div class="ttdoc">Retorna o código do cartão.</div><div class="ttdef"><b>Definition:</b> Cartao.h:33</div></div>
+<div class="ttc" id="aclass_cartao_html_a4263cb9948c3152f9d4f8f733624697e"><div class="ttname"><a href="class_cartao.html#a4263cb9948c3152f9d4f8f733624697e">Cartao::setCodigo</a></div><div class="ttdeci">void setCodigo(Codigo &amp;newCodigo)</div><div class="ttdoc">Atribui um novo código ao cartão.</div><div class="ttdef"><b>Definition:</b> Cartao.h:41</div></div>
+<div class="ttc" id="aclass_cartao_html_a6df306eb6b04bc3e10f638da193b08a0"><div class="ttname"><a href="class_cartao.html#a6df306eb6b04bc3e10f638da193b08a0">Cartao::getCodigo</a></div><div class="ttdeci">Codigo getCodigo() const</div><div class="ttdoc">Retorna o código do cartão.</div><div class="ttdef"><b>Definition:</b> Cartao.h:36</div></div>
 <div class="ttc" id="aclass_cartao_html_a835ee09bb49469ee9b51f1648e4d00bf"><div class="ttname"><a href="class_cartao.html#a835ee09bb49469ee9b51f1648e4d00bf">Cartao::Cartao</a></div><div class="ttdeci">Cartao(const Codigo &amp;codigo, const Texto &amp;nome, const Texto &amp;descricao, const Coluna &amp;coluna)</div><div class="ttdoc">Inicializa o objeto com os valores passados por parâmetro.</div></div>
-<div class="ttc" id="aclass_cartao_html_af414ab91d70756e911079ad2ecb96199"><div class="ttname"><a href="class_cartao.html#af414ab91d70756e911079ad2ecb96199">Cartao::getDescricao</a></div><div class="ttdeci">Texto getDescricao() const</div><div class="ttdoc">Retorna a descrição do cartão.</div><div class="ttdef"><b>Definition:</b> Cartao.h:53</div></div>
-<div class="ttc" id="aclass_codigo_html"><div class="ttname"><a href="class_codigo.html">Codigo</a></div><div class="ttdef"><b>Definition:</b> Codigo.h:13</div></div>
-<div class="ttc" id="aclass_coluna_html"><div class="ttname"><a href="class_coluna.html">Coluna</a></div><div class="ttdef"><b>Definition:</b> Coluna.h:12</div></div>
-<div class="ttc" id="aclass_texto_html"><div class="ttname"><a href="class_texto.html">Texto</a></div><div class="ttdef"><b>Definition:</b> Texto.h:18</div></div>
+<div class="ttc" id="aclass_cartao_html_af414ab91d70756e911079ad2ecb96199"><div class="ttname"><a href="class_cartao.html#af414ab91d70756e911079ad2ecb96199">Cartao::getDescricao</a></div><div class="ttdeci">Texto getDescricao() const</div><div class="ttdoc">Retorna a descrição do cartão.</div><div class="ttdef"><b>Definition:</b> Cartao.h:56</div></div>
+<div class="ttc" id="aclass_codigo_html"><div class="ttname"><a href="class_codigo.html">Codigo</a></div><div class="ttdef"><b>Definition:</b> Codigo.h:15</div></div>
+<div class="ttc" id="aclass_coluna_html"><div class="ttname"><a href="class_coluna.html">Coluna</a></div><div class="ttdef"><b>Definition:</b> Coluna.h:14</div></div>
+<div class="ttc" id="aclass_texto_html"><div class="ttname"><a href="class_texto.html">Texto</a></div><div class="ttdef"><b>Definition:</b> Texto.h:21</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_b6fe58feaf6db8197458bb99298aea1c.html">entidades</a></li><li class="navelem"><b>Cartao.h</b></li>
-    <li class="footer">Generated on Thu Oct 19 2023 20:50:10 for KanbanSystem by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Dec 1 2023 17:24:15 for KanbanSystem by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

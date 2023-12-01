@@ -31,7 +31,17 @@
 			<Add directory="src" />
 			<Add directory="test" />
 		</Compiler>
-
+		<Linker>
+			<Add library="/lib/x86_64-linux-gnu/libsqlite3.a" />
+		</Linker>
+		<Unit filename="include/Interfaces.h" />
+		<Unit filename="include/Stubs.h" />
+		<Unit filename="include/containers/ContainerConta.h" />
+		<Unit filename="include/controladoras/CntrAInterface.h" />
+		<Unit filename="include/controladoras/CntrIAAutenticacao.h" />
+		<Unit filename="include/controladoras/CntrIAConta.h" />
+		<Unit filename="include/controladoras/CntrISAutenticacao.h" />
+		<Unit filename="include/controladoras/CntrISConta.h" />
 		<Unit filename="include/dominios/Codigo.h" />
 		<Unit filename="include/dominios/Coluna.h" />
 		<Unit filename="include/dominios/Email.h" />
@@ -41,18 +51,14 @@
 		<Unit filename="include/entidades/Cartao.h" />
 		<Unit filename="include/entidades/Conta.h" />
 		<Unit filename="include/entidades/Quadro.h" />
-
-		<Unit filename="include/Interfaces.h" />
-		<Unit filename="include/Stubs.h" />
-
-		<Unit filename="include/containers/ContainerConta.h" />
-
-		<Unit filename="include/controladoras/CntrAInterface.h" />
-		<Unit filename="include/controladoras/CntrIAAutenticacao.h" />
-		<Unit filename="include/controladoras/CntrISAutenticacao.h" />
-		<Unit filename="include/controladoras/CntrIAConta.h" />
-		<Unit filename="include/controladoras/CntrISConta.h" />
-
+		<Unit filename="include/sqlite3.h" />
+		<Unit filename="src/Stubs.cpp" />
+		<Unit filename="src/containers/ContainerConta.cpp" />
+		<Unit filename="src/controladoras/CntrAInterface.cpp" />
+		<Unit filename="src/controladoras/CntrIAAutenticacao.cpp" />
+		<Unit filename="src/controladoras/CntrIAConta.cpp" />
+		<Unit filename="src/controladoras/CntrISAutenticacao.cpp" />
+		<Unit filename="src/controladoras/CntrISConta.cpp" />
 		<Unit filename="src/dominios/Codigo.cpp" />
 		<Unit filename="src/dominios/Coluna.cpp" />
 		<Unit filename="src/dominios/Email.cpp" />
@@ -62,38 +68,25 @@
 		<Unit filename="src/entidades/Cartao.cpp" />
 		<Unit filename="src/entidades/Conta.cpp" />
 		<Unit filename="src/entidades/Quadro.cpp" />
-
-		<Unit filename="src/Stubs.cpp" />
-
-    	<Unit filename="src/containers/ContainerConta.cpp" />
-
-		<Unit filename="src/controladoras/CntrAInterface.cpp" />
-		<Unit filename="src/controladoras/CntrIAAutenticacao.cpp" />
-		<Unit filename="src/controladoras/CntrISAutenticacao.cpp" />
-		<Unit filename="src/controladoras/CntrIAConta.cpp" />
-        <Unit filename="src/controladoras/CntrISConta.cpp" />
-
 		<Unit filename="src/main.cpp" />
-
-		<Unit filename="test/dominios/CodigoTeste.h" />
-        <Unit filename="test/dominios/ColunaTeste.h" />
-        <Unit filename="test/dominios/EmailTeste.h" />
-        <Unit filename="test/dominios/LimiteTeste.h" />
-        <Unit filename="test/dominios/SenhaTeste.h" />
-        <Unit filename="test/dominios/TextoTeste.h" />
-        <Unit filename="test/entidades/CartaoTeste.h" />
-        <Unit filename="test/entidades/ContaTeste.h" />
-        <Unit filename="test/entidades/QuadroTeste.h" />
 		<Unit filename="test/dominios/CodigoTeste.cpp" />
-        <Unit filename="test/dominios/ColunaTeste.cpp" />
-        <Unit filename="test/dominios/EmailTeste.cpp" />
-        <Unit filename="test/dominios/LimiteTeste.cpp" />
-        <Unit filename="test/dominios/SenhaTeste.cpp" />
-        <Unit filename="test/dominios/TextoTeste.cpp" />
+		<Unit filename="test/dominios/CodigoTeste.h" />
+		<Unit filename="test/dominios/ColunaTeste.cpp" />
+		<Unit filename="test/dominios/ColunaTeste.h" />
+		<Unit filename="test/dominios/EmailTeste.cpp" />
+		<Unit filename="test/dominios/EmailTeste.h" />
+		<Unit filename="test/dominios/LimiteTeste.cpp" />
+		<Unit filename="test/dominios/LimiteTeste.h" />
+		<Unit filename="test/dominios/SenhaTeste.cpp" />
+		<Unit filename="test/dominios/SenhaTeste.h" />
+		<Unit filename="test/dominios/TextoTeste.cpp" />
+		<Unit filename="test/dominios/TextoTeste.h" />
 		<Unit filename="test/entidades/CartaoTeste.cpp" />
-        <Unit filename="test/entidades/ContaTeste.cpp" />
-        <Unit filename="test/entidades/QuadroTeste.cpp" />
-
+		<Unit filename="test/entidades/CartaoTeste.h" />
+		<Unit filename="test/entidades/ContaTeste.cpp" />
+		<Unit filename="test/entidades/ContaTeste.h" />
+		<Unit filename="test/entidades/QuadroTeste.cpp" />
+		<Unit filename="test/entidades/QuadroTeste.h" />
 		<Extensions>
 			<DoxyBlocks>
 				<comment_style block="0" line="0" />

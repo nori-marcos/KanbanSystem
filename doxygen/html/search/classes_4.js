@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['senha_36',['Senha',['../class_senha.html',1,'']]]
+  ['limite_83',['Limite',['../class_limite.html',1,'']]]
 ];

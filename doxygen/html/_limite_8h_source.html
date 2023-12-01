@@ -85,49 +85,52 @@ $(document).ready(function(){initNavTree('_limite_8h_source.html',''); initResiz
 <div class="title">Limite.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef KANBANSYSTEM_LIMITE_H</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define KANBANSYSTEM_LIMITE_H</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//Marcos Noriyuki Miyata 18/0126890</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//Gustavo Vieira do Nascimento 22/2012872</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;stdexcept&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">using namespace </span>std;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_limite.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_limite.html">Limite</a> {</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordtype">int</span> valor;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> validarValor(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;newValor);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_limite.html#a303ac4375b40c97938ad21bbcf722ae7">   19</a></span>&#160;    <a class="code" href="class_limite.html#a303ac4375b40c97938ad21bbcf722ae7">Limite</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;valor);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_limite.html#aabf8f87c90807bd2d19e18872843aefc">   22</a></span>&#160;    <a class="code" href="class_limite.html#aabf8f87c90807bd2d19e18872843aefc">Limite</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#ifndef KANBANSYSTEM_LIMITE_H</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#define KANBANSYSTEM_LIMITE_H</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;stdexcept&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_limite.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_limite.html">Limite</a> {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">int</span> valor;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> validarValor(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;newValor);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_limite.html#a303ac4375b40c97938ad21bbcf722ae7">   22</a></span>&#160;    <a class="code" href="class_limite.html#a303ac4375b40c97938ad21bbcf722ae7">Limite</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;valor);</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_limite.html#ae3513251940018c33b8a072f91343f00">   25</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_limite.html#ae3513251940018c33b8a072f91343f00">getValor</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordflow">return</span> valor;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    }</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_limite.html#a6392918c38b17484db4cf90acdb5219e">   30</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_limite.html#a6392918c38b17484db4cf90acdb5219e">setValor</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;newValor) {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        validarValor(newValor);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        this-&gt;valor = newValor;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_limite.html#aabf8f87c90807bd2d19e18872843aefc">   25</a></span>&#160;    <a class="code" href="class_limite.html#aabf8f87c90807bd2d19e18872843aefc">Limite</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_limite.html#ae3513251940018c33b8a072f91343f00">   28</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_limite.html#ae3513251940018c33b8a072f91343f00">getValor</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordflow">return</span> valor;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    }</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_limite.html#a6392918c38b17484db4cf90acdb5219e">   33</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_limite.html#a6392918c38b17484db4cf90acdb5219e">setValor</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;newValor) {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        validarValor(newValor);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        this-&gt;valor = newValor;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#endif </span><span class="comment">//KANBANSYSTEM_LIMITE_H</span></div>
-<div class="ttc" id="aclass_limite_html"><div class="ttname"><a href="class_limite.html">Limite</a></div><div class="ttdef"><b>Definition:</b> Limite.h:11</div></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#endif </span><span class="comment">//KANBANSYSTEM_LIMITE_H</span></div>
+<div class="ttc" id="aclass_limite_html"><div class="ttname"><a href="class_limite.html">Limite</a></div><div class="ttdef"><b>Definition:</b> Limite.h:14</div></div>
 <div class="ttc" id="aclass_limite_html_a303ac4375b40c97938ad21bbcf722ae7"><div class="ttname"><a href="class_limite.html#a303ac4375b40c97938ad21bbcf722ae7">Limite::Limite</a></div><div class="ttdeci">Limite(const int &amp;valor)</div><div class="ttdoc">Inicializa o objeto com o valor passado por parâmetro.</div></div>
-<div class="ttc" id="aclass_limite_html_a6392918c38b17484db4cf90acdb5219e"><div class="ttname"><a href="class_limite.html#a6392918c38b17484db4cf90acdb5219e">Limite::setValor</a></div><div class="ttdeci">void setValor(const int &amp;newValor)</div><div class="ttdoc">Atribui um novo valor ao objeto.</div><div class="ttdef"><b>Definition:</b> Limite.h:30</div></div>
+<div class="ttc" id="aclass_limite_html_a6392918c38b17484db4cf90acdb5219e"><div class="ttname"><a href="class_limite.html#a6392918c38b17484db4cf90acdb5219e">Limite::setValor</a></div><div class="ttdeci">void setValor(const int &amp;newValor)</div><div class="ttdoc">Atribui um novo valor ao objeto.</div><div class="ttdef"><b>Definition:</b> Limite.h:33</div></div>
 <div class="ttc" id="aclass_limite_html_aabf8f87c90807bd2d19e18872843aefc"><div class="ttname"><a href="class_limite.html#aabf8f87c90807bd2d19e18872843aefc">Limite::Limite</a></div><div class="ttdeci">Limite()=default</div><div class="ttdoc">Inicializa o objeto com o valor vazio.</div></div>
-<div class="ttc" id="aclass_limite_html_ae3513251940018c33b8a072f91343f00"><div class="ttname"><a href="class_limite.html#ae3513251940018c33b8a072f91343f00">Limite::getValor</a></div><div class="ttdeci">int getValor() const</div><div class="ttdoc">Retorna o valor do objeto.</div><div class="ttdef"><b>Definition:</b> Limite.h:25</div></div>
+<div class="ttc" id="aclass_limite_html_ae3513251940018c33b8a072f91343f00"><div class="ttname"><a href="class_limite.html#ae3513251940018c33b8a072f91343f00">Limite::getValor</a></div><div class="ttdeci">int getValor() const</div><div class="ttdoc">Retorna o valor do objeto.</div><div class="ttdef"><b>Definition:</b> Limite.h:28</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c0d10a41af149a1d0f636d2d65cacec0.html">dominios</a></li><li class="navelem"><b>Limite.h</b></li>
-    <li class="footer">Generated on Thu Oct 19 2023 20:50:10 for KanbanSystem by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Dec 1 2023 17:24:15 for KanbanSystem by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

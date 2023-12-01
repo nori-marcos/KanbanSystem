@@ -85,58 +85,59 @@ $(document).ready(function(){initNavTree('_email_8h_source.html',''); initResiza
 <div class="title">Email.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef EMAIL_H</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define EMAIL_H</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;stdexcept&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//Marcos Noriyuki Miyata 18/0126890</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef EMAIL_H</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define EMAIL_H</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;stdexcept&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_email.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_email.html">Email</a> {</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">string</span> email;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_email.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_email.html">Email</a> {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> validarEmail(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;email);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">string</span> email;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> validarNome(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;nome);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> validarEmail(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;email);</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> validarDominio(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;dominio);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> validarNome(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;nome);</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> validarCaracter(<span class="keyword">const</span> <span class="keywordtype">char</span> &amp;caracter);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> validarDominio(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;dominio);</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> validarPontosSeguidos(<span class="keyword">const</span> <span class="keywordtype">char</span> &amp;caracter1, <span class="keyword">const</span> <span class="keywordtype">char</span> &amp;caracter2);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> validarCaracter(<span class="keyword">const</span> <span class="keywordtype">char</span> &amp;caracter);</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> validarPontosSeguidos(<span class="keyword">const</span> <span class="keywordtype">char</span> &amp;caracter1, <span class="keyword">const</span> <span class="keywordtype">char</span> &amp;caracter2);</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_email.html#a4a199734e29834046e8d9fa5d04dfd0d">   36</a></span>&#160;    <a class="code" href="class_email.html#a4a199734e29834046e8d9fa5d04dfd0d">Email</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;email);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_email.html#a5b74ed2ee8c170edc6d32eee149c2edf">   39</a></span>&#160;    <a class="code" href="class_email.html#a5b74ed2ee8c170edc6d32eee149c2edf">Email</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_email.html#a6c314589c2042bf2234a9b5781d50def">   42</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_email.html#a6c314589c2042bf2234a9b5781d50def">getValor</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">return</span> email;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_email.html#a6452429ac79e467d3f1e13ae87ae553c">   47</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_email.html#a6452429ac79e467d3f1e13ae87ae553c">setValor</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;newEmail) {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        validarEmail(newEmail);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        this-&gt;email = newEmail;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;};</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// EMAIL_H</span></div>
-<div class="ttc" id="aclass_email_html"><div class="ttname"><a href="class_email.html">Email</a></div><div class="ttdef"><b>Definition:</b> Email.h:18</div></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_email.html#a4a199734e29834046e8d9fa5d04dfd0d">   37</a></span>&#160;    <a class="code" href="class_email.html#a4a199734e29834046e8d9fa5d04dfd0d">Email</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;email);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_email.html#a5b74ed2ee8c170edc6d32eee149c2edf">   40</a></span>&#160;    <a class="code" href="class_email.html#a5b74ed2ee8c170edc6d32eee149c2edf">Email</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_email.html#a573b7a1f21085bbb13cf6ec4dd802ecc">   43</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_email.html#a573b7a1f21085bbb13cf6ec4dd802ecc">getValor</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">return</span> email;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_email.html#a1f667024c7bb50a96eb520d8e21bc06c">   48</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_email.html#a1f667024c7bb50a96eb520d8e21bc06c">setValor</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;newEmail) {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        validarEmail(newEmail);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        this-&gt;email = newEmail;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// EMAIL_H</span></div>
+<div class="ttc" id="aclass_email_html"><div class="ttname"><a href="class_email.html">Email</a></div><div class="ttdef"><b>Definition:</b> Email.h:20</div></div>
+<div class="ttc" id="aclass_email_html_a1f667024c7bb50a96eb520d8e21bc06c"><div class="ttname"><a href="class_email.html#a1f667024c7bb50a96eb520d8e21bc06c">Email::setValor</a></div><div class="ttdeci">void setValor(const string &amp;newEmail)</div><div class="ttdoc">Atribui um novo email ao objeto.</div><div class="ttdef"><b>Definition:</b> Email.h:48</div></div>
 <div class="ttc" id="aclass_email_html_a4a199734e29834046e8d9fa5d04dfd0d"><div class="ttname"><a href="class_email.html#a4a199734e29834046e8d9fa5d04dfd0d">Email::Email</a></div><div class="ttdeci">Email(const string &amp;email)</div><div class="ttdoc">Inicializa o objeto com o email passado por parâmetro.</div></div>
+<div class="ttc" id="aclass_email_html_a573b7a1f21085bbb13cf6ec4dd802ecc"><div class="ttname"><a href="class_email.html#a573b7a1f21085bbb13cf6ec4dd802ecc">Email::getValor</a></div><div class="ttdeci">string getValor() const</div><div class="ttdoc">Retorna o email do objeto.</div><div class="ttdef"><b>Definition:</b> Email.h:43</div></div>
 <div class="ttc" id="aclass_email_html_a5b74ed2ee8c170edc6d32eee149c2edf"><div class="ttname"><a href="class_email.html#a5b74ed2ee8c170edc6d32eee149c2edf">Email::Email</a></div><div class="ttdeci">Email()=default</div><div class="ttdoc">Inicializa o objeto com o email vazio.</div></div>
-<div class="ttc" id="aclass_email_html_a6452429ac79e467d3f1e13ae87ae553c"><div class="ttname"><a href="class_email.html#a6452429ac79e467d3f1e13ae87ae553c">Email::setValor</a></div><div class="ttdeci">void setValor(const string &amp;newEmail)</div><div class="ttdoc">Atribui um novo email ao objeto.</div><div class="ttdef"><b>Definition:</b> Email.h:47</div></div>
-<div class="ttc" id="aclass_email_html_a6c314589c2042bf2234a9b5781d50def"><div class="ttname"><a href="class_email.html#a6c314589c2042bf2234a9b5781d50def">Email::getValor</a></div><div class="ttdeci">string getValor() const</div><div class="ttdoc">Retorna o email do objeto.</div><div class="ttdef"><b>Definition:</b> Email.h:42</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c0d10a41af149a1d0f636d2d65cacec0.html">dominios</a></li><li class="navelem"><b>Email.h</b></li>
-    <li class="footer">Generated on Thu Oct 19 2023 20:50:10 for KanbanSystem by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Dec 1 2023 17:24:15 for KanbanSystem by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -5,6 +5,7 @@
 #include "include/controladoras/CntrISAutenticacao.h"
 #include "include/controladoras/CntrISConta.h"
 #include "include/controladoras/CntrIAConta.h"
+#include "include/sqlite3.h"
 
 using namespace std;
 
@@ -19,23 +20,6 @@ int main() {
     ISConta *cntrISConta = new CntrISConta();
 
     ContainerConta *containerConta = new ContainerConta();
-
-    Conta conta_1;
-    Texto nome_1;
-    Texto email_texto_1;
-    Texto senha_texto_1;
-    Email email_1;
-    Senha senha_1;
-
-    nome_1.setValor("Marcos");
-    email_1.setValor("marcos@gmail.com");
-    senha_1.setValor("Abc1!");
-
-    conta_1.setNome(nome_1);
-    conta_1.setEmail(email_1);
-    conta_1.setSenha(senha_1);
-
-    containerConta->incluir(conta_1);
 
     cntrISAutenticacao->setContainerConta(containerConta);
     cntrIAutenticacao->setCntrIAutenticacao(cntrISAutenticacao);

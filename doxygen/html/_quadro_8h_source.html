@@ -85,83 +85,86 @@ $(document).ready(function(){initNavTree('_quadro_8h_source.html',''); initResiz
 <div class="title">Quadro.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef KANBANSYSTEM_QUADRO_H</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define KANBANSYSTEM_QUADRO_H</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//Marcos Noriyuki Miyata 18/0126890</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//Delma Nogueira  de Jesus 22/2035705</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;include/dominios/Texto.h&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;include/dominios/Limite.h&quot;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;include/dominios/Codigo.h&quot;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_quadro.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_quadro.html">Quadro</a> {</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_codigo.html">Codigo</a> codigo;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="class_texto.html">Texto</a> nome;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="class_texto.html">Texto</a> descricao;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="class_limite.html">Limite</a> limite;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_quadro.html#a0f5066578f3b103bd7e232095e450e04">   24</a></span>&#160;    <a class="code" href="class_quadro.html#a0f5066578f3b103bd7e232095e450e04">Quadro</a>(<span class="keyword">const</span> <a class="code" href="class_codigo.html">Codigo</a> &amp;codigo, <span class="keyword">const</span> <a class="code" href="class_texto.html">Texto</a> &amp;nome, <span class="keyword">const</span> <a class="code" href="class_texto.html">Texto</a> &amp;descricao, <span class="keyword">const</span> <a class="code" href="class_limite.html">Limite</a> &amp;limite);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_quadro.html#a90abd135de10b8d1564184f996977a1b">   27</a></span>&#160;    <a class="code" href="class_quadro.html#a90abd135de10b8d1564184f996977a1b">Quadro</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#ifndef KANBANSYSTEM_QUADRO_H</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#define KANBANSYSTEM_QUADRO_H</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;include/dominios/Texto.h&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;include/dominios/Limite.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;include/dominios/Codigo.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_quadro.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_quadro.html">Quadro</a> {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="class_codigo.html">Codigo</a> codigo;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="class_texto.html">Texto</a> nome;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="class_texto.html">Texto</a> descricao;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="class_limite.html">Limite</a> limite;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_quadro.html#a0f5066578f3b103bd7e232095e450e04">   27</a></span>&#160;    <a class="code" href="class_quadro.html#a0f5066578f3b103bd7e232095e450e04">Quadro</a>(<span class="keyword">const</span> <a class="code" href="class_codigo.html">Codigo</a> &amp;codigo, <span class="keyword">const</span> <a class="code" href="class_texto.html">Texto</a> &amp;nome, <span class="keyword">const</span> <a class="code" href="class_texto.html">Texto</a> &amp;descricao, <span class="keyword">const</span> <a class="code" href="class_limite.html">Limite</a> &amp;limite);</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_quadro.html#a53f7ac5a7b7ae83df37f105b69818165">   30</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_quadro.html#a53f7ac5a7b7ae83df37f105b69818165">setValor</a>(<span class="keyword">const</span> <a class="code" href="class_codigo.html">Codigo</a> &amp;newCodigo) {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        this-&gt;codigo = newCodigo;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    };</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_quadro.html#a42ff3dfd42100dd4bba7d466a12ff891">   35</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_quadro.html#a42ff3dfd42100dd4bba7d466a12ff891">setNome</a>(<span class="keyword">const</span> <a class="code" href="class_texto.html">Texto</a> &amp;newNome) {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        this-&gt;nome = newNome;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    };</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_quadro.html#aa7ac08b23f0c504237762769fe2af9ce">   40</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_quadro.html#aa7ac08b23f0c504237762769fe2af9ce">setDescricao</a>(<span class="keyword">const</span> <a class="code" href="class_texto.html">Texto</a> &amp;newDescricao) {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        this-&gt;descricao = newDescricao;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    };</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_quadro.html#ad8a12d09c47f2e8501f7bb9739e18ba7">   45</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_quadro.html#ad8a12d09c47f2e8501f7bb9739e18ba7">setLimite</a>(<span class="keyword">const</span> <a class="code" href="class_limite.html">Limite</a> &amp;newLimite) {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        this-&gt;limite = newLimite;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    };</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_quadro.html#aee145532e82b92b9d80a6d586408b6ad">   50</a></span>&#160;    <a class="code" href="class_codigo.html">Codigo</a> <a class="code" href="class_quadro.html#aee145532e82b92b9d80a6d586408b6ad">getValor</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">return</span> codigo;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    };</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_quadro.html#a681139cee3671a4934bc5a5a56c8b288">   55</a></span>&#160;    <a class="code" href="class_texto.html">Texto</a> <a class="code" href="class_quadro.html#a681139cee3671a4934bc5a5a56c8b288">getNome</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">return</span> nome;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    };</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_quadro.html#a8643a5c8ae75dd0fd9c3c62f6ffda12d">   60</a></span>&#160;    <a class="code" href="class_texto.html">Texto</a> <a class="code" href="class_quadro.html#a8643a5c8ae75dd0fd9c3c62f6ffda12d">getDescricao</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">return</span> descricao;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    };</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="class_quadro.html#a7799b0eea6c85113d94d4f231108c354">   65</a></span>&#160;    <a class="code" href="class_limite.html">Limite</a> <a class="code" href="class_quadro.html#a7799b0eea6c85113d94d4f231108c354">getLimite</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">return</span> limite;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    };</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;};</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_quadro.html#a90abd135de10b8d1564184f996977a1b">   30</a></span>&#160;    <a class="code" href="class_quadro.html#a90abd135de10b8d1564184f996977a1b">Quadro</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_quadro.html#a53f7ac5a7b7ae83df37f105b69818165">   33</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_quadro.html#a53f7ac5a7b7ae83df37f105b69818165">setCodigo</a>(<span class="keyword">const</span> <a class="code" href="class_codigo.html">Codigo</a> &amp;newCodigo) {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        this-&gt;codigo = newCodigo;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    };</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_quadro.html#a42ff3dfd42100dd4bba7d466a12ff891">   38</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_quadro.html#a42ff3dfd42100dd4bba7d466a12ff891">setNome</a>(<span class="keyword">const</span> <a class="code" href="class_texto.html">Texto</a> &amp;newNome) {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        this-&gt;nome = newNome;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    };</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_quadro.html#aa7ac08b23f0c504237762769fe2af9ce">   43</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_quadro.html#aa7ac08b23f0c504237762769fe2af9ce">setDescricao</a>(<span class="keyword">const</span> <a class="code" href="class_texto.html">Texto</a> &amp;newDescricao) {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        this-&gt;descricao = newDescricao;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    };</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_quadro.html#ad8a12d09c47f2e8501f7bb9739e18ba7">   48</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_quadro.html#ad8a12d09c47f2e8501f7bb9739e18ba7">setLimite</a>(<span class="keyword">const</span> <a class="code" href="class_limite.html">Limite</a> &amp;newLimite) {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        this-&gt;limite = newLimite;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    };</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_quadro.html#aee145532e82b92b9d80a6d586408b6ad">   53</a></span>&#160;    <a class="code" href="class_codigo.html">Codigo</a> <a class="code" href="class_quadro.html#aee145532e82b92b9d80a6d586408b6ad">getCodigo</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">return</span> codigo;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    };</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_quadro.html#a681139cee3671a4934bc5a5a56c8b288">   58</a></span>&#160;    <a class="code" href="class_texto.html">Texto</a> <a class="code" href="class_quadro.html#a681139cee3671a4934bc5a5a56c8b288">getNome</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">return</span> nome;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    };</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="class_quadro.html#a8643a5c8ae75dd0fd9c3c62f6ffda12d">   63</a></span>&#160;    <a class="code" href="class_texto.html">Texto</a> <a class="code" href="class_quadro.html#a8643a5c8ae75dd0fd9c3c62f6ffda12d">getDescricao</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">return</span> descricao;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    };</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="class_quadro.html#a7799b0eea6c85113d94d4f231108c354">   68</a></span>&#160;    <a class="code" href="class_limite.html">Limite</a> <a class="code" href="class_quadro.html#a7799b0eea6c85113d94d4f231108c354">getLimite</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordflow">return</span> limite;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    };</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#endif </span><span class="comment">//KANBANSYSTEM_QUADRO_H</span></div>
-<div class="ttc" id="aclass_codigo_html"><div class="ttname"><a href="class_codigo.html">Codigo</a></div><div class="ttdef"><b>Definition:</b> Codigo.h:13</div></div>
-<div class="ttc" id="aclass_limite_html"><div class="ttname"><a href="class_limite.html">Limite</a></div><div class="ttdef"><b>Definition:</b> Limite.h:11</div></div>
-<div class="ttc" id="aclass_quadro_html"><div class="ttname"><a href="class_quadro.html">Quadro</a></div><div class="ttdef"><b>Definition:</b> Quadro.h:15</div></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;};</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif </span><span class="comment">//KANBANSYSTEM_QUADRO_H</span></div>
+<div class="ttc" id="aclass_codigo_html"><div class="ttname"><a href="class_codigo.html">Codigo</a></div><div class="ttdef"><b>Definition:</b> Codigo.h:15</div></div>
+<div class="ttc" id="aclass_limite_html"><div class="ttname"><a href="class_limite.html">Limite</a></div><div class="ttdef"><b>Definition:</b> Limite.h:14</div></div>
+<div class="ttc" id="aclass_quadro_html"><div class="ttname"><a href="class_quadro.html">Quadro</a></div><div class="ttdef"><b>Definition:</b> Quadro.h:18</div></div>
 <div class="ttc" id="aclass_quadro_html_a0f5066578f3b103bd7e232095e450e04"><div class="ttname"><a href="class_quadro.html#a0f5066578f3b103bd7e232095e450e04">Quadro::Quadro</a></div><div class="ttdeci">Quadro(const Codigo &amp;codigo, const Texto &amp;nome, const Texto &amp;descricao, const Limite &amp;limite)</div><div class="ttdoc">Inicializa o objeto com os valores passados por parâmetro.</div></div>
-<div class="ttc" id="aclass_quadro_html_a42ff3dfd42100dd4bba7d466a12ff891"><div class="ttname"><a href="class_quadro.html#a42ff3dfd42100dd4bba7d466a12ff891">Quadro::setNome</a></div><div class="ttdeci">void setNome(const Texto &amp;newNome)</div><div class="ttdoc">Atribui um novo nome ao objeto.</div><div class="ttdef"><b>Definition:</b> Quadro.h:35</div></div>
-<div class="ttc" id="aclass_quadro_html_a53f7ac5a7b7ae83df37f105b69818165"><div class="ttname"><a href="class_quadro.html#a53f7ac5a7b7ae83df37f105b69818165">Quadro::setValor</a></div><div class="ttdeci">void setValor(const Codigo &amp;newCodigo)</div><div class="ttdoc">Atribui um novo código ao objeto.</div><div class="ttdef"><b>Definition:</b> Quadro.h:30</div></div>
-<div class="ttc" id="aclass_quadro_html_a681139cee3671a4934bc5a5a56c8b288"><div class="ttname"><a href="class_quadro.html#a681139cee3671a4934bc5a5a56c8b288">Quadro::getNome</a></div><div class="ttdeci">Texto getNome() const</div><div class="ttdoc">Retorna o nome do objeto.</div><div class="ttdef"><b>Definition:</b> Quadro.h:55</div></div>
-<div class="ttc" id="aclass_quadro_html_a7799b0eea6c85113d94d4f231108c354"><div class="ttname"><a href="class_quadro.html#a7799b0eea6c85113d94d4f231108c354">Quadro::getLimite</a></div><div class="ttdeci">Limite getLimite() const</div><div class="ttdoc">Retorna o limite do objeto.</div><div class="ttdef"><b>Definition:</b> Quadro.h:65</div></div>
-<div class="ttc" id="aclass_quadro_html_a8643a5c8ae75dd0fd9c3c62f6ffda12d"><div class="ttname"><a href="class_quadro.html#a8643a5c8ae75dd0fd9c3c62f6ffda12d">Quadro::getDescricao</a></div><div class="ttdeci">Texto getDescricao() const</div><div class="ttdoc">Retorna a descrição do objeto.</div><div class="ttdef"><b>Definition:</b> Quadro.h:60</div></div>
+<div class="ttc" id="aclass_quadro_html_a42ff3dfd42100dd4bba7d466a12ff891"><div class="ttname"><a href="class_quadro.html#a42ff3dfd42100dd4bba7d466a12ff891">Quadro::setNome</a></div><div class="ttdeci">void setNome(const Texto &amp;newNome)</div><div class="ttdoc">Atribui um novo nome ao objeto.</div><div class="ttdef"><b>Definition:</b> Quadro.h:38</div></div>
+<div class="ttc" id="aclass_quadro_html_a53f7ac5a7b7ae83df37f105b69818165"><div class="ttname"><a href="class_quadro.html#a53f7ac5a7b7ae83df37f105b69818165">Quadro::setCodigo</a></div><div class="ttdeci">void setCodigo(const Codigo &amp;newCodigo)</div><div class="ttdoc">Atribui um novo código ao objeto.</div><div class="ttdef"><b>Definition:</b> Quadro.h:33</div></div>
+<div class="ttc" id="aclass_quadro_html_a681139cee3671a4934bc5a5a56c8b288"><div class="ttname"><a href="class_quadro.html#a681139cee3671a4934bc5a5a56c8b288">Quadro::getNome</a></div><div class="ttdeci">Texto getNome() const</div><div class="ttdoc">Retorna o nome do objeto.</div><div class="ttdef"><b>Definition:</b> Quadro.h:58</div></div>
+<div class="ttc" id="aclass_quadro_html_a7799b0eea6c85113d94d4f231108c354"><div class="ttname"><a href="class_quadro.html#a7799b0eea6c85113d94d4f231108c354">Quadro::getLimite</a></div><div class="ttdeci">Limite getLimite() const</div><div class="ttdoc">Retorna o limite do objeto.</div><div class="ttdef"><b>Definition:</b> Quadro.h:68</div></div>
+<div class="ttc" id="aclass_quadro_html_a8643a5c8ae75dd0fd9c3c62f6ffda12d"><div class="ttname"><a href="class_quadro.html#a8643a5c8ae75dd0fd9c3c62f6ffda12d">Quadro::getDescricao</a></div><div class="ttdeci">Texto getDescricao() const</div><div class="ttdoc">Retorna a descrição do objeto.</div><div class="ttdef"><b>Definition:</b> Quadro.h:63</div></div>
 <div class="ttc" id="aclass_quadro_html_a90abd135de10b8d1564184f996977a1b"><div class="ttname"><a href="class_quadro.html#a90abd135de10b8d1564184f996977a1b">Quadro::Quadro</a></div><div class="ttdeci">Quadro()=default</div><div class="ttdoc">Inicializa o objeto com os valores vazios.</div></div>
-<div class="ttc" id="aclass_quadro_html_aa7ac08b23f0c504237762769fe2af9ce"><div class="ttname"><a href="class_quadro.html#aa7ac08b23f0c504237762769fe2af9ce">Quadro::setDescricao</a></div><div class="ttdeci">void setDescricao(const Texto &amp;newDescricao)</div><div class="ttdoc">Atribui uma nova descrição ao objeto.</div><div class="ttdef"><b>Definition:</b> Quadro.h:40</div></div>
-<div class="ttc" id="aclass_quadro_html_ad8a12d09c47f2e8501f7bb9739e18ba7"><div class="ttname"><a href="class_quadro.html#ad8a12d09c47f2e8501f7bb9739e18ba7">Quadro::setLimite</a></div><div class="ttdeci">void setLimite(const Limite &amp;newLimite)</div><div class="ttdoc">Atribui um novo limite ao objeto.</div><div class="ttdef"><b>Definition:</b> Quadro.h:45</div></div>
-<div class="ttc" id="aclass_quadro_html_aee145532e82b92b9d80a6d586408b6ad"><div class="ttname"><a href="class_quadro.html#aee145532e82b92b9d80a6d586408b6ad">Quadro::getValor</a></div><div class="ttdeci">Codigo getValor() const</div><div class="ttdoc">Retorna o código do objeto.</div><div class="ttdef"><b>Definition:</b> Quadro.h:50</div></div>
-<div class="ttc" id="aclass_texto_html"><div class="ttname"><a href="class_texto.html">Texto</a></div><div class="ttdef"><b>Definition:</b> Texto.h:18</div></div>
+<div class="ttc" id="aclass_quadro_html_aa7ac08b23f0c504237762769fe2af9ce"><div class="ttname"><a href="class_quadro.html#aa7ac08b23f0c504237762769fe2af9ce">Quadro::setDescricao</a></div><div class="ttdeci">void setDescricao(const Texto &amp;newDescricao)</div><div class="ttdoc">Atribui uma nova descrição ao objeto.</div><div class="ttdef"><b>Definition:</b> Quadro.h:43</div></div>
+<div class="ttc" id="aclass_quadro_html_ad8a12d09c47f2e8501f7bb9739e18ba7"><div class="ttname"><a href="class_quadro.html#ad8a12d09c47f2e8501f7bb9739e18ba7">Quadro::setLimite</a></div><div class="ttdeci">void setLimite(const Limite &amp;newLimite)</div><div class="ttdoc">Atribui um novo limite ao objeto.</div><div class="ttdef"><b>Definition:</b> Quadro.h:48</div></div>
+<div class="ttc" id="aclass_quadro_html_aee145532e82b92b9d80a6d586408b6ad"><div class="ttname"><a href="class_quadro.html#aee145532e82b92b9d80a6d586408b6ad">Quadro::getCodigo</a></div><div class="ttdeci">Codigo getCodigo() const</div><div class="ttdoc">Retorna o código do objeto.</div><div class="ttdef"><b>Definition:</b> Quadro.h:53</div></div>
+<div class="ttc" id="aclass_texto_html"><div class="ttname"><a href="class_texto.html">Texto</a></div><div class="ttdef"><b>Definition:</b> Texto.h:21</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_b6fe58feaf6db8197458bb99298aea1c.html">entidades</a></li><li class="navelem"><b>Quadro.h</b></li>
-    <li class="footer">Generated on Thu Oct 19 2023 20:50:10 for KanbanSystem by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Dec 1 2023 17:24:15 for KanbanSystem by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
