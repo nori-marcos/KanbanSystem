@@ -7,8 +7,6 @@ find_package(SQLite3 REQUIRED)
 
 include_directories(.)
 configure_file(${CMAKE_SOURCE_DIR}/kanban.db ${CMAKE_BINARY_DIR}/kanban.db COPYONLY)
-configure_file(${CMAKE_SOURCE_DIR}/kanban.db ${CMAKE_BINARY_DIR}/Debug/kanban.db COPYONLY)
-configure_file(${CMAKE_SOURCE_DIR}/kanban.db ${CMAKE_BINARY_DIR}/Release/kanban.db COPYONLY)
 
 add_executable(KanbanSystem
         src/dominios/Coluna.cpp

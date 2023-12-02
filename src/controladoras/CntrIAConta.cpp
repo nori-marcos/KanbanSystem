@@ -22,20 +22,17 @@ bool CntrIAConta::incluir() {
             nome.setValor(string(campo_nome));
             email.setValor(string(campo_email));
             senha.setValor(string(campo_senha));
-            break;
+            Conta conta;
+            conta.setNome(nome);
+            conta.setEmail(email);
+            conta.setSenha(senha);
+            return cntrISConta->incluir(conta);
         } catch (invalid_argument &exp) {
             cout << "----------------------------------------" << endl;
             cout << "Dado em formato incorreto." << endl;
             cout << exp.what() << endl;
         }
     }
-
-    Conta conta;
-    conta.setNome(nome);
-    conta.setEmail(email);
-    conta.setSenha(senha);
-
-    return cntrISConta->incluir(conta);
 }
 
 bool CntrIAConta::remover(const Email &email) {
