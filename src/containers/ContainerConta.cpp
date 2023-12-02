@@ -94,6 +94,13 @@ Conta ContainerConta::pesquisar(Conta conta) {
         throw invalid_argument("Erro ao executar a consulta. Verifique se o email está correto.");
     }
 
+    string senhaBanco = string(reinterpret_cast<const char *>(sqlite3_column_text(stmt, 2)));
+
+    if (senhaBanco != conta.getSenha().getValor()) {
+        sqlite3_finalize(stmt);
+        throw invalid_argument("Verifique se o email e a senha estão corretos.");
+    }
+
     conta.setNome(string(reinterpret_cast<const char *>(sqlite3_column_text(stmt, 0))));
     conta.setEmail(string(reinterpret_cast<const char *>(sqlite3_column_text(stmt, 1))));
     conta.setSenha(string(reinterpret_cast<const char *>(sqlite3_column_text(stmt, 2))));
