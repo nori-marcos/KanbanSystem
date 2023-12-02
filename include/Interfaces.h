@@ -6,6 +6,11 @@
 #include "include/dominios/Senha.h"
 #include "include/entidades/Conta.h"
 #include "include/containers/ContainerConta.h"
+#include "include/dominios/Coluna.h"
+#include "include/dominios/Codigo.h"
+#include "include/dominios/Limite.h"
+#include "include/entidades/Cartao.h"
+#include "include/entidades/Quadro.h"
 
 class ISAutenticacao;
 
@@ -39,7 +44,21 @@ public:
 
 class IAGerenciamento {
 public:
-    virtual void executar(const Email &email) = 0;
+    virtual Cartao criarCartao(const Codigo &, const Texto &, const Texto &, const Coluna &) = 0;
+
+    virtual Quadro criarQuadro(const Codigo &, const Texto &, const Texto &, const Limite &) = 0;
+
+    virtual Cartao editarCartao(const Codigo &, const Texto &, const Texto &, const Coluna &) = 0;
+
+    virtual Quadro editarQuadro(const Codigo &, const Texto &, const Texto &, const Coluna &) = 0;
+
+    virtual Cartao consultarCartao(const Codigo &, const Coluna &) = 0;
+
+    virtual Quadro consultarQuadro(const Codigo &) = 0;
+
+    virtual bool removerCartao(const Codigo &, const Coluna &) = 0;
+
+    virtual bool removerQuadro(const Codigo &) = 0;
 
     virtual void setCntrIGerenciamento(ISGerenciamento *) = 0;
 
@@ -72,7 +91,21 @@ public:
 
 class ISGerenciamento {
 public:
-    virtual void executar(const Email &) = 0;
+    virtual Cartao criarCartao(const Codigo &, const Texto &, const Texto &, const Coluna &) = 0;
+
+    virtual Quadro criarQuadro(const Codigo &, const Texto &, const Texto &, const Limite &) = 0;
+
+    virtual Cartao editarCartao(const Codigo &, const Texto &, const Texto &, const Coluna &) = 0;
+
+    virtual Quadro editarQuadro(const Codigo &, const Texto &, const Texto &, const Coluna &) = 0;
+
+    virtual Cartao consultarCartao(const Codigo &, const Coluna &) = 0;
+
+    virtual Quadro consultarQuadro(const Codigo &) = 0;
+
+    virtual bool removerCartao(const Codigo &, const Coluna &) = 0;
+
+    virtual bool removerQuadro(const Codigo &) = 0;
 
     virtual ~ISGerenciamento() {};
 };
