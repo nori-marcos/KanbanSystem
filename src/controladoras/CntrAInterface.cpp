@@ -5,7 +5,11 @@ void CntrAInterface::executar() {
 
     while (apresentar) {
         int campoPrincipal;
-
+        cout << "----------------------------------------" << endl;
+        cout << "╦╔═╔═╗╔╗╔╔╗ ╔═╗╔╗╔  ╔═╗╦ ╦╔═╗╔╦╗╔═╗╔╦╗\n"
+                "╠╩╗╠═╣║║║╠╩╗╠═╣║║║  ╚═╗╚╦╝╚═╗ ║ ║╣ ║║║\n"
+                "╩ ╩╩ ╩╝╚╝╚═╝╩ ╩╝╚╝  ╚═╝ ╩ ╚═╝ ╩ ╚═╝╩ ╩"
+             << endl;
         cout << "----------------------------------------" << endl;
         cout << "Selecione um dos serviços:" << endl;
         cout << "1 - Autenticar conta" << endl;

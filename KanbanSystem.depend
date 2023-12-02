@@ -346,7 +346,7 @@
 	<wchar.h>
 	<stdbool.h>
 
-1701483775 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/controladoras/CntrISAutenticacao.cpp
+1701486276 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/controladoras/CntrISAutenticacao.cpp
 	"include/controladoras/CntrISAutenticacao.h"
 
 1701479503 /home/marcos/CodeBlocksProjects/KanbanSystem//include/controladoras/CntrISAutenticacao.h
@@ -362,7 +362,7 @@
 1701486123 /home/marcos/CodeBlocksProjects/KanbanSystem//include/controladoras/CntrIAConta.h
 	"include/Interfaces.h"
 
-1701483775 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/controladoras/CntrISConta.cpp
+1701486276 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/controladoras/CntrISConta.cpp
 	"include/controladoras/CntrISConta.h"
 
 1701483130 /home/marcos/CodeBlocksProjects/KanbanSystem//include/controladoras/CntrISConta.h
