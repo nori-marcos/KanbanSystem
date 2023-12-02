@@ -74,7 +74,6 @@ void CntrAInterface::executar() {
                                                 cout << "Senha: " << contaAtualizada.getSenha().getValor() << endl;
                                             } catch (const invalid_argument &exception) {
                                                 cout << "Conta não atualizada." << endl;
-
                                                 cout << endl << exception.what() << endl;
                                             }
                                             break;
@@ -87,7 +86,6 @@ void CntrAInterface::executar() {
                                             }
                                             break;
                                         case 4:
-                                            apresentarSessao = false;
                                             break;
                                         default:
                                             break;
@@ -107,7 +105,6 @@ void CntrAInterface::executar() {
                                 cin >> campoProjeto;
 
                                 if (campoProjeto == 4) {
-                                    apresentarSessao = false;
                                     break;
                                 } else {
                                     cout << "----------------------------------------" << endl;
