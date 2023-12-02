@@ -301,16 +301,16 @@
 	<string>
 	"include/entidades/Quadro.h"
 
-1701452382 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/controladoras/CntrIAAutenticacao.cpp
+1701480329 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/controladoras/CntrIAAutenticacao.cpp
 	"include/controladoras/CntrIAAutenticacao.h"
 
-1700751677 /home/marcos/CodeBlocksProjects/KanbanSystem//include/controladoras/CntrIAAutenticacao.h
+1701480329 /home/marcos/CodeBlocksProjects/KanbanSystem//include/controladoras/CntrIAAutenticacao.h
 	"include/Interfaces.h"
 	<stdexcept>
 	<iostream>
 	<cstdlib>
 
-1701451485 /home/marcos/CodeBlocksProjects/KanbanSystem//include/Interfaces.h
+1701483130 /home/marcos/CodeBlocksProjects/KanbanSystem//include/Interfaces.h
 	"include/dominios/Email.h"
 	"include/dominios/Senha.h"
 	"include/entidades/Conta.h"
@@ -322,18 +322,18 @@
 	<iostream>
 	<string>
 
-1701472375 /home/marcos/CodeBlocksProjects/KanbanSystem//include/containers/ContainerConta.h
+1701483687 /home/marcos/CodeBlocksProjects/KanbanSystem//include/containers/ContainerConta.h
 	<iostream>
 	<string>
 	"include/entidades/Conta.h"
 	"include/sqlite3.h"
 
-1701472537 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/containers/ContainerConta.cpp
+1701483687 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/containers/ContainerConta.cpp
 	"include/containers/ContainerConta.h"
 	"include/sqlite3.h"
 	<iostream>
 
-1701471901 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/controladoras/CntrAInterface.cpp
+1701482679 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/controladoras/CntrAInterface.cpp
 	"include/controladoras/CntrAInterface.h"
 
 1701369355 /home/marcos/CodeBlocksProjects/KanbanSystem//include/controladoras/CntrAInterface.h
@@ -346,10 +346,10 @@
 	<wchar.h>
 	<stdbool.h>
 
-1701376984 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/controladoras/CntrISAutenticacao.cpp
+1701483775 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/controladoras/CntrISAutenticacao.cpp
 	"include/controladoras/CntrISAutenticacao.h"
 
-1701030877 /home/marcos/CodeBlocksProjects/KanbanSystem//include/controladoras/CntrISAutenticacao.h
+1701479503 /home/marcos/CodeBlocksProjects/KanbanSystem//include/controladoras/CntrISAutenticacao.h
 	"include/Interfaces.h"
 	"include/containers/ContainerConta.h"
 
@@ -359,13 +359,13 @@
 1701452466 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/controladoras/CntrIAConta.cpp
 	"include/controladoras/CntrIAConta.h"
 
-1701451734 /home/marcos/CodeBlocksProjects/KanbanSystem//include/controladoras/CntrIAConta.h
+1701483130 /home/marcos/CodeBlocksProjects/KanbanSystem//include/controladoras/CntrIAConta.h
 	"include/Interfaces.h"
 
-1701376984 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/controladoras/CntrISConta.cpp
+1701483775 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/controladoras/CntrISConta.cpp
 	"include/controladoras/CntrISConta.h"
 
-1701375778 /home/marcos/CodeBlocksProjects/KanbanSystem//include/controladoras/CntrISConta.h
+1701483130 /home/marcos/CodeBlocksProjects/KanbanSystem//include/controladoras/CntrISConta.h
 	"include/Interfaces.h"
 
 1604950702 /home/marcos/CodeBlocksProjects/KanbanSystem//include/sqlite3.h

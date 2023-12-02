@@ -4,54 +4,72 @@ void CntrAInterface::executar() {
     bool apresentar = true;
 
     while (apresentar) {
-        int campo;
+        int campoPrincipal;
 
         cout << "----------------------------------------" << endl;
         cout << "Selecione um dos serviços:" << endl;
         cout << "1 - Autenticar conta" << endl;
         cout << "2 - Criar conta" << endl;
         cout << "3 - Encerrar sistema" << endl;
-        cin >> campo;
+        cin >> campoPrincipal;
 
-        switch (campo) {
-            case 1:
-                if (cntrIAAutenticacao->autenticar(&email)) {
+        switch (campoPrincipal) {
+            case 1: {
+                try {
+                    Conta contaAutenticada = cntrIAAutenticacao->autenticar(&email);
                     cout << "----------------------------------------" << endl;
                     cout << "Autenticação realizada com sucesso." << endl;
 
                     bool apresentarSessao = true;
                     while (apresentarSessao) {
+                        int campoSessao;
+
                         cout << "----------------------------------------" << endl;
                         cout << "Selecione um dos serviços:" << endl;
                         cout << "1 - Gerenciar conta" << endl;
                         cout << "2 - Gerenciar projeto" << endl;
                         cout << "3 - Encerrar sessão" << endl;
-                        cin >> campo;
+                        cin >> campoSessao;
 
-                        switch (campo) {
-                            case 1:
+                        switch (campoSessao) {
+                            case 1: {
                                 while (apresentarSessao) {
+                                    int campoConta;
+
                                     cout << "----------------------------------------" << endl;
                                     cout << "Selecione um dos serviços de conta:" << endl;
-                                    cout << "1 - Visulizar conta" << endl;
+                                    cout << "1 - Visualizar conta" << endl;
                                     cout << "2 - Atualizar conta" << endl;
                                     cout << "3 - Remover conta" << endl;
                                     cout << "4 - Voltar" << endl;
-                                    cin >> campo;
+                                    cin >> campoConta;
 
-                                    switch (campo) {
-                                        case 1:
-                                            if (cntrIAConta->pesquisar()) {
-                                                cout << "Conta encontrada." << endl;
-                                            } else {
-                                                cout << "Conta não encontrada." << endl;
+                                    switch (campoConta) {
+                                        case 1: {
+                                            try {
+                                                Conta contaEncontrada = cntrIAConta->pesquisar(contaAutenticada);
+                                                cout << "----------------------------------------" << endl;
+                                                cout << "Dados da conta:" << endl;
+                                                cout << "Nome: " << contaEncontrada.getNome().getValor() << endl;
+                                                cout << "Email: " << contaEncontrada.getEmail().getValor() << endl;
+                                                cout << "Senha: " << contaEncontrada.getSenha().getValor() << endl;
+                                            } catch (const invalid_argument &exception) {
+                                                cout << endl << exception.what() << endl;
                                             }
                                             break;
+                                        }
                                         case 2:
-                                            if (cntrIAConta->atualizar()) {
-                                                cout << "Conta atualizada." << endl;
-                                            } else {
+                                            try {
+                                                Conta contaAtualizada = cntrIAConta->atualizar(contaAutenticada);
+                                                cout << "----------------------------------------" << endl;
+                                                cout << "Dados da conta atualizada:" << endl;
+                                                cout << "Nome: " << contaAtualizada.getNome().getValor() << endl;
+                                                cout << "Email: " << contaAtualizada.getEmail().getValor() << endl;
+                                                cout << "Senha: " << contaAtualizada.getSenha().getValor() << endl;
+                                            } catch (const invalid_argument &exception) {
                                                 cout << "Conta não atualizada." << endl;
+
+                                                cout << endl << exception.what() << endl;
                                             }
                                             break;
                                         case 3:
@@ -70,6 +88,7 @@ void CntrAInterface::executar() {
                                     }
                                 }
                                 break;
+                            }
                             case 2:
                                 cout << "Serviço não implementado." << endl;
                                 break;
@@ -80,11 +99,13 @@ void CntrAInterface::executar() {
                                 break;
                         }
                     }
-                } else {
+                } catch (const invalid_argument &exception) {
                     cout << "----------------------------------------" << endl;
                     cout << "Falha na autenticação." << endl;
+                    cout << endl << exception.what() << endl;
                 }
                 break;
+            }
             case 2:
                 if (cntrIAConta->incluir()) {
                     cout << "Conta criada com sucesso." << endl;

@@ -15,9 +15,9 @@ public:
 
     static bool remover(const Email &);
 
-    static bool pesquisar(Conta *);
+    static Conta pesquisar(Conta);
 
-    static bool atualizar(const Conta &);
+    static Conta atualizar(const Conta &);
 
 };
 

@@ -68,21 +68,22 @@ bool ContainerConta::remover(const Email &email) {
     return result;
 }
 
-bool ContainerConta::pesquisar(Conta *conta) {
+Conta ContainerConta::pesquisar(Conta conta) {
     sqlite3 *db;
     if (!conectar(&db, "kanban.db")) {
-        return false;
+        throw runtime_error("Erro ao conectar ao banco de dados.");
     }
 
-    std::string sql = "SELECT nome, email, senha FROM conta WHERE email = '"
-                      + conta->getEmail().getValor() + "'";
+    string sql;
+    sql = "SELECT nome, email, senha FROM conta WHERE email = '"
+          + conta.getEmail().getValor() + "'";
 
     sqlite3_stmt *stmt;
     int rc = sqlite3_prepare_v2(db, sql.c_str(), -1, &stmt, nullptr);
 
     if (rc != SQLITE_OK) {
         cout << "Erro ao preparar a consulta: " << sqlite3_errmsg(db) << endl;
-        return false;
+        throw invalid_argument("Erro ao preparar a consulta. Verifique se o email está correto.");
     }
 
     rc = sqlite3_step(stmt);
@@ -90,17 +91,21 @@ bool ContainerConta::pesquisar(Conta *conta) {
     if (rc != SQLITE_ROW) {
         cout << "Erro ao executar a consulta: " << sqlite3_errmsg(db) << endl;
         sqlite3_finalize(stmt);
-        return false;
+        throw invalid_argument("Erro ao executar a consulta. Verifique se o email está correto.");
     }
 
+    conta.setNome(string(reinterpret_cast<const char *>(sqlite3_column_text(stmt, 0))));
+    conta.setEmail(string(reinterpret_cast<const char *>(sqlite3_column_text(stmt, 1))));
+    conta.setSenha(string(reinterpret_cast<const char *>(sqlite3_column_text(stmt, 2))));
+
     sqlite3_finalize(stmt);
-    return true;
+    return conta;
 }
 
-bool ContainerConta::atualizar(const Conta &conta) {
+Conta ContainerConta::atualizar(const Conta &conta) {
     sqlite3 *db;
     if (!conectar(&db, "kanban.db")) {
-        return false;
+        throw runtime_error("Erro ao conectar ao banco de dados.");
     }
 
     std::string sql = "UPDATE conta SET nome = '"
@@ -113,6 +118,20 @@ bool ContainerConta::atualizar(const Conta &conta) {
 
     bool result = executar(db, sql);
 
+    if (!result) {
+        throw runtime_error("Erro ao executar a consulta de atualização.");
+    }
+
+    Conta contaAtualizada;
+
+    try {
+        contaAtualizada = pesquisar(conta);
+    } catch (const invalid_argument &e) {
+        throw runtime_error("Erro ao pesquisar a conta após a atualização.");
+    }
+
     desconectar(db);
-    return result;
+
+    return contaAtualizada;
 }
+

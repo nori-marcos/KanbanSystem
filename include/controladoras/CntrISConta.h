@@ -8,13 +8,13 @@ class CntrISConta : public ISConta {
 private:
     ContainerConta *containerConta;
 public:
-    bool incluir(const Conta&);
+    bool incluir(const Conta &);
 
-    bool remover(const Email&);
+    bool remover(const Email &);
 
-    bool pesquisar(Conta *);
+    Conta pesquisar(const Conta &);
 
-    bool atualizar(const Conta&);
+    Conta atualizar(const Conta &);
 
     void setCntrISConta(ContainerConta *containerConta) {
         this->containerConta = containerConta;

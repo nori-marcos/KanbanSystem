@@ -9,7 +9,7 @@ bool CntrISConta::incluir(const Conta &conta) {
     cout << "Senha: " << conta.getSenha().getValor() << endl;
 
     try {
-        resposta = containerConta->incluir(conta);
+        resposta = ContainerConta::incluir(conta);
     } catch (const invalid_argument &exception) {
         cout << endl << exception.what() << endl;
     }
@@ -24,7 +24,7 @@ bool CntrISConta::remover(const Email &email) {
     cout << "Email: " << email.getValor() << endl;
 
     try {
-        resposta = containerConta->remover(email);
+        resposta = ContainerConta::remover(email);
     } catch (const invalid_argument &exception) {
         cout << endl << exception.what() << endl;
     }
@@ -32,16 +32,13 @@ bool CntrISConta::remover(const Email &email) {
     return resposta;
 }
 
-bool CntrISConta::pesquisar(Conta *conta) {
-    bool resposta = true;
+Conta CntrISConta::pesquisar(const Conta &conta) {
+    Conta resposta;
 
     cout << endl << "CntrISConta::pesquisar()" << endl;
-    cout << "Nome: " << conta->getNome().getValor() << endl;
-    cout << "Email: " << conta->getEmail().getValor() << endl;
-    cout << "Senha: " << conta->getSenha().getValor() << endl;
 
     try {
-        resposta = containerConta->pesquisar(conta);
+        resposta = ContainerConta::pesquisar(conta);
     } catch (const invalid_argument &exception) {
         cout << endl << exception.what() << endl;
     }
@@ -49,16 +46,13 @@ bool CntrISConta::pesquisar(Conta *conta) {
     return resposta;
 }
 
-bool CntrISConta::atualizar(const Conta &conta) {
-    bool resposta = true;
+Conta CntrISConta::atualizar(const Conta &conta) {
+    Conta resposta;
 
     cout << endl << "CntrISConta::atualizar()" << endl;
-    cout << "Nome: " << conta.getNome().getValor() << endl;
-    cout << "Email: " << conta.getEmail().getValor() << endl;
-    cout << "Senha: " << conta.getSenha().getValor() << endl;
 
     try {
-        resposta = containerConta->atualizar(conta);
+        resposta = ContainerConta::atualizar(conta);
     } catch (const invalid_argument &exception) {
         cout << endl << exception.what() << endl;
     }

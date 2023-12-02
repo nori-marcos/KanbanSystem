@@ -10,7 +10,7 @@ private:
     ContainerConta *containerConta;
 
 public:
-    bool autenticar(const Email &, const Senha &);
+    Conta autenticar(const Email &, const Senha &);
 
     void setContainerConta(ContainerConta *containerConta) {
         this->containerConta = containerConta;

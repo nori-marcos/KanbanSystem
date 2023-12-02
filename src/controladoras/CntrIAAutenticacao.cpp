@@ -1,6 +1,6 @@
 #include "include/controladoras/CntrIAAutenticacao.h"
 
-bool CntrIAAutenticacao::autenticar(Email *email) {
+Conta CntrIAAutenticacao::autenticar(Email *email) {
     char campo_email[80];
     char campo_senha[80];
 
@@ -24,5 +24,5 @@ bool CntrIAAutenticacao::autenticar(Email *email) {
         }
     }
 
-    return cntrIAutenticacao->autenticar(*email, senha);
+    return cntrISAutenticacao->autenticar(*email, senha);
 }

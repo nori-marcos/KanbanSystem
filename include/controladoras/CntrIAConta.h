@@ -12,9 +12,9 @@ public:
 
     bool remover();
 
-    bool atualizar();
+    Conta atualizar(Conta &conta);
 
-    bool pesquisar();
+    Conta pesquisar(Conta &conta);
 
     void setCntrIAConta(ISConta *cntrISConta) {
         this->cntrISConta = cntrISConta;

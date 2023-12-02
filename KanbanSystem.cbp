@@ -35,7 +35,6 @@
 			<Add library="/lib/x86_64-linux-gnu/libsqlite3.a" />
 		</Linker>
 		<Unit filename="include/Interfaces.h" />
-		<Unit filename="include/Stubs.h" />
 		<Unit filename="include/containers/ContainerConta.h" />
 		<Unit filename="include/controladoras/CntrAInterface.h" />
 		<Unit filename="include/controladoras/CntrIAAutenticacao.h" />
@@ -52,7 +51,6 @@
 		<Unit filename="include/entidades/Conta.h" />
 		<Unit filename="include/entidades/Quadro.h" />
 		<Unit filename="include/sqlite3.h" />
-		<Unit filename="src/Stubs.cpp" />
 		<Unit filename="src/containers/ContainerConta.cpp" />
 		<Unit filename="src/controladoras/CntrAInterface.cpp" />
 		<Unit filename="src/controladoras/CntrIAAutenticacao.cpp" />

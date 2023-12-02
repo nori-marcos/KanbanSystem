@@ -11,12 +11,12 @@ using namespace std;
 
 class CntrIAAutenticacao : public IAAutenticacao {
 private:
-    ISAutenticacao *cntrIAutenticacao;
+    ISAutenticacao *cntrISAutenticacao;
 public:
-    bool autenticar(Email *);
+    Conta autenticar(Email *);
 
-    void setCntrIAutenticacao(ISAutenticacao *cntrIAutenticacao) {
-        this->cntrIAutenticacao = cntrIAutenticacao;
+    void setCntrIAutenticacao(ISAutenticacao *cntrISAutenticacao) {
+        this->cntrISAutenticacao = cntrISAutenticacao;
     };
 };
 
