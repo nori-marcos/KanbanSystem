@@ -322,18 +322,18 @@
 	<iostream>
 	<string>
 
-1701468252 /home/marcos/CodeBlocksProjects/KanbanSystem//include/containers/ContainerConta.h
+1701472375 /home/marcos/CodeBlocksProjects/KanbanSystem//include/containers/ContainerConta.h
 	<iostream>
 	<string>
 	"include/entidades/Conta.h"
 	"include/sqlite3.h"
 
-1701468252 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/containers/ContainerConta.cpp
+1701472537 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/containers/ContainerConta.cpp
 	"include/containers/ContainerConta.h"
 	"include/sqlite3.h"
 	<iostream>
 
-1701452119 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/controladoras/CntrAInterface.cpp
+1701471901 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/controladoras/CntrAInterface.cpp
 	"include/controladoras/CntrAInterface.h"
 
 1701369355 /home/marcos/CodeBlocksProjects/KanbanSystem//include/controladoras/CntrAInterface.h

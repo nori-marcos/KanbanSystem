@@ -8,7 +8,7 @@ void CntrAInterface::executar() {
 
         cout << "----------------------------------------" << endl;
         cout << "Selecione um dos serviços:" << endl;
-        cout << "1 - Acessar sistema" << endl;
+        cout << "1 - Autenticar conta" << endl;
         cout << "2 - Criar conta" << endl;
         cout << "3 - Encerrar sistema" << endl;
         cin >> campo;
@@ -33,7 +33,7 @@ void CntrAInterface::executar() {
                                 while (apresentarSessao) {
                                     cout << "----------------------------------------" << endl;
                                     cout << "Selecione um dos serviços de conta:" << endl;
-                                    cout << "1 - Pesquisar conta" << endl;
+                                    cout << "1 - Visulizar conta" << endl;
                                     cout << "2 - Atualizar conta" << endl;
                                     cout << "3 - Remover conta" << endl;
                                     cout << "4 - Voltar" << endl;
