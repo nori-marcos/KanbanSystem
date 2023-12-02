@@ -38,34 +38,24 @@ bool CntrIAConta::incluir() {
     return cntrISConta->incluir(conta);
 }
 
-bool CntrIAConta::remover() {
-    char campo_email[80];
-
-    Email email;
+bool CntrIAConta::remover(const Email &email) {
 
     while (true) {
         cout << "----------------------------------------" << endl;
-        cout << "Digite seu email:" << endl;
-        cin >> campo_email;
-
         try {
-            email.setValor(string(campo_email));
-            break;
+            return cntrISConta->remover(email);
         } catch (invalid_argument &exp) {
             cout << "----------------------------------------" << endl;
             cout << "Dado em formato incorreto." << endl;
             cout << exp.what() << endl;
         }
     }
-
-    return cntrISConta->remover(email);
 }
 
 Conta CntrIAConta::atualizar(Conta &conta) {
     Conta conta_atualizada;
     int campo_escolha;
     char campo_nome[80];
-    char campo_email[80];
     char campo_senha[80];
 
     Texto nome;

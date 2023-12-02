@@ -310,7 +310,7 @@
 	<iostream>
 	<cstdlib>
 
-1701483130 /home/marcos/CodeBlocksProjects/KanbanSystem//include/Interfaces.h
+1701486102 /home/marcos/CodeBlocksProjects/KanbanSystem//include/Interfaces.h
 	"include/dominios/Email.h"
 	"include/dominios/Senha.h"
 	"include/entidades/Conta.h"
@@ -359,7 +359,7 @@
 1701452466 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/controladoras/CntrIAConta.cpp
 	"include/controladoras/CntrIAConta.h"
 
-1701483130 /home/marcos/CodeBlocksProjects/KanbanSystem//include/controladoras/CntrIAConta.h
+1701486123 /home/marcos/CodeBlocksProjects/KanbanSystem//include/controladoras/CntrIAConta.h
 	"include/Interfaces.h"
 
 1701483775 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/controladoras/CntrISConta.cpp

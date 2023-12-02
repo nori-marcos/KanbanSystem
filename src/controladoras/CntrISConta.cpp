@@ -3,11 +3,6 @@
 bool CntrISConta::incluir(const Conta &conta) {
     bool resposta = true;
 
-    cout << endl << "CntrISConta::incluir()" << endl;
-    cout << "Nome: " << conta.getNome().getValor() << endl;
-    cout << "Email: " << conta.getEmail().getValor() << endl;
-    cout << "Senha: " << conta.getSenha().getValor() << endl;
-
     try {
         resposta = ContainerConta::incluir(conta);
     } catch (const invalid_argument &exception) {
@@ -19,9 +14,6 @@ bool CntrISConta::incluir(const Conta &conta) {
 
 bool CntrISConta::remover(const Email &email) {
     bool resposta = true;
-
-    cout << endl << "CntrISConta::remover()" << endl;
-    cout << "Email: " << email.getValor() << endl;
 
     try {
         resposta = ContainerConta::remover(email);
@@ -35,8 +27,6 @@ bool CntrISConta::remover(const Email &email) {
 Conta CntrISConta::pesquisar(const Conta &conta) {
     Conta resposta;
 
-    cout << endl << "CntrISConta::pesquisar()" << endl;
-
     try {
         resposta = ContainerConta::pesquisar(conta);
     } catch (const invalid_argument &exception) {
@@ -48,8 +38,6 @@ Conta CntrISConta::pesquisar(const Conta &conta) {
 
 Conta CntrISConta::atualizar(const Conta &conta) {
     Conta resposta;
-
-    cout << endl << "CntrISConta::atualizar()" << endl;
 
     try {
         resposta = ContainerConta::atualizar(conta);

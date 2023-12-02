@@ -26,7 +26,7 @@ class IAConta {
 public:
     virtual bool incluir() = 0;
 
-    virtual bool remover() = 0;
+    virtual bool remover(const Email &) = 0;
 
     virtual Conta atualizar(Conta &) = 0;
 

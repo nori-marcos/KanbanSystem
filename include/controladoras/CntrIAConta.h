@@ -10,7 +10,7 @@ private:
 public:
     bool incluir();
 
-    bool remover();
+    bool remover(const Email &email);
 
     Conta atualizar(Conta &conta);
 

@@ -73,7 +73,7 @@ void CntrAInterface::executar() {
                                             }
                                             break;
                                         case 3:
-                                            if (cntrIAConta->remover()) {
+                                            if (cntrIAConta->remover(contaAutenticada.getEmail())) {
                                                 cout << "Conta removida." << endl;
                                                 apresentarSessao = false;
                                             } else {
