@@ -28,7 +28,7 @@ void CntrAInterface::executar() {
                         cout << "Selecione um dos serviços:" << endl;
                         cout << "1 - Gerenciar conta" << endl;
                         cout << "2 - Gerenciar projeto" << endl;
-                        cout << "3 - Encerrar sessão" << endl;
+                        cout << "3 - Sair da área logada" << endl;
                         cin >> campoSessao;
 
                         switch (campoSessao) {
@@ -41,7 +41,7 @@ void CntrAInterface::executar() {
                                     cout << "1 - Visualizar conta" << endl;
                                     cout << "2 - Atualizar conta" << endl;
                                     cout << "3 - Remover conta" << endl;
-                                    cout << "4 - Voltar" << endl;
+                                    cout << "4 - Sair do gerenciamento de conta" << endl;
                                     cin >> campoConta;
 
                                     switch (campoConta) {
@@ -90,8 +90,25 @@ void CntrAInterface::executar() {
                                 break;
                             }
                             case 2:
-                                cout << "Serviço não implementado." << endl;
-                                break;
+                                int campoProjeto;
+
+                                cout << "----------------------------------------" << endl;
+                                cout << "Selecione um dos serviços de projeto:" << endl;
+                                cout << "1 - Criar projeto" << endl;
+                                cout << "2 - Editar projeto" << endl;
+                                cout << "3 - Remover projeto" << endl;
+                                cout << "4 - Sair do gerenciamento de projeto" << endl;
+                                cin >> campoProjeto;
+
+                                if (campoProjeto == 4) {
+                                    apresentarSessao = false;
+                                    break;
+                                } else {
+                                    cout << "----------------------------------------" << endl;
+                                    cout << "Serviço não implementado." << endl;
+                                    break;
+                                }
+
                             case 3:
                                 apresentarSessao = false;
                                 break;

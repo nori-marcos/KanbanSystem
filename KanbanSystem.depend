@@ -333,7 +333,7 @@
 	"include/sqlite3.h"
 	<iostream>
 
-1701482679 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/controladoras/CntrAInterface.cpp
+1701486102 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/controladoras/CntrAInterface.cpp
 	"include/controladoras/CntrAInterface.h"
 
 1701369355 /home/marcos/CodeBlocksProjects/KanbanSystem//include/controladoras/CntrAInterface.h
@@ -356,7 +356,7 @@
 1701028515 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/Stubs.cpp
 	"include/Stubs.h"
 
-1701452466 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/controladoras/CntrIAConta.cpp
+1701486102 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/controladoras/CntrIAConta.cpp
 	"include/controladoras/CntrIAConta.h"
 
 1701486123 /home/marcos/CodeBlocksProjects/KanbanSystem//include/controladoras/CntrIAConta.h

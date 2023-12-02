@@ -67,7 +67,7 @@ Conta CntrIAConta::atualizar(Conta &conta) {
         cout << "Selecione o campo a ser atualizado:" << endl;
         cout << "1 - Nome" << endl;
         cout << "2 - Senha" << endl;
-        cout << "3 - Terminar atualização." << endl;
+        cout << "3 - Terminar atualização" << endl;
         cin >> campo_escolha;
 
         switch (campo_escolha) {
