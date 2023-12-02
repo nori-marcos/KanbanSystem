@@ -1,6 +1,8 @@
 #include "include/controladoras/CntrAInterface.h"
 
 void CntrAInterface::executar() {
+    string negrito = "\033[1m";
+    string reset = "\033[0m";
     bool apresentar = true;
 
     while (apresentar) {
@@ -11,7 +13,7 @@ void CntrAInterface::executar() {
                 "╩ ╩╩ ╩╝╚╝╚═╝╩ ╩╝╚╝  ╚═╝ ╩ ╚═╝ ╩ ╚═╝╩ ╩"
              << endl;
         cout << "----------------------------------------" << endl;
-        cout << "Selecione um dos serviços:" << endl;
+        cout << negrito << "Selecione um dos serviços:" << reset << endl;
         cout << "1 - Autenticar conta" << endl;
         cout << "2 - Criar conta" << endl;
         cout << "3 - Encerrar sistema" << endl;
@@ -29,7 +31,7 @@ void CntrAInterface::executar() {
                         int campoSessao;
 
                         cout << "----------------------------------------" << endl;
-                        cout << "Selecione um dos serviços:" << endl;
+                        cout << negrito << "Selecione um dos serviços:" << reset << endl;
                         cout << "1 - Gerenciar conta" << endl;
                         cout << "2 - Gerenciar projeto" << endl;
                         cout << "3 - Sair da área logada" << endl;
@@ -41,7 +43,7 @@ void CntrAInterface::executar() {
                                     int campoConta;
 
                                     cout << "----------------------------------------" << endl;
-                                    cout << "Selecione um dos serviços de conta:" << endl;
+                                    cout << negrito << "Selecione um dos serviços de conta:" << reset << endl;
                                     cout << "1 - Visualizar conta" << endl;
                                     cout << "2 - Atualizar conta" << endl;
                                     cout << "3 - Remover conta" << endl;
