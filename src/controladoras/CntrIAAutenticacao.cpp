@@ -19,7 +19,7 @@ Conta CntrIAAutenticacao::autenticar(Email *email) {
             return cntrISAutenticacao->autenticar(*email, senha);
         } catch (invalid_argument &exp) {
             cout << "----------------------------------------" << endl;
-            cout << "Dado em formato incorreto." << endl;
+            cout << "Usuário inexistente." << endl;
             cout << exp.what() << endl;
         }
         break;

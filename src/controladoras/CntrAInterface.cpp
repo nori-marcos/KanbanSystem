@@ -79,11 +79,20 @@ void CntrAInterface::executar() {
                                             }
                                             break;
                                         case 3:
-                                            if (cntrIAConta->remover(contaAutenticada.getEmail())) {
-                                                cout << "Conta removida." << endl;
-                                                apresentarSessao = false;
-                                            } else {
-                                                cout << "Conta não removida." << endl;
+                                            int escolha_remocao;
+
+                                            cout << "Tem certeza que deseja remover a conta?" << endl;
+                                            cout << "1. Sim" << endl;
+                                            cout << "2. Não" << endl;
+                                            cin >> escolha_remocao;
+
+                                            if (escolha_remocao == 1) {
+                                                if (cntrIAConta->remover(contaAutenticada.getEmail())) {
+                                                    cout << "Conta removida." << endl;
+                                                    apresentarSessao = false;
+                                                } else {
+                                                    cout << "Conta não removida." << endl;
+                                                }
                                             }
                                             break;
                                         case 4:
