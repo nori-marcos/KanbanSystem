@@ -22,5 +22,7 @@ Conta CntrIAAutenticacao::autenticar(Email *email) {
             cout << "Dado em formato incorreto." << endl;
             cout << exp.what() << endl;
         }
+        break;
     }
+    return Conta();
 }

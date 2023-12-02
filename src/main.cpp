@@ -10,6 +10,12 @@
 using namespace std;
 
 int main() {
+    cout << "----------------------------------------" << endl;
+    cout << "╦╔═╔═╗╔╗╔╔╗ ╔═╗╔╗╔  ╔═╗╦ ╦╔═╗╔╦╗╔═╗╔╦╗\n"
+            "╠╩╗╠═╣║║║╠╩╗╠═╣║║║  ╚═╗╚╦╝╚═╗ ║ ║╣ ║║║\n"
+            "╩ ╩╩ ╩╝╚╝╚═╝╩ ╩╝╚╝  ╚═╝ ╩ ╚═╝ ╩ ╚═╝╩ ╩"
+         << endl;
+
     // Instanciar controladoras de apresentação.
     CntrAInterface *cntrAInterface = new CntrAInterface();
     IAAutenticacao *cntrIAutenticacao = new CntrIAAutenticacao();

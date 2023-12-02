@@ -7,11 +7,7 @@ void CntrAInterface::executar() {
 
     while (apresentar) {
         int campoPrincipal;
-        cout << "----------------------------------------" << endl;
-        cout << "╦╔═╔═╗╔╗╔╔╗ ╔═╗╔╗╔  ╔═╗╦ ╦╔═╗╔╦╗╔═╗╔╦╗\n"
-                "╠╩╗╠═╣║║║╠╩╗╠═╣║║║  ╚═╗╚╦╝╚═╗ ║ ║╣ ║║║\n"
-                "╩ ╩╩ ╩╝╚╝╚═╝╩ ╩╝╚╝  ╚═╝ ╩ ╚═╝ ╩ ╚═╝╩ ╩"
-             << endl;
+
         cout << "----------------------------------------" << endl;
         cout << negrito << "Selecione um dos serviços:" << reset << endl;
         cout << "1 - Autenticar conta" << endl;
@@ -23,6 +19,11 @@ void CntrAInterface::executar() {
             case 1: {
                 try {
                     Conta contaAutenticada = cntrIAAutenticacao->autenticar(&email);
+
+                    if (contaAutenticada.getEmail().getValor().empty()) {
+                        break;
+                    }
+
                     cout << "----------------------------------------" << endl;
                     cout << "Autenticação realizada com sucesso." << endl;
 
