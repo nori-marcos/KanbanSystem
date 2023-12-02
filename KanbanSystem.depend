@@ -333,7 +333,7 @@
 	"include/sqlite3.h"
 	<iostream>
 
-1701486102 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/controladoras/CntrAInterface.cpp
+1701489103 source:/home/marcos/CodeBlocksProjects/KanbanSystem/src/controladoras/CntrAInterface.cpp
 	"include/controladoras/CntrAInterface.h"
 
 1701369355 /home/marcos/CodeBlocksProjects/KanbanSystem//include/controladoras/CntrAInterface.h

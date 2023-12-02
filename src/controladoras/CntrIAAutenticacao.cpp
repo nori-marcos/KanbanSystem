@@ -16,13 +16,11 @@ Conta CntrIAAutenticacao::autenticar(Email *email) {
         try {
             email->setValor(string(campo_email));
             senha.setValor(string(campo_senha));
-            break;
+            return cntrISAutenticacao->autenticar(*email, senha);
         } catch (invalid_argument &exp) {
             cout << "----------------------------------------" << endl;
             cout << "Dado em formato incorreto." << endl;
             cout << exp.what() << endl;
         }
     }
-
-    return cntrISAutenticacao->autenticar(*email, senha);
 }
